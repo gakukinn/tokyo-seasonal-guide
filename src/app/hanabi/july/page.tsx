@@ -1,9 +1,7 @@
 'use client';
 
-import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useParams } from 'next/navigation';
 
 // 地区数据
 const regions = [
@@ -51,35 +49,8 @@ const regions = [
   },
 ];
 
-// 月份信息
-const monthInfo = {
-  7: {
-    name: '7月',
-    title: '盛夏花火月',
-    description: '梅雨季结束，夏日花火大会正式拉开序幕',
-    totalEvents: 28,
-    peakDates: ['7月最后一个周六 - 隅田川花火大会', '7月下旬 - 横浜开港祭']
-  },
-  8: {
-    name: '8月',
-    title: '花火高峰月',
-    description: '一年中花火大会最密集的月份，精彩纷呈',
-    totalEvents: 35,
-    peakDates: ['8月第一个周六 - 江戸川区花火大会', '8月中旬 - 各地夏祭高峰']
-  }
-};
-
-export default function MonthPage() {
-  const params = useParams();
-  const monthNum = parseInt(params.month as string);
+export default function JulyPage() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
-  
-  // 只允许7月和8月
-  if (!monthInfo[monthNum as 7 | 8]) {
-    notFound();
-  }
-  
-  const currentMonth = monthInfo[monthNum as 7 | 8];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800">
@@ -111,7 +82,7 @@ export default function MonthPage() {
           <nav className="flex items-center space-x-2 text-sm text-white/70">
             <Link href="/" className="hover:text-white transition-colors">首页</Link>
             <span>›</span>
-            <span className="text-white font-medium">{currentMonth.name}花火大会</span>
+            <span className="text-white font-medium">7月花火大会</span>
           </nav>
         </div>
       </div>
@@ -122,17 +93,17 @@ export default function MonthPage() {
         <section className="pt-12 pb-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {currentMonth.name}
+              7月
               <span className="block text-yellow-400 text-3xl md:text-4xl mt-2">
-                {currentMonth.title}
+                盛夏花火月
               </span>
             </h1>
             <p className="text-xl text-white/80 mb-6 max-w-2xl mx-auto">
-              {currentMonth.description}
+              梅雨季结束，夏日花火大会正式拉开序幕
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold text-yellow-400">{currentMonth.totalEvents}</div>
+                <div className="text-2xl font-bold text-yellow-400">28</div>
                 <div className="text-white/80 text-sm">花火大会活动</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -148,29 +119,28 @@ export default function MonthPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-white text-center mb-6">本月重点活动</h2>
             <div className="space-y-3 mb-8">
-              {currentMonth.peakDates.map((date, index) => (
-                <div key={index} className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-400/30 rounded-lg p-4 text-center">
-                  <div className="text-yellow-400 font-semibold">{date}</div>
-                </div>
-              ))}
+              <div className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-400/30 rounded-lg p-4 text-center">
+                <div className="text-yellow-400 font-semibold">7月最后一个周六 - 隅田川花火大会</div>
+              </div>
+              <div className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-400/30 rounded-lg p-4 text-center">
+                <div className="text-yellow-400 font-semibold">7月下旬 - 横浜开港祭</div>
+              </div>
             </div>
             
             {/* 7月花火专题按钮 */}
-            {monthNum === 7 && (
-              <div className="text-center">
-                <Link
-                  href="/hanabi/month/july"
-                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold px-8 py-4 rounded-full hover:from-blue-400 hover:to-purple-500 transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30"
-                >
-                  <span className="text-2xl">🎆</span>
-                  <span>查看7月所有花火大会</span>
-                  <span className="text-xl">→</span>
-                </Link>
-                <p className="text-white/70 text-sm mt-3">
-                  专题展示：按时间顺序浏览7月所有花火大会
-                </p>
-              </div>
-            )}
+            <div className="text-center">
+              <Link
+                href="/hanabi/month/july"
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold px-8 py-4 rounded-full hover:from-blue-400 hover:to-purple-500 transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30"
+              >
+                <span className="text-2xl">🎆</span>
+                <span>查看7月所有花火大会</span>
+                <span className="text-xl">→</span>
+              </Link>
+              <p className="text-white/70 text-sm mt-3">
+                专题展示：按时间顺序浏览7月所有花火大会
+              </p>
+            </div>
           </div>
         </section>
 
@@ -182,7 +152,7 @@ export default function MonthPage() {
               {regions.map((region) => (
                 <Link
                   key={region.id}
-                  href={`/region/${region.id}?month=${monthNum}`}
+                  href={`/region/${region.id}?month=7`}
                   className={`group backdrop-blur-sm border rounded-xl p-6 hover:bg-white/20 transition-all transform hover:scale-105 ${
                     selectedRegion === region.id 
                       ? 'bg-white/20 border-yellow-400/50 shadow-lg shadow-yellow-400/20' 
@@ -230,10 +200,10 @@ export default function MonthPage() {
             <h2 className="text-2xl font-bold text-white mb-8">快速跳转</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href={monthNum === 7 ? "/hanabi/8" : "/hanabi/7"}
+                href="/hanabi/august"
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/20 transition-all"
               >
-                查看{monthNum === 7 ? "8月" : "7月"}花火大会
+                查看8月花火大会
               </Link>
               <Link
                 href="/"
