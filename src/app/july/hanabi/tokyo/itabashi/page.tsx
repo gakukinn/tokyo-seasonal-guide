@@ -1,5 +1,5 @@
 import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
-import { itabashiData } from '../../../../../data/itabashi';
+import { itabashiData } from '../../../../../data/level5-july-hanabi-tokyo-itabashi';
 
 export default function ItabashiDetailPage() {
   return <HanabiDetailTemplate data={itabashiData} />;

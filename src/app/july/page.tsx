@@ -19,7 +19,7 @@ const activityTypes = [
     description: '体验日本传统文化',
     count: 4,
     icon: '🏮',
-    color: 'from-red-500 to-pink-600',
+    color: 'from-pink-400 to-blue-500',
     available: false
   },
   {
@@ -33,7 +33,8 @@ const activityTypes = [
   }
 ];
 
-// 7月重点活动时间线
+// 7月重点活动时间线 (暂时保留供未来使用)
+/*
 const timelineEvents = [
   {
     date: '7月第三个周六',
@@ -64,23 +65,30 @@ const timelineEvents = [
     importance: 'primary'
   }
 ];
+*/
 
 export default function JulyPage() {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100">
-      {/* 背景装饰 */}
-      <div className="absolute inset-0 bg-[url('/fireworks-pattern.svg')] opacity-5"></div>
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-blue-100 relative">
+      {/* 多层背景装饰 */}
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-50/70 via-transparent to-blue-50/70"></div>
+      <div className="absolute inset-0 bg-[url('/fireworks-pattern.svg')] opacity-10"></div>
+      {/* 浮动装饰圆点 */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-pink-200/30 rounded-full blur-xl"></div>
+      <div className="absolute top-40 right-20 w-48 h-48 bg-blue-200/30 rounded-full blur-xl"></div>
+      <div className="absolute bottom-40 left-1/4 w-24 h-24 bg-yellow-200/30 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 right-1/3 w-36 h-36 bg-purple-200/30 rounded-full blur-xl"></div>
       
       {/* 面包屑导航 */}
-      <nav className="relative z-10 bg-red-600 border-b border-red-700">
+      <nav className="relative z-10 bg-blue-300 border-b border-blue-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center space-x-2 text-sm">
-            <Link href="/" className="text-white/80 hover:text-white transition-colors">
+            <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors">
               首页
             </Link>
-            <span className="text-white/60">›</span>
-            <span className="text-white font-medium">七月 · 文月</span>
+            <span className="text-gray-600">›</span>
+            <span className="text-gray-900 font-medium">七月 · 文月</span>
           </div>
         </div>
       </nav>
@@ -94,21 +102,19 @@ export default function JulyPage() {
               <div className="text-6xl">🌙</div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-                  七月 <span className="text-red-600">文月</span>
+                  七月 <span className="text-blue-400">文月</span>
                 </h1>
                 <p className="text-xl text-gray-700">
                   七夕文学 · 夏夜花火的黄金时节
                 </p>
               </div>
             </div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              七月是关东地区花火大会的核心月份，隅田川、立川等顶级花火大会轮番上演，为夏夜增添绚烂色彩
-            </p>
+
           </div>
         </section>
 
         {/* 活动类型选择 */}
-        <section className="py-12 bg-white/80 backdrop-blur-sm border-t border-red-200">
+        <section className="py-12 bg-gradient-to-r from-white/90 via-pink-50/80 to-blue-50/80 backdrop-blur-sm border-t border-blue-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">七月活动分类</h2>
             <p className="text-gray-600 text-center mb-12">
@@ -133,9 +139,6 @@ export default function JulyPage() {
                       <p className="text-lg mb-4 text-white/90">
                         {activity.description}
                       </p>
-                      <div className="text-sm text-white/80">
-                        {activity.count} 个活动
-                      </div>
                     </div>
                   </Link>
                 ) : (
@@ -158,9 +161,6 @@ export default function JulyPage() {
                       <p className="text-lg mb-4 text-gray-600">
                         {activity.description}
                       </p>
-                      <div className="text-sm text-gray-700">
-                        {activity.count} 个活动
-                      </div>
                     </div>
                   </div>
                 )
@@ -172,13 +172,13 @@ export default function JulyPage() {
 
 
         {/* 七月旅游实用信息 */}
-        <section className="py-16 bg-white/80 backdrop-blur-sm border-t border-red-200">
+        <section className="py-16 bg-gradient-to-br from-pink-50/90 via-white/85 to-blue-50/90 backdrop-blur-sm border-t border-red-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">七月旅游实用信息</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* 天气信息 */}
-              <div className="bg-white border-2 border-red-200 rounded-xl p-6 hover:shadow-lg transition-all">
+              <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-center mb-4">
                   <div className="text-3xl mb-2">🌡️</div>
                   <h3 className="text-xl font-bold text-gray-800">天气状况</h3>
@@ -196,8 +196,8 @@ export default function JulyPage() {
                     <span>降雨：</span>
                     <span className="text-gray-800 font-medium">梅雨季末期</span>
                   </div>
-                  <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-700 text-xs">
+                  <div className="mt-4 p-3 bg-blue-100 border border-blue-300 rounded-lg">
+                    <p className="text-blue-700 text-xs">
                       💡 建议携带轻便雨具和防晒用品
                     </p>
                   </div>
@@ -205,7 +205,7 @@ export default function JulyPage() {
               </div>
 
               {/* 交通信息 */}
-              <div className="bg-white border-2 border-red-200 rounded-xl p-6 hover:shadow-lg transition-all">
+              <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-center mb-4">
                   <div className="text-3xl mb-2">🚇</div>
                   <h3 className="text-xl font-bold text-gray-800">交通指南</h3>
@@ -223,8 +223,8 @@ export default function JulyPage() {
                     <span>夏季活动：</span>
                     <span className="text-gray-800 font-medium">部分加班</span>
                   </div>
-                  <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-700 text-xs">
+                  <div className="mt-4 p-3 bg-blue-100 border border-blue-300 rounded-lg">
+                    <p className="text-blue-700 text-xs">
                       💡 大型活动日建议查询最新时刻表
                     </p>
                   </div>
@@ -232,7 +232,7 @@ export default function JulyPage() {
               </div>
 
               {/* 旅游贴士 */}
-              <div className="bg-white border-2 border-red-200 rounded-xl p-6 hover:shadow-lg transition-all">
+              <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 hover:shadow-lg transition-all">
                 <div className="text-center mb-4">
                   <div className="text-3xl mb-2">💡</div>
                   <h3 className="text-xl font-bold text-gray-800">旅游贴士</h3>
@@ -250,8 +250,8 @@ export default function JulyPage() {
                     <span>营业时间：</span>
                     <span className="text-gray-800 font-medium">夏季延长</span>
                   </div>
-                  <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-700 text-xs">
+                  <div className="mt-4 p-3 bg-blue-100 border border-blue-300 rounded-lg">
+                    <p className="text-blue-700 text-xs">
                       💡 建议制定备选方案应对天气变化
                     </p>
                   </div>
@@ -262,7 +262,7 @@ export default function JulyPage() {
         </section>
 
         {/* 快速导航 */}
-        <section className="py-12 bg-red-50">
+        <section className="py-12 bg-gradient-to-r from-pink-100/80 via-red-50/90 to-blue-100/80">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-8">快速导航</h3>
             <div className="flex flex-wrap justify-center gap-4">
@@ -274,7 +274,7 @@ export default function JulyPage() {
               </Link>
               <Link
                 href="/july/hanabi"
-                className="bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold px-6 py-3 rounded-full hover:from-red-600 hover:to-red-700 transition-all"
+                className="bg-gradient-to-r from-pink-400 to-blue-400 text-white font-semibold px-6 py-3 rounded-full hover:from-pink-500 hover:to-blue-500 transition-all"
               >
                 七月花火大会 →
               </Link>

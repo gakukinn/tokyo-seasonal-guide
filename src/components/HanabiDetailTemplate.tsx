@@ -125,8 +125,8 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
             </div>
             <nav className="hidden md:flex space-x-6">
               <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">首页</Link>
-              <Link href={`/hanabi/${data.month}`} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">{data.month}月花火</Link>
-              <Link href="/region/tokyo" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">东京地区</Link>
+              <Link href="/july" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">七月花火</Link>
+              <Link href="/july/hanabi/tokyo" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">东京地区</Link>
             </nav>
           </div>
         </div>
@@ -162,7 +162,11 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
           <nav className="flex items-center space-x-2 text-sm text-gray-700">
             <Link href="/" className="hover:text-gray-900 transition-colors font-medium">首页</Link>
             <span className="text-gray-600">›</span>
-            <Link href="/hanabi/tokyo" className="hover:text-gray-900 transition-colors font-medium">东京花火大会</Link>
+            <Link href="/july" className="hover:text-gray-900 transition-colors font-medium">七月 · 文月</Link>
+            <span className="text-gray-600">›</span>
+            <Link href="/july/hanabi" className="hover:text-gray-900 transition-colors font-medium">花火大会</Link>
+            <span className="text-gray-600">›</span>
+            <Link href="/july/hanabi/tokyo" className="hover:text-gray-900 transition-colors font-medium">东京</Link>
             <span className="text-gray-600">›</span>
             <span className="text-gray-900 font-bold">{data.name}</span>
           </nav>
@@ -177,7 +181,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
             {/* 返回按钮 */}
             <div className="mb-6">
               <Link 
-                href="/hanabi/tokyo" 
+                href="/july/hanabi/tokyo" 
                 className="inline-flex items-center text-gray-700 hover:text-gray-900 transition-colors font-medium"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -192,10 +196,10 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
               <div className="lg:col-span-2">
                 <div className="mb-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <span className={`${themeColors.bg500} text-white text-xs font-bold px-3 py-1 rounded-full`}>
+                    <span className={`${themeColors.bg200} ${themeColors.text800} text-xs font-bold px-3 py-1 rounded-full border ${themeColors.border200}`}>
                       {data.status}
                     </span>
-                    <span className="bg-green-200 text-green-900 text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="bg-pink-200 text-pink-900 text-xs font-bold px-3 py-1 rounded-full">
                       {data.ticketPrice}
                     </span>
                   </div>
@@ -324,7 +328,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                   onClick={() => setSelectedTab(tab.id)}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-full font-semibold transition-all ${
                     selectedTab === tab.id
-                      ? `${themeColors.bg600} text-white`
+                      ? `${themeColors.bg200} ${themeColors.text800} border ${themeColors.border200}`
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -359,7 +363,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                       </ul>
                     </div>
                     
-                    <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                    <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
                       <h4 className="text-gray-800 font-bold mb-3">活动特色</h4>
                       <div className="space-y-2 text-gray-700 text-sm">
                         {data.venues[0]?.features.map((feature, index) => (
@@ -443,8 +447,8 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">观赏攻略</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {data.viewingSpots.map((spot, index) => (
-                      <div key={index} className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                    {data.viewingSpots.map((spot, spotIndex) => (
+                      <div key={spotIndex} className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                         <div className="flex items-center justify-between mb-3">
                           <h4 className="font-bold text-gray-800">{spot.name}</h4>
                           <div className="flex items-center space-x-1">
@@ -457,7 +461,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                         <p className="text-sm text-gray-700 mb-3">{spot.tips}</p>
                         <div className="space-y-2">
                           <div>
-                            <span className="text-green-600 font-semibold text-xs">优点：</span>
+                            <span className="text-pink-600 font-semibold text-xs">优点：</span>
                             <ul className="text-xs text-gray-700">
                               {spot.pros.map((pro, proIndex) => (
                                 <li key={proIndex}>• {pro}</li>
@@ -483,8 +487,8 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">实用建议</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {data.tips.map((tipCategory, index) => (
-                      <div key={index} className={`${themeColors.bg50} rounded-lg p-4 border ${themeColors.border200}`}>
+                    {data.tips.map((tipCategory, tipIndex) => (
+                      <div key={tipIndex} className={`${themeColors.bg50} rounded-lg p-4 border ${themeColors.border200}`}>
                         <h4 className="font-bold text-gray-800 mb-3">{tipCategory.category}</h4>
                         <ul className="space-y-2">
                           {tipCategory.items.map((item, itemIndex) => (
@@ -525,7 +529,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                 </div>
                 
                 <div className="space-y-4">
-                  {data.related.regionRecommendations.map((item, index) => (
+                  {data.related.regionRecommendations.map((item) => (
                     <Link 
                       key={item.id} 
                       href={item.link}
@@ -552,7 +556,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
 
                 <div className="mt-6 pt-4 border-t border-gray-200">
                   <Link 
-                    href="/region/tokyo"
+                    href="/july/hanabi/tokyo"
                     className="inline-flex items-center text-purple-600 hover:text-purple-700 transition-colors font-semibold"
                   >
                     <span>查看东京所有花火大会</span>
@@ -574,15 +578,15 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                 </div>
                 
                 <div className="space-y-4">
-                  {data.related.timeRecommendations.map((item, index) => (
+                  {data.related.timeRecommendations.map((item) => (
                     <Link 
                       key={item.id} 
                       href={item.link}
-                      className="block p-4 rounded-lg border border-gray-200 hover:border-green-300 hover:bg-green-50 transition-all group"
+                      className="block p-4 rounded-lg border border-gray-200 hover:border-pink-300 hover:bg-pink-50 transition-all group"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
-                          <h4 className="font-bold text-gray-900 group-hover:text-green-700 transition-colors">
+                          <h4 className="font-bold text-gray-900 group-hover:text-pink-700 transition-colors">
                             {item.name}
                           </h4>
                           <div className="flex items-center space-x-4 mt-2 text-sm text-gray-600">
@@ -591,7 +595,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
                             <span>👥 {item.visitors}</span>
                           </div>
                         </div>
-                        <div className="ml-4 text-green-600 group-hover:text-green-700 transition-colors">
+                        <div className="ml-4 text-pink-600 group-hover:text-pink-700 transition-colors">
                           →
                         </div>
                       </div>
@@ -601,8 +605,8 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
 
                 <div className="mt-6 pt-4 border-t border-gray-200">
                   <Link 
-                    href="/hanabi/july"
-                    className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors font-semibold"
+                    href="/july/hanabi"
+                    className="inline-flex items-center text-pink-600 hover:text-pink-700 transition-colors font-semibold"
                   >
                     <span>查看7月所有花火大会</span>
                     <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -613,16 +617,7 @@ export default function HanabiDetailTemplate({ data }: HanabiDetailTemplateProps
               </div>
             </div>
 
-            {/* 3次点击提示 */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-gray-200">
-              <div className="text-center">
-                <div className="text-2xl mb-3">⚡</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">3次点击到达任何目标</h3>
-                <p className="text-gray-700 text-sm">
-                  从任何页面出发，最多3次点击即可到达您想要的花火详情页面
-                </p>
-              </div>
-            </div>
+
           </div>
         </section>
       </main>
