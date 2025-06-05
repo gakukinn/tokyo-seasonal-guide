@@ -254,7 +254,6 @@ export default function RegionalHanabiTemplate({
                               <p className="text-gray-600 text-sm">{event.area} · {event.specificDate}</p>
                             </div>
                             <div className="flex items-center space-x-4 text-sm text-gray-500">
-                              <span>⏰ {event.time}</span>
                               <span>🚇 {event.station} ({event.walkingTime})</span>
                               <span className="bg-pink-50 text-rose-500 px-2 py-1 rounded-full text-xs">{event.highlights[0]}</span>
                             </div>
@@ -319,16 +318,10 @@ export default function RegionalHanabiTemplate({
 
                       {/* 基本信息 */}
                       <div className="space-y-2 mb-4">
-                        {/* 第一行：日期和时间 */}
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-2 min-w-0 flex-1">
-                            <span className="text-sm flex-shrink-0">📅</span>
-                            <span className="text-xs text-gray-700 font-semibold truncate">{event.date}</span>
-                          </div>
-                          <div className="flex items-center space-x-2 min-w-0">
-                            <span className="text-sm flex-shrink-0">⏰</span>
-                            <span className="text-xs text-gray-600 font-medium">{event.time}</span>
-                          </div>
+                        {/* 第一行：日期 */}
+                        <div className="flex items-center space-x-2">
+                          <span className="text-sm flex-shrink-0">📅</span>
+                          <span className="text-xs text-gray-700 font-semibold">{event.date}</span>
                         </div>
                         
                         {/* 第二行：地点 */}
@@ -404,12 +397,12 @@ export default function RegionalHanabiTemplate({
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-gray-800 text-center mb-10">{regionInfo.name}花火大会特色</h2>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               {regionInfo.features.map((feature, index) => (
-                <div key={index} className="text-center bg-white rounded-lg p-4 md:p-6 shadow-sm h-full flex flex-col">
+                                                                     <div key={index} className="flex-1 min-w-0 max-w-xs text-center bg-white rounded-lg p-4 md:p-6 shadow-sm">
                   <div className="text-3xl mb-3">{feature.icon}</div>
                   <h3 className="text-base font-bold text-gray-800 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm flex-1">
+                  <p className="text-gray-600 text-sm">
                     {feature.description}
                   </p>
                 </div>
