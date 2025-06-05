@@ -2,6 +2,10 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { REGIONAL_CONFIG } from '@/config/regional-template';
+import LikeButton from '@/components/shared/LikeButton';
+import ViewModeToggle from '@/components/shared/ViewModeToggle';
+import { validateInDevelopment } from '@/utils/validation';
 
 /**
  * RegionalHanabiTemplate - 第4层花火大会地区模板
@@ -83,6 +87,9 @@ export default function RegionalHanabiTemplate({
 }: RegionalHanabiTemplateProps) {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
+  // 开发环境数据验证
+  validateInDevelopment(events, `RegionalHanabiTemplate(${regionInfo.name})`);
+
   // 初始点赞数据 (从hanabi.walkerplus.com获取)
   const initialLikes: Record<string, number> = {
     // 东京地区
@@ -114,23 +121,14 @@ export default function RegionalHanabiTemplate({
     return initialLikes;
   });
 
-  // 简约三色循环（与第三层ActivityTemplate一致）
+  // 使用配置文件的颜色系统
   const getCardColor = (index: number) => {
-    const colorOptions = [
-      'from-rose-100 to-white',
-      'from-white to-blue-100', 
-      'from-blue-100 to-blue-200'
-    ];
-    return colorOptions[index % colorOptions.length];
+    return REGIONAL_CONFIG.cardColors[index % REGIONAL_CONFIG.cardColors.length];
   };
 
   const getCrowdLevelInfo = (level: string) => {
-    switch (level) {
-      case 'high': return { text: '非常拥挤', color: 'bg-red-200', icon: '🔴' };
-      case 'medium': return { text: '适中', color: 'bg-yellow-200', icon: '🟡' };
-      case 'low': return { text: '相对宽松', color: 'bg-green-200', icon: '🟢' };
-      default: return { text: '未知', color: 'bg-gray-200', icon: '⚪' };
-    }
+    return REGIONAL_CONFIG.crowdLevels[level as keyof typeof REGIONAL_CONFIG.crowdLevels] || 
+           { text: '未知', color: 'bg-gray-200', icon: '⚪' };
   };
 
   // 点赞处理函数
@@ -210,26 +208,10 @@ export default function RegionalHanabiTemplate({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* 简洁视图切换 */}
             <div className="flex justify-end mb-6">
-              <div className="flex items-center space-x-1">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`p-2 rounded-lg text-sm transition-all ${
-                    viewMode === 'grid' ? 'bg-blue-200/60 text-gray-700' : 'hover:bg-white/50 text-gray-500'
-                  }`}
-                  title="网格视图"
-                >
-                  🔳
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`p-2 rounded-lg text-sm transition-all ${
-                    viewMode === 'list' ? 'bg-blue-200/60 text-gray-700' : 'hover:bg-white/50 text-gray-500'
-                  }`}
-                  title="列表视图"
-                >
-                  📋
-                </button>
-              </div>
+              <ViewModeToggle 
+                viewMode={viewMode} 
+                onViewModeChange={setViewMode}
+              />
             </div>
             <div className={`${
               viewMode === 'grid' 
@@ -261,14 +243,12 @@ export default function RegionalHanabiTemplate({
                         <div className="flex items-center space-x-4 text-sm text-gray-600">
                           <span>👥 {event.visitors}</span>
                           <span>🎆 {event.fireworks}</span>
-                          <button 
-                            className="px-3 py-2 md:px-3 md:py-2 min-w-[44px] min-h-[44px] bg-red-50 border border-red-200 text-gray-600 rounded-lg hover:bg-red-100 active:scale-95 transition-all flex items-center justify-center space-x-1"
-                            title={`点赞 ${likes[event.id] || 0} 次 (点击增加)`}
-                            onClick={() => handleLike(event.id)}
-                          >
-                            <span className="text-red-500 text-lg">❤️</span>
-                            <span className="text-sm font-bold text-red-600">{likes[event.id] || 0}</span>
-                          </button>
+                          <LikeButton 
+                            eventId={event.id}
+                            initialLikes={likes[event.id] || 0}
+                            onLike={handleLike}
+                            size="md"
+                          />
                           <Link
                             href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
                             className="bg-blue-300 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-400 active:scale-95 transition-all"
@@ -359,14 +339,12 @@ export default function RegionalHanabiTemplate({
 
                       {/* 行动按钮 - 固定在底部 */}
                       <div className="flex space-x-2 mt-auto">
-                        <button 
-                          className="px-3 py-3 md:px-3 md:py-3 min-w-[44px] min-h-[44px] bg-red-50 border border-red-200 text-gray-600 rounded-lg hover:bg-red-100 active:scale-95 transition-all flex items-center justify-center space-x-1"
-                          title={`点赞 ${likes[event.id] || 0} 次 (点击增加)`}
-                          onClick={() => handleLike(event.id)}
-                        >
-                          <span className="text-red-500 text-lg">❤️</span>
-                          <span className="text-sm font-bold text-red-600">{likes[event.id] || 0}</span>
-                        </button>
+                        <LikeButton 
+                          eventId={event.id}
+                          initialLikes={likes[event.id] || 0}
+                          onLike={handleLike}
+                          size="md"
+                        />
                         <Link
                           href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
                           className="flex-1 bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium text-center py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all flex items-center justify-center"
