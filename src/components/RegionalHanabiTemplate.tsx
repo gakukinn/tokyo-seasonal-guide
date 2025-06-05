@@ -83,10 +83,14 @@ export default function RegionalHanabiTemplate({
     return initialLikes;
   });
 
-  const getLevelColor = (level: string) => {
-    return level === 'primary' 
-      ? 'from-pink-100 to-rose-200' 
-      : 'from-pink-50 to-rose-100';
+  // 简约三色循环（与第三层ActivityTemplate一致）
+  const getCardColor = (index: number) => {
+    const colorOptions = [
+      'from-rose-100 to-white',
+      'from-white to-blue-100', 
+      'from-blue-100 to-blue-200'
+    ];
+    return colorOptions[index % colorOptions.length];
   };
 
   const getCrowdLevelInfo = (level: string) => {
@@ -113,7 +117,7 @@ export default function RegionalHanabiTemplate({
   };
 
   return (
-    <div className="min-h-screen bg-blue-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-50 to-blue-100">
       {/* 背景装饰 */}
       <div className="absolute inset-0 bg-[url('/fireworks-pattern.svg')] opacity-5"></div>
       
@@ -154,7 +158,7 @@ export default function RegionalHanabiTemplate({
       {/* 主要内容 */}
       <main className="relative z-10">
         {/* 标题区域 - 第2段：蓝色 */}
-        <section className="pt-12 pb-16 text-center bg-blue-50">
+        <section className="pt-12 pb-16 text-center bg-gradient-to-b from-rose-100/60 to-white/50 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-center md:space-x-4 mb-6">
               <div>
@@ -170,43 +174,38 @@ export default function RegionalHanabiTemplate({
           </div>
         </section>
 
-        {/* 工具栏 - 装饰性区域：蓝色 */}
-        <section className="py-6 bg-blue-100 border-t border-blue-200">
+        {/* 花火大会列表 - 主要内容区：蓝色 */}
+        <section className="py-12 bg-white/30 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-end">
-              {/* 视图模式 */}
-              <div className="flex items-center space-x-2">
-                <span className="text-gray-800 font-medium">视图：</span>
+            {/* 简洁视图切换 */}
+            <div className="flex justify-end mb-6">
+              <div className="flex items-center space-x-1">
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`p-2 md:p-2 min-w-[44px] min-h-[44px] rounded text-sm active:scale-95 transition-all ${
-                    viewMode === 'grid' ? 'bg-blue-300 text-gray-700' : 'bg-white border border-blue-100 text-gray-600'
+                  className={`p-2 rounded-lg text-sm transition-all ${
+                    viewMode === 'grid' ? 'bg-blue-200/60 text-gray-700' : 'hover:bg-white/50 text-gray-500'
                   }`}
+                  title="网格视图"
                 >
                   🔳
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`p-2 md:p-2 min-w-[44px] min-h-[44px] rounded text-sm active:scale-95 transition-all ${
-                    viewMode === 'list' ? 'bg-blue-300 text-gray-700' : 'bg-white border border-blue-100 text-gray-600'
+                  className={`p-2 rounded-lg text-sm transition-all ${
+                    viewMode === 'list' ? 'bg-blue-200/60 text-gray-700' : 'hover:bg-white/50 text-gray-500'
                   }`}
+                  title="列表视图"
                 >
                   📋
                 </button>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* 花火大会列表 - 主要内容区：蓝色 */}
-        <section className="py-12 bg-blue-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className={`${
               viewMode === 'grid' 
                 ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 auto-rows-fr' 
                 : 'space-y-4 md:space-y-5'
             }`}>
-              {events.map((event) => {
+              {events.map((event, index) => {
                 const crowdInfo = getCrowdLevelInfo(event.crowdLevel);
                 
                 if (viewMode === 'list') {
@@ -259,7 +258,7 @@ export default function RegionalHanabiTemplate({
                                           className="bg-white border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-pink-200 transition-all duration-300 group cursor-pointer"
                   >
                     {/* 图片和标签 */}
-                    <div className={`relative h-48 bg-gradient-to-br ${getLevelColor(event.level)} flex items-center justify-center`}>
+                                            <div className={`relative h-48 bg-gradient-to-br ${getCardColor(index)} flex items-center justify-center`}>
                       <div className="text-6xl">🎆</div>
                       
                       {/* 标签叠加 */}
