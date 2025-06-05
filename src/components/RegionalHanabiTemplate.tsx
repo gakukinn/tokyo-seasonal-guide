@@ -92,13 +92,13 @@ export default function RegionalHanabiTemplate({
     'hachioji': 30,
     'tachikawa': 34,
     'mikurajima': 1,
-    // 埼玉地区
-    'koshigaya': 89,
-    'saitama-owada': 76,
-    'iruma-base': 45,
-    'ogawa-tanabata': 32,
-    'seibu-en': 28,
-    'metsza-nordic': 15
+    // 埼玉地区 (数据来源: Walker Plus 行ってみたい)
+    'koshigaya': 82,
+    'saitama-owada': 33,
+    'iruma-base': 18,
+    'ogawa-tanabata': 4,
+    'seibu-en': 29,
+    'metsza-nordic': 10
   };
   
   // 从localStorage读取保存的点赞数据
