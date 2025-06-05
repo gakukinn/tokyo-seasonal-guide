@@ -58,7 +58,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
     highlights: ['北欧各国大使館推荐音乐', '湖畔花火', '北欧主题'],
     level: 'secondary',
     crowdLevel: 'medium',
-    station: '飯能駅',
+    station: '飯能站',
     walkingTime: '徒步约13分钟',
     mapUrl: 'https://maps.google.com/metsza-nordic-hanabi',
     image: '/hanabi-metsza-nordic.jpg'
@@ -77,7 +77,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
     highlights: ['大迫力音乐与花火', '游乐园夜间花火节', '一体感热狂'],
     level: 'secondary',
     crowdLevel: 'medium',
-    station: '西武遊園地駅',
+    station: '西武游园地站',
     walkingTime: '徒步约3分钟',
     mapUrl: 'https://maps.google.com/seibu-en-hanabi',
     image: '/hanabi-seibu-en.jpg'
@@ -96,7 +96,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
     highlights: ['自卫队基地打上', '4号玉スターマイン', '盆踊り文化体验'],
     level: 'secondary',
     crowdLevel: 'medium',
-    station: '稲荷山公園駅',
+    station: '稻荷山公园站',
     walkingTime: '徒步约20分钟',
     mapUrl: 'https://maps.google.com/iruma-base-hanabi',
     image: '/hanabi-iruma-base.jpg'
@@ -115,7 +115,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
     highlights: ['种类丰富约5000发', '越谷夏日明星活动', '27万人规模'],
     level: 'primary',
     crowdLevel: 'high',
-    station: '越谷駅',
+    station: '越谷站',
     walkingTime: '徒步约15分钟',
     mapUrl: 'https://maps.google.com/koshigaya-hanabi',
     image: '/hanabi-koshigaya.jpg'
@@ -127,14 +127,14 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
     date: '7月26日',
     specificDate: '2025年7月26日(土)',
     time: '夜间举办',
-    location: '小川町駅周辺',
+    location: '小川町站周边',
     area: '比企郡小川町',
     visitors: '约9万',
     fireworks: '约200发',
     highlights: ['夜空スターマイン', '尺玉绽放', '第77回历史传统'],
     level: 'secondary',
     crowdLevel: 'medium',
-    station: '小川町駅',
+    station: '小川町站',
     walkingTime: '徒步约5分钟',
     mapUrl: 'https://maps.google.com/ogawa-tanabata-hanabi',
     image: '/hanabi-ogawa-tanabata.jpg'
@@ -153,7 +153,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
     highlights: ['さいたま市花火大会领头活动', '大和田公园会场', '2023年实绩9万人'],
     level: 'primary',
     crowdLevel: 'medium',
-    station: '大和田駅',
+    station: '大和田站',
     walkingTime: '徒步约10分钟',
     mapUrl: 'https://maps.google.com/saitama-owada-hanabi',
     image: '/hanabi-saitama-owada.jpg'

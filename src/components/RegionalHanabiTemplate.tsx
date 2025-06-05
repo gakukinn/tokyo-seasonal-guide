@@ -255,7 +255,6 @@ export default function RegionalHanabiTemplate({
                             </div>
                             <div className="flex items-center space-x-4 text-sm text-gray-500">
                               <span>🚇 {event.station} ({event.walkingTime})</span>
-                              <span className="bg-pink-50 text-rose-500 px-2 py-1 rounded-full text-xs">{event.highlights[0]}</span>
                             </div>
                           </div>
                         </div>
@@ -343,19 +342,7 @@ export default function RegionalHanabiTemplate({
                         </div>
                       </div>
 
-                      {/* 亮点标签 */}
-                      <div className="mb-5">
-                        <div className="flex flex-wrap gap-2">
-                          {event.highlights.slice(0, 2).map((highlight, idx) => (
-                            <span 
-                              key={idx}
-                              className="text-xs bg-pink-50 text-rose-500 px-2 py-1 rounded-full"
-                            >
-                              {highlight}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
+
 
                       {/* 交通信息 */}
                       <div className="mb-5 p-3 bg-blue-50 rounded-lg border border-blue-100">
