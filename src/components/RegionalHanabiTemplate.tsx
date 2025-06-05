@@ -284,10 +284,10 @@ export default function RegionalHanabiTemplate({
                 return (
                   <div
                     key={event.id}
-                                          className="bg-white border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-pink-200 transition-all duration-300 group cursor-pointer"
+                    className="bg-white border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-pink-200 transition-all duration-300 group cursor-pointer flex flex-col h-full"
                   >
                     {/* 图片和标签 */}
-                                            <div className={`relative h-48 bg-gradient-to-br ${getCardColor(index)} flex items-center justify-center`}>
+                    <div className={`relative h-48 bg-gradient-to-br ${getCardColor(index)} flex items-center justify-center flex-shrink-0`}>
                       <div className="text-6xl">🎆</div>
                       
                       {/* 标签叠加 */}
@@ -309,27 +309,32 @@ export default function RegionalHanabiTemplate({
                       </div>
                     </div>
 
-                    {/* 内容区域 */}
-                    <div className="p-4 md:p-6">
-                      <div className="mb-4">
-                        <h3 className="text-xl md:text-lg font-bold text-gray-800 mb-1 leading-tight">{event.name}</h3>
+                    {/* 内容区域 - 使用 flex-1 占据剩余空间 */}
+                    <div className="p-4 md:p-6 flex flex-col flex-1">
+                      {/* 标题 - 紧凑高度 */}
+                      <div className="mb-3">
+                        <h3 className="text-xl md:text-lg font-bold text-gray-800 leading-tight overflow-hidden" style={{
+                          display: '-webkit-box',
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: 'vertical'
+                        }}>{event.name}</h3>
                       </div>
 
-                      {/* 基本信息 */}
+                      {/* 基本信息 - 紧凑布局 */}
                       <div className="space-y-2 mb-4">
-                        {/* 第一行：日期 */}
-                        <div className="flex items-center space-x-2">
-                          <span className="text-sm flex-shrink-0">📅</span>
-                          <span className="text-xs text-gray-700 font-semibold">{event.date}</span>
+                        {/* 第一行：日期和地点 */}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-2">
+                            <span className="text-sm flex-shrink-0">📅</span>
+                            <span className="text-xs text-gray-700 font-semibold">{event.date}</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <span className="text-sm flex-shrink-0">📍</span>
+                            <span className="text-xs text-gray-600">{event.area}</span>
+                          </div>
                         </div>
                         
-                        {/* 第二行：地点 */}
-                        <div className="flex items-center space-x-2">
-                          <span className="text-sm flex-shrink-0">📍</span>
-                          <span className="text-xs text-gray-600">{event.area}</span>
-                        </div>
-                        
-                        {/* 第三行：人数和花火数 */}
+                        {/* 第二行：人数和花火数 */}
                         <div className="flex items-center justify-between">
                           <div className="flex items-center space-x-2 min-w-0">
                             <span className="text-sm flex-shrink-0">👥</span>
@@ -342,11 +347,9 @@ export default function RegionalHanabiTemplate({
                         </div>
                       </div>
 
-
-
-                      {/* 交通信息 */}
-                      <div className="mb-5 p-3 bg-blue-50 rounded-lg border border-blue-100">
-                        <div className="flex items-center space-x-2 text-xs min-w-0">
+                      {/* 交通信息 - 固定高度 */}
+                      <div className="mb-5 p-3 bg-blue-50 rounded-lg border border-blue-100 h-12 flex items-center">
+                        <div className="flex items-center space-x-2 text-xs min-w-0 w-full">
                           <span className="text-sm flex-shrink-0">🚇</span>
                           <span className="text-gray-500 flex-shrink-0">最近车站：</span>
                           <span className="text-gray-700 font-medium truncate">{event.station}</span>
@@ -354,8 +357,8 @@ export default function RegionalHanabiTemplate({
                         </div>
                       </div>
 
-                      {/* 行动按钮 */}
-                      <div className="flex space-x-2">
+                      {/* 行动按钮 - 固定在底部 */}
+                      <div className="flex space-x-2 mt-auto">
                         <button 
                           className="px-3 py-3 md:px-3 md:py-3 min-w-[44px] min-h-[44px] bg-red-50 border border-red-200 text-gray-600 rounded-lg hover:bg-red-100 active:scale-95 transition-all flex items-center justify-center space-x-1"
                           title={`点赞 ${likes[event.id] || 0} 次 (点击增加)`}
@@ -366,7 +369,7 @@ export default function RegionalHanabiTemplate({
                         </button>
                         <Link
                           href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
-                          className="flex-1 bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium text-center py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all"
+                          className="flex-1 bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium text-center py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all flex items-center justify-center"
                         >
                           查看详情
                         </Link>
@@ -379,43 +382,41 @@ export default function RegionalHanabiTemplate({
           </div>
         </section>
 
-        {/* 地区花火特色 - 装饰性区域：蓝色 */}
-        <section className="py-12 bg-blue-100 border-t border-blue-200">
+        {/* 地区花火特色和快速导航 - 合并区域 */}
+        <section className="py-12 bg-blue-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-gray-800 text-center mb-10">{regionInfo.name}花火大会特色</h2>
             
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-16">
               {regionInfo.features.map((feature, index) => (
-                                                                     <div key={index} className="flex-1 min-w-0 max-w-xs text-center bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                  <div className="text-3xl mb-3">{feature.icon}</div>
-                  <h3 className="text-base font-bold text-gray-800 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm">
+                <div key={index} className="flex-1 min-w-0 max-w-xs bg-white rounded-lg p-4 md:p-6 shadow-sm">
+                  <div className="text-3xl mb-3 text-center">{feature.icon}</div>
+                  <h3 className="text-base font-bold text-gray-800 mb-2 text-center">{feature.title}</h3>
+                  <p className="text-gray-600 text-sm text-left">
                     {feature.description}
                   </p>
                 </div>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* 快速导航 - 主要内容区：蓝色 */}
-        <section className="py-10 bg-blue-50 border-t border-blue-200">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-xl font-bold text-gray-800 mb-6">快速导航</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {regionInfo.navigationLinks.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  className={`${
-                    link.isPrimary 
-                      ? 'bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium px-4 md:px-5 py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all'
-                      : 'bg-white border border-blue-100 text-gray-700 font-medium px-4 md:px-5 py-3 rounded-lg hover:bg-blue-50 hover:border-blue-200 active:scale-95 transition-all'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+            {/* 快速导航 - 在同一区域内 */}
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-xl font-bold text-gray-800 mb-6">快速导航</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {regionInfo.navigationLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    className={`${
+                      link.isPrimary 
+                        ? 'bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium px-4 md:px-5 py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all'
+                        : 'bg-white border border-blue-100 text-gray-700 font-medium px-4 md:px-5 py-3 rounded-lg hover:bg-blue-50 hover:border-blue-200 active:scale-95 transition-all'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </section>
