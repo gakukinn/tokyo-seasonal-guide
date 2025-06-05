@@ -85,12 +85,20 @@ export default function RegionalHanabiTemplate({
 
   // 初始点赞数据 (从hanabi.walkerplus.com获取)
   const initialLikes: Record<string, number> = {
+    // 东京地区
     'tokyo-racecourse': 152,
     'katsushika': 98,
     'sumida': 124,
     'hachioji': 30,
     'tachikawa': 34,
-    'mikurajima': 1
+    'mikurajima': 1,
+    // 埼玉地区
+    'koshigaya': 89,
+    'saitama-owada': 76,
+    'iruma-base': 45,
+    'ogawa-tanabata': 32,
+    'seibu-en': 28,
+    'metsza-nordic': 15
   };
   
   // 从localStorage读取保存的点赞数据
@@ -256,12 +264,12 @@ export default function RegionalHanabiTemplate({
                           <span>👥 {event.visitors}</span>
                           <span>🎆 {event.fireworks}</span>
                           <button 
-                            className="px-3 py-2 md:px-3 md:py-2 min-w-[44px] min-h-[44px] bg-white border border-blue-100 text-gray-600 rounded-lg hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center space-x-1"
-                            title="收藏"
+                            className="px-3 py-2 md:px-3 md:py-2 min-w-[44px] min-h-[44px] bg-red-50 border border-red-200 text-gray-600 rounded-lg hover:bg-red-100 active:scale-95 transition-all flex items-center justify-center space-x-1"
+                            title={`点赞 ${likes[event.id] || 0} 次 (点击增加)`}
                             onClick={() => handleLike(event.id)}
                           >
-                            <span className="text-red-500">❤️</span>
-                            <span className="text-xs font-medium">{likes[event.id] || 0}</span>
+                            <span className="text-red-500 text-lg">❤️</span>
+                            <span className="text-sm font-bold text-red-600">{likes[event.id] || 0}</span>
                           </button>
                           <Link
                             href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
@@ -369,12 +377,12 @@ export default function RegionalHanabiTemplate({
                       {/* 行动按钮 */}
                       <div className="flex space-x-2">
                         <button 
-                          className="px-3 py-3 md:px-3 md:py-3 min-w-[44px] min-h-[44px] bg-white border border-blue-100 text-gray-600 rounded-lg hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center space-x-1"
-                          title="收藏"
+                          className="px-3 py-3 md:px-3 md:py-3 min-w-[44px] min-h-[44px] bg-red-50 border border-red-200 text-gray-600 rounded-lg hover:bg-red-100 active:scale-95 transition-all flex items-center justify-center space-x-1"
+                          title={`点赞 ${likes[event.id] || 0} 次 (点击增加)`}
                           onClick={() => handleLike(event.id)}
                         >
-                          <span className="text-red-500">❤️</span>
-                          <span className="text-xs font-medium">{likes[event.id] || 0}</span>
+                          <span className="text-red-500 text-lg">❤️</span>
+                          <span className="text-sm font-bold text-red-600">{likes[event.id] || 0}</span>
                         </button>
                         <Link
                           href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
