@@ -46,7 +46,7 @@ export interface RegionInfo {
 export const saitamaHanabiEvents: HanabiEvent[] = [
   {
     id: 'metsza-nordic',
-    name: 'メッツァの北欧花火2025',
+    name: '梅茨北欧花火2025',
     englishName: 'Metsä Nordic Fireworks 2025',
     date: '7月12日等',
     specificDate: '2025年7月12日(土)、19日(土)、20日(日)、26日(土)',
@@ -65,7 +65,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
   },
   {
     id: 'seibu-en',
-    name: '西武園ゆうえんち大火祭り',
+    name: '西武园大火祭',
     englishName: 'Seibu-en Yuenchi Dai Kasai Matsuri',
     date: '7月19日～',
     specificDate: '2025年7月19日(土)～9月15日(祝)的土日祝、8月11日(祝)～8月15日(金)',
@@ -84,7 +84,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
   },
   {
     id: 'iruma-base',
-    name: '令和7年度入間基地納涼祭～盆踊りと花火の夕べ～',
+    name: '入间基地纳凉祭',
     englishName: 'Reiwa 7 Iruma Air Base Summer Festival',
     date: '7月23日',
     specificDate: '2025年7月23日(水)',
@@ -122,7 +122,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
   },
   {
     id: 'ogawa-tanabata',
-    name: '第77回 小川町七夕まつり花火大会',
+    name: '小川町七夕花火大会',
     englishName: 'The 77th Ogawa-machi Tanabata Matsuri Fireworks Festival',
     date: '7月26日',
     specificDate: '2025年7月26日(土)',
@@ -141,7 +141,7 @@ export const saitamaHanabiEvents: HanabiEvent[] = [
   },
   {
     id: 'saitama-owada',
-    name: '令和7年度 さいたま市花火大会 大和田公園会場',
+    name: '埼玉市大和田花火大会',
     englishName: 'Reiwa 7 Saitama City Fireworks Festival Owada Park Venue',
     date: '7月27日',
     specificDate: '2025年7月27日(日)',
@@ -169,7 +169,7 @@ export const saitamaMonthInfo: MonthInfo = {
 export const saitamaRegionInfo: RegionInfo = {
   name: '埼玉',
   englishName: 'Saitama',
-  icon: '🌸',
+  icon: '🌽',
   description: '关东内陆的夏夜花火祭典，从自卫队基地到市民祭典，融合传统文化与现代娱乐的多样体验',
   urlSlug: 'saitama',
   features: [

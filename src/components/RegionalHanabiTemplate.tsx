@@ -3,6 +3,29 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
+/**
+ * RegionalHanabiTemplate - 第4层花火大会地区模板
+ * 
+ * 🚨 数据格式规范 (必须遵守):
+ * 
+ * 1. 标题格式 (name字段):
+ *    ✅ 使用中文标题，简洁明了，不换行
+ *    ✅ 示例: "越谷花火大会"、"入间基地纳凉祭"、"西武园大火祭"
+ *    ❌ 避免: 日文原文、冗长副标题、换行符
+ * 
+ * 2. 访客数据格式 (visitors字段):
+ *    ✅ 格式: "77万"、"91万"、"500人"、"未公布"
+ *    ❌ 避免: "77万人"、"非公布"、英文表述
+ * 
+ * 3. 地区图标 (regionInfo.icon):
+ *    ✅ 选择最具代表性的地区特色图标
+ *    ✅ 埼玉: 🌽 (农业特色)、东京: 🗼 (都市特色)
+ *    
+ * 4. 色调规范:
+ *    ✅ 与第3层ActivityTemplate保持一致的蓝色渐变系统
+ *    ✅ 卡片循环: rose-100→white→blue-100→blue-200
+ */
+
 interface HanabiEvent {
   id: string;
   name: string;
