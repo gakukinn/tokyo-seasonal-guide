@@ -105,7 +105,15 @@ export default function RegionalHanabiTemplate({
     'iruma-base': 18,
     'ogawa-tanabata': 4,
     'seibu-en': 29,
-    'metsza-nordic': 10
+    'metsza-nordic': 10,
+    // 千叶地区 (数据来源: Walker Plus 行ってみたい)
+    'chiba-july-01': 9,   // 南房总白浜海女祭
+    'chiba-july-02': 23,  // 富津市民花火大会
+    'chiba-july-03': 6,   // 山武市夏日嘉年华
+    'chiba-july-04': 9,   // 大网白里花火大会
+    'chiba-july-05': 15,  // 鸭川市民花火大会
+    'chiba-july-06': 6,   // 千叶罗德海洋花火
+    'chiba-july-07': 7    // 母亲牧场夏夜农场
   };
   
   // 从localStorage读取保存的点赞数据

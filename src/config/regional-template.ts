@@ -2,8 +2,8 @@
 export const REGIONAL_CONFIG = {
   // 卡片循环颜色系统 - 与第3层ActivityTemplate保持一致
   cardColors: [
-    'from-rose-100 to-white',      // 粉色渐变
-    'from-white to-blue-100',      // 白到蓝渐变  
+    'from-rose-100 to-rose-200',   // 粉色渐变
+    'from-blue-100 to-white',      // 蓝到白渐变  
     'from-blue-100 to-blue-200',   // 蓝色渐变
     'from-white to-rose-100'       // 白到粉渐变
   ],
