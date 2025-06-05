@@ -318,34 +318,34 @@ export default function RegionalHanabiTemplate({
                       </div>
 
                       {/* 基本信息 */}
-                      <div className="grid grid-cols-2 gap-2 md:gap-3 mb-3 md:mb-4 text-xs">
-                        <div className="space-y-1 md:space-y-2">
-                          <div className="flex items-center space-x-2">
-                            <span className="text-sm">📅</span>
-                            <span className="text-sm md:text-xs text-gray-700 font-semibold">{event.specificDate}</span>
+                      <div className="space-y-2 mb-4">
+                        {/* 第一行：日期和时间 */}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-2 min-w-0 flex-1">
+                            <span className="text-sm flex-shrink-0">📅</span>
+                            <span className="text-xs text-gray-700 font-semibold truncate">{event.date}</span>
                           </div>
-                          <div className="hidden md:flex items-center space-x-2">
-                            <span className="text-sm">⏰</span>
-                            <span className="text-gray-600">{event.time}</span>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <span className="text-sm">📍</span>
-                            <span className="text-sm md:text-xs text-gray-600">{event.area}</span>
+                          <div className="flex items-center space-x-2 min-w-0">
+                            <span className="text-sm flex-shrink-0">⏰</span>
+                            <span className="text-xs text-gray-600 font-medium">{event.time}</span>
                           </div>
                         </div>
                         
-                        <div className="space-y-1 md:space-y-2">
-                          <div className="flex items-center space-x-2">
-                            <span className="text-sm">👥</span>
-                            <span className="text-sm md:text-xs text-blue-600 font-semibold">{event.visitors}</span>
+                        {/* 第二行：地点 */}
+                        <div className="flex items-center space-x-2">
+                          <span className="text-sm flex-shrink-0">📍</span>
+                          <span className="text-xs text-gray-600">{event.area}</span>
+                        </div>
+                        
+                        {/* 第三行：人数和花火数 */}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-2 min-w-0">
+                            <span className="text-sm flex-shrink-0">👥</span>
+                            <span className="text-xs text-blue-600 font-semibold">{event.visitors}</span>
                           </div>
-                          <div className="flex items-center space-x-2">
-                            <span className="text-sm">🎆</span>
-                            <span className="text-sm md:text-xs text-rose-600 font-semibold">{event.fireworks}</span>
-                          </div>
-                          <div className="hidden md:flex items-center space-x-2">
-                            <span className="text-sm">🚇</span>
-                            <span className="text-gray-600">{event.walkingTime}</span>
+                          <div className="flex items-center space-x-2 min-w-0">
+                            <span className="text-sm flex-shrink-0">🎆</span>
+                            <span className="text-xs text-rose-600 font-semibold">{event.fireworks}</span>
                           </div>
                         </div>
                       </div>
