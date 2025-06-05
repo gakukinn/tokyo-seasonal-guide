@@ -1,434 +1,286 @@
-# 关东地区旅游指南 - 五层分层架构
+# 关东地区旅游指南 - AI开发指南
 
-## 🔴 AI执行规范（最高优先级 - 必须严格遵守）
+## 🤖 AI执行规范（最高优先级）
 
-### **色彩主题 - 绝对不可违反**
+### **核心原则**
 ```
-🎨 整个项目统一使用：浅粉、白色、浅蓝三色调 - 清澈自然的日式美学
-⚠️ 重要警告：即使观察到代码中某些页面使用特定颜色，也不能推测其他页面要用不同颜色
-⚠️ 优先级：文档规范 > 代码观察，永远以此文档为准，不得基于代码现象推测规则
-```
-
-### **五层模板使用 - 严格执行流程**
-```
-🔄 每一层必须按照本层的标准模板来制作，绝对不允许自由发挥设计
-
-第1层模板：src/app/page.tsx                           (首页)
-第2层模板：src/app/july/page.tsx                       (月份专题页)
-第3层模板：src/app/july/hanabi/page.tsx                (活动类型页)
-第4层模板：src/components/RegionalHanabiTemplate.tsx    (地区汇总页 - 推荐动态模板)
-第4层备用：src/app/july/hanabi/tokyo/page.tsx          (地区汇总页 - 传统复制模式)
-第5层模板：src/app/july/hanabi/tokyo/sumida/page.tsx  (活动详情页)
-
-🔧 动态模板组件：
-第4层动态模板：src/components/RegionalHanabiTemplate.tsx
-- 基于东京模板提取的可复用组件
-- 接受events和regionInfo作为props
-- 确保所有第4层页面布局和样式100%一致
-- 新建第4层页面时优先使用此模板
-
-📋 第4层动态模板使用方法（推荐方式）：
-1. 导入组件：import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
-2. 准备两个数据对象：
-   - events数组：包含花火大会信息（id, name, englishName, date等）
-   - regionInfo对象：包含地区信息（name, icon, description, features等）
-3. 使用模板：return <RegionalHanabiTemplate events={events} regionInfo={regionInfo} />
-4. 参考示例：src/app/july/hanabi/saitama/page.tsx（按此模式创建）
-
-📋 第4层传统模式（备用方式）：
-- 完全复制src/app/july/hanabi/tokyo/page.tsx结构
-- 替换数据和地区特定信息
-- 确保所有section完整保留
-
-🚫 绝对禁止的行为：
-- 重新设计页面布局
-- 修改色彩方案
-- 创造新的组件结构
-- 改变视图切换方式
-- 调整按钮样式
-- 修改面包屑导航
-
-✅ 允许的操作：
-- 替换数据内容
-- 修改文字描述
-- 更新链接地址
-- 调整图标选择（如🗼→🌲）
-- 修改地区名称
+1. 严格遵循五层架构 - 每层有固定的职责和模板
+2. 绝对使用指定模板 - 不允许自由发挥或创新设计
+3. 统一色彩方案 - 浅粉、白色、浅蓝三色调
+4. 固定地区管理 - 顺序和图标完全标准化
+5. 配置文件驱动 - 数据与样式分离
 ```
 
-### **标准模板使用流程**
+### **五层架构定义**
+```
+🏠 第1层：主页 (/)                                    - 12个月份选择
+📅 第2层：月份页 (/october)                           - 当月活动类型展示  
+🎆 第3层：活动类型页 (/october/hanabi)                - 地区选择入口
+🏙️ 第4层：地区活动列表页 (/october/hanabi/tokyo)      - 具体活动列表
+🎯 第5层：活动详情页 (/october/hanabi/tokyo/shinagawa) - 单个活动详情
+```
+
+## 📋 强制模板系统
+
+### **模板文件位置（必须严格使用）**
+```
+第1层模板：src/app/page.tsx                           
+第2层模板：src/components/MonthTemplate.tsx           
+第3层模板：src/components/ActivityTemplate.tsx        
+第4层模板：src/components/RegionalHanabiTemplate.tsx  
+第5层模板：src/components/HanabiDetailTemplate.tsx    
+```
+
+### **配置文件系统**
+```
+月份配置：src/config/monthsConfig.ts          - 第2层数据源
+活动配置：src/config/activityConfig.ts        - 第3层数据源（地区顺序固定）
+地区数据：src/data/level4-*.ts                - 第4层数据源
+活动数据：src/data/level5-*.ts                - 第5层数据源
+```
+
+## 🔒 地区管理固定化
+
+### **地区顺序（绝对不可更改）**
+```
+页面显示顺序：
+第一行：🗼 东京 → 🌸 埼玉 → 🏖️ 千叶
+第二行：🌊 神奈川 → 🏔️ 甲越信 → 🌿 北关东
+
+代码配置：['tokyo', 'saitama', 'chiba', 'kanagawa', 'koshinetsu', 'kitakanto']
+控制文件：src/config/activityConfig.ts
+```
+
+### **地区图标（完全固定）**
+```
+tokyo: '🗼'     kanagawa: '🌊'
+saitama: '🌸'   koshinetsu: '🏔️' 
+chiba: '🏖️'    kitakanto: '🌿'
+```
+
+## 💻 标准模板使用方法
+
+### **第2层：月份页面**
+```typescript
+// 文件：src/app/october/page.tsx
+import MonthTemplate from '@/components/MonthTemplate';
+
+export default function OctoberPage() {
+  return <MonthTemplate monthId={10} />;
+}
+
+// 数据源：src/config/monthsConfig.ts
+// 配置：activities数组（3-6个活动）
+```
+
+### **第3层：活动类型页面**
+```typescript
+// 文件：src/app/october/hanabi/page.tsx
+import ActivityTemplate from '@/components/ActivityTemplate';
+
+export default function OctoberHanabiPage() {
+  const customRegions = [
+    { id: 'tokyo', count: 2, available: true },
+    { id: 'saitama', count: 1, available: true },
+    // ... 其他地区配置（只能配置count、available、description）
+  ];
+
+  return (
+    <ActivityTemplate 
+      monthId={10} 
+      activityId="hanabi" 
+      customConfig={{ regions: customRegions }}
+    />
+  );
+}
+
+// 注意：地区顺序和图标由activityConfig.ts固定控制
+```
+
+### **第4层：地区活动列表页面**
+```typescript
+// 文件：src/app/october/hanabi/tokyo/page.tsx
+import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
+import { events } from '@/data/level4-october-hanabi-tokyo';
+import { regionInfo } from '@/data/level4-october-hanabi-tokyo';
+
+export default function OctoberTokyoHanabiPage() {
+  return <RegionalHanabiTemplate events={events} regionInfo={regionInfo} />;
+}
+
+// 数据文件：src/data/level4-october-hanabi-tokyo.ts
+// 必须包含：events数组 + regionInfo对象
+```
+
+### **第5层：活动详情页面**
+```typescript
+// 文件：src/app/october/hanabi/tokyo/shinagawa/page.tsx
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { eventData, navigationData } from '@/data/level5-october-hanabi-tokyo-shinagawa';
+
+export default function ShinagawaPage() {
+  return <HanabiDetailTemplate eventData={eventData} navigationData={navigationData} />;
+}
+
+// 数据文件：src/data/level5-october-hanabi-tokyo-shinagawa.ts
+```
+
+## 🚫 严格禁止事项
+
+### **绝对禁止的操作**
+```
+❌ 修改模板布局结构
+❌ 更改色彩方案（必须使用浅粉白蓝）
+❌ 自定义地区顺序
+❌ 自定义地区图标
+❌ 创建新的组件结构
+❌ 修改面包屑导航样式
+❌ 绕过配置文件直接硬编码
+❌ 复制粘贴页面代码而不用模板
+```
+
+### **允许的操作**
+```
+✅ 配置活动数量（count）
+✅ 设置可用性状态（available）
+✅ 修改描述文字（description）
+✅ 更新活动数据内容
+✅ 调整导航链接地址
+✅ 修改文字内容和描述
+```
+
+## 🔧 开发工作流程
+
+### **创建新页面的标准流程**
 ```
 步骤1：确定目标层级（第几层？）
-步骤2：找到对应模板文件（参考上述模板路径）
-步骤3：完整复制模板文件结构
-步骤4：只替换数据内容，保持所有样式类名不变
-步骤5：验证路径连接和面包屑导航
+步骤2：查找对应模板文件
+步骤3：创建页面文件，导入对应模板
+步骤4：准备数据文件（如需要）
+步骤5：配置props传递给模板
+步骤6：测试页面访问和导航
+步骤7：验证样式和布局一致性
 ```
 
-### **遇到冲突时的处理原则**
+### **错误处理原则**
 ```
-🔺 优先级排序：
-1. 项目介绍文档规范（最高）
-2. 标准模板文件结构
-3. 用户具体要求
-4. AI的观察和推测（最低）
-
-如发现文档与代码不一致，必须：
-1. 停止操作
-2. 询问用户确认
-3. 不得擅自推测
+遇到模板冲突：优先使用最新模板
+遇到样式问题：检查是否严格使用模板
+遇到导航问题：验证路径和面包屑
+遇到数据问题：检查配置文件格式
 ```
 
-## 项目概述
+## 🎨 设计规范
 
-**目标**：建设面向中国游客的关东地区旅游指南网站，重点介绍月度活动和地区特色
-**框架**：Next.js 15.3.3，运行在 localhost:3002 端口
-**设计理念**：时间主导的五层分层架构 + 用户旅游规划思维 + 精确导航原则
-**色彩主题**：浅粉、白色、浅蓝三色调 - 清澈自然的日式美学
-
-## 当前项目状态（重要！）
-
-### **已完成的架构实现**
+### **色彩主题（强制执行）**
 ```
-✅ 五层完整架构已建成并运行正常
-├── 第1层: 首页 (/) - 12个月份入口，浅粉白蓝渐变背景
-├── 第2层: 月份专题页 (/july等) - 当月活动类型展示
-├── 第3层: 活动类型页 (/july/hanabi等) - 地区选择入口
-├── 第4层: 地区汇总页 (/july/hanabi/tokyo等) - 活动列表展示
-└── 第5层: 具体活动页 (/july/hanabi/tokyo/sumida等) - 详情页面
-
-五层架构已完整实现并正常运行
+主色调：浅粉色系 (from-rose-100, to-rose-200)
+辅助色：白色系 (from-white, to-white)  
+强调色：浅蓝色系 (from-blue-100, to-blue-200)
+文字色：深灰色系 (text-gray-800, text-gray-700)
 ```
 
-### **当前优势和特色**
-- ✅ **色彩协调性**: 浅蓝(清澈)、白色(纯净)、浅粉(温暖)三色和谐
-- ✅ **完整链路**: 用户可从首页顺利点击到任意详情页
-- ✅ **日式美学**: 清澈自然的三色调，符合日式设计理念
-- ✅ **五层架构**: 信息层次清晰，每层都有明确价值
-
-
-
-## 核心设计理念
-
-### **用户旅游规划思维模式**
+### **响应式断点**
 ```
-用户规划旅行的自然思维：
-1. 确定时间：我什么时候去？
-2. 了解月份：那个月份有什么特色？
-3. 选择活动：我对什么活动感兴趣？
-4. 确定地区：我想在哪个地区参加活动？
-5. 具体了解：这个活动的详细信息是什么？
+移动端：grid-cols-1 (1列)
+平板端：sm:grid-cols-2 (2列)  
+桌面端：lg:grid-cols-3 (3列)
 ```
 
-### **五层分层架构**
-```
-第一层：首页入口 (12个月份导航)
-├── 第二层：月份专题 (当月活动总览)
-│   ├── 第三层：活动类型 (花火、祭祀、灯光、樱花等)
-│   │   ├── 第四层：地区汇总 (东京、神奈川、埼玉、千叶、周边)
-│   │   │   └── 第五层：活动详情 (具体活动详情页)
-```
+## 📊 项目当前状态
 
-## 路径结构设计
-
-### **语义化URL架构**
+### **已完成功能**
 ```
-/[月份]/[活动类型]/[地区]/[具体活动]
-
-示例路径：
-例如：/july/hanabi/tokyo/sumida     - 7月东京隅田川花火
-例如：/april/sakura/tokyo/ueno      - 4月东京上野樱花
-例如：/december/illumination/tokyo/roppongi - 12月东京六本木灯光秀
-例如：/august/matsuri/tokyo/kanda   - 8月东京神田祭
+✅ 五层架构完整实现
+✅ 模板系统100%统一化
+✅ 地区顺序和图标固定化
+✅ 十月页面扩展为6个活动
+✅ 花火页面地区选择统一化
+✅ 第四层东京花火页面完成
+✅ 导航链路完整打通
 ```
 
-### **路径优势**
-- ✅ **SEO友好**：URL语义明确，搜索引擎易理解
-- ✅ **用户友好**：路径直观，符合思维习惯  
-- ✅ **开发友好**：目录结构清晰，代码组织合理
-- ✅ **扩展友好**：新增月份、活动、地区都很容易
-- ✅ **信息层次明确**：每一层都有清晰的信息目标
-
-## 页面层级详细设计
-
-### **第一层：首页入口**
+### **技术架构**
 ```
-路径：/
-页面：12个月份导航首页
+框架：Next.js 15.3.3
+运行端口：http://localhost:3000
+样式：Tailwind CSS
+部署：开发环境（本地）
 ```
 
-**首页设计：**
-- 12个月份大按钮布局（3×4 或 4×3）
-- 当前月份高亮显示
-- 每个月份显示主要活动预览
-- 热门月份（7-8月夏季）特别标注
+## ⚡ 快速参考
 
-### **第二层：月份专题页**
+### **常用路径格式**
 ```
-路径：/[month]
-页面：月份活动总览页
+月份页面：/[month]
+活动页面：/[month]/[activity]  
+地区页面：/[month]/[activity]/[region]
+详情页面：/[month]/[activity]/[region]/[event]
 ```
 
-**月份专题页设计规范：/[month]**
-- 当月总体介绍和特色
-- 当月所有活动类型概览（花火、祭祀、灯光、樱花等）
-- 重点活动日期时间线
-- 天气、交通等旅游实用信息
-
-### **第三层：活动类型页**
+### **关键配置文件**
 ```
-路径：/[month]/[activity]
-页面：月份活动分类展示
+monthsConfig.ts    - 控制第2层月份页面的活动展示
+activityConfig.ts  - 控制第3层的地区顺序和图标
+level4-*.ts        - 第4层的活动列表数据
+level5-*.ts        - 第5层的活动详情数据
 ```
 
-**活动类型分类：**
-- **hanabi**（花火大会）- 夏季主力
-- **matsuri**（传统祭祀）- 全年都有
-- **illumination**（灯光秀）- 冬季主力
-- **sakura**（樱花季）- 春季专属
-- **autumn**（秋叶季）- 秋季专属
-- **events**（其他活动）- 补充分类
-
-**活动类型页设计规范：/[month]/[activity]**
-- 该月该活动类型的总体介绍
-- 关东5个地区的入口卡片（东京、神奈川、埼玉、千叶、周边）
-- 每个地区的特色预览和活动数量提示
-- **注意：此层不显示具体活动列表，只做地区导航**
-
-### **第四层：地区汇总页**
+### **测试验证要点**
 ```
-路径：/[month]/[activity]/[region]
-页面：特定月份特定活动在特定地区的汇总
+页面访问：HTTP 200状态码
+导航链路：面包屑和按钮链接正确
+样式一致：所有同层页面布局相同
+数据展示：配置文件数据正确显示
+响应式：移动端和桌面端布局正常
 ```
 
-**地区分类：**
-- **tokyo**（东京都）- 核心区域
-- **kanagawa**（神奈川县）- 包含横浜、镰仓
-- **saitama**（埼玉县）- 包含大宫、川越
-- **chiba**（千叶县）- 包含船橋、市川
-- **around**（周边）- 富士山，伊豆，群马、栃木、茨城等
+## 📝 开发注意事项
 
-**地区汇总页设计规范：/[month]/[activity]/[region]**
-- 该月该地区该活动类型的所有活动列表
-- 按人气/日期排序展示
-- 地图标注所有活动位置
-- 交通便利性和观赏建议
-- 推荐观赏路线规划
-
-### **第五层：活动详情页**
+### **AI执行建议**
 ```
-路径：/[month]/[activity]/[region]/[detail]
-页面：具体活动的完整旅游指南
+1. 开始任务前先确认目标层级
+2. 严格按照模板使用方法执行
+3. 不确定时优先参考项目介绍文档
+4. 遇到冲突时停止并询问用户
+5. 完成后进行全面功能测试
+6. 确保所有链接和导航正常工作
 ```
 
-**详细页模板结构：**
+### **维护原则**
 ```
-活动详情页模板 (ActivityDetailTemplate)
-├── 基本信息（日期、时间、地点、费用）
-├── 活动特色和看点介绍
-├── 交通指南（电车、巴士、自驾）
-├── 观赏地图（Google Maps嵌入）
-├── 周边设施（餐厅、住宿、购物）
-├── 注意事项（天气、人流、预约）
-└── 相关推荐（同月其他活动、同活动其他地区）
+优先级：项目介绍 > 现有代码 > AI推测
+更新：先更新配置文件，再更新页面
+测试：每次修改后验证相关页面
+一致性：确保同层页面完全一致
 ```
 
-## 技术架构
+## 🔍 常见问题解决
 
-### **文件目录结构**
+### **问题1：地区顺序不对**
 ```
-src/app/
-├── page.tsx                    # 首页（12个月份入口）
-├── [month]/
-│   ├── page.tsx               # 月份专题页
-│   ├── [activity]/
-│   │   ├── page.tsx           # 活动类型页
-│   │   ├── [region]/
-│   │   │   ├── page.tsx       # 地区活动页
-│   │   │   └── [detail]/
-│   │   │       └── page.tsx   # 详细介绍页
+原因：自定义了地区配置
+解决：检查activityConfig.ts中的固定顺序
+确认：['tokyo', 'saitama', 'chiba', 'kanagawa', 'koshinetsu', 'kitakanto']
 ```
 
-### **数据管理架构**
+### **问题2：模板样式不一致**
 ```
-src/data/
-├── months/                    # 月份数据
-│   ├── [month].ts            # 月份基本信息 (july.ts, august.ts等)
-├── activities/               # 活动数据  
-│   ├── [activity]/           # 按活动类型分类 (hanabi/, matsuri/等)
-│   │   └── [region].ts       # 该活动类型在各地区的数据
-└── regions/                  # 地区数据
-    └── [region].ts           # 地区基本信息 (tokyo.ts, kanagawa.ts等)
-
-⚠️ 数据导入规范（防止过度导入错误）：
-- 第2层（月份页）：只导入活动类型元数据，不导入具体活动
-- 第3层（活动页）：只导入地区元数据，不导入具体活动  
-- 第4层（地区页）：导入该地区该活动类型的所有具体活动数据
-- 第5层（详情页）：导入单个活动的完整详细数据
+原因：没有使用标准模板
+解决：确保导入了正确的模板组件
+检查：模板文件路径是否正确
 ```
 
-## 🎯 模板制作原则（重要）
-
-### **标准模板文件（AI必须严格遵循）**
+### **问题3：导航链接错误**
 ```
-🔄 核心原则：每一层必须按照本层的标准模板来制作
-⚠️ 绝对禁止：自由发挥设计、修改样式、重新布局
-✅ 唯一允许：替换数据内容、修改文字描述
+原因：面包屑路径配置错误
+解决：检查monthId、activityId、regionId参数
+验证：getActivityPath()函数是否正确调用
 ```
 
-### **五层架构模板对应（AI执行标准）**
+### **问题4：页面404错误**
 ```
-✅ Layer 1: src/app/page.tsx                           - 首页模板
-✅ Layer 2: src/app/july/page.tsx                       - 月份专题页模板
-✅ Layer 3: src/app/july/hanabi/page.tsx                - 活动类型页模板
-✅ Layer 4: src/components/RegionalHanabiTemplate.tsx    - 地区汇总页模板（推荐）
-✅ Layer 4备用: src/app/july/hanabi/tokyo/page.tsx      - 地区汇总页模板（传统）
-✅ Layer 5: src/app/july/hanabi/tokyo/sumida/page.tsx  - 活动详情页模板
-
-⚠️ AI操作指南：需要创建任何页面时，必须先确定是第几层，然后选择对应模板
-✅ 标准工作流程：
-- 第1-3层和第5层：确定层级 → 找到模板文件 → 复制结构 → 替换数据 → 验证结果
-- 第4层（推荐）：确定层级 → 使用动态模板 → 准备数据对象 → 导入并传参 → 验证结果
-```
-
-### **模板制作工作流程**
-1. **确定目标层级**：明确要创建的是Layer 2-5中的哪一层
-2. **选择对应模板**：找到对应层级的标准模板文件  
-3. **复制模板结构**：保持文件命名和目录结构一致
-4. **修改内容数据**：根据新内容更新文本、图片、链接
-5. **验证路径连贯**：确保新页面与上下层级正确连接
-
-### **文件命名硬性规范**
-- **页面文件**：必须命名为 `page.tsx`（Next.js框架要求）
-- **数据文件**：`level{层级}-{完整路径描述}.ts`
-- **组件文件**：使用PascalCase，如 `HanabiDetailTemplate.tsx`
-
-### **扩展新内容的标准操作**
-```
-扩展新月份 → 参考: july/page.tsx
-扩展新活动类型 → 参考: july/hanabi/page.tsx  
-扩展新地区 → 参考: july/hanabi/tokyo/page.tsx
-扩展新详情页 → 参考: july/hanabi/tokyo/sumida/page.tsx
-```
-
-### **质量保证原则**
-- ✅ 使用经过验证的模板结构
-- ✅ 保持色彩主题一致性（浅粉白蓝三色调）
-- ✅ 确保面包屑导航正确连接
-- ✅ 验证所有层级路径返回200状态码
-
-### **类型定义系统**
-```typescript
-// 活动基础类型
-interface Activity {
-  id: string;
-  name: string;
-  englishName: string;
-  month: number;
-  date: string;
-  region: string;
-  category: 'hanabi' | 'matsuri' | 'illumination' | 'sakura' | 'autumn' | 'events';
-  location: string;
-  description: string;
-  highlights: string[];
-  access: TransportInfo;
-  mapUrl: string;
-  images: string[];
-  relatedActivities: RelatedActivity[];
-}
-
-// 相关推荐类型
-interface RelatedActivity {
-  type: 'same_month' | 'same_activity' | 'same_region';
-  activities: Activity[];
-}
-```
-
-## 导航和用户体验
-
-### **精确导航原则实现**
-```
-用户可以通过清晰的5层结构直达目标：
-
-标准路径：首页 → 月份专题 → 活动类型 → 地区汇总 → 活动详情 (4次点击)
-每一层都提供明确的信息价值和导航目标
-```
-
-### **面包屑导航设计**
-```
-每个页面都有清晰的面包屑：
-例如：首页 › [月份] › [活动类型] › [地区] › [具体活动]
-实例：首页 › 7月 › 花火大会 › 东京 › 隅田川花火大会
-
-五层导航的优势：
-- 信息层次清晰，每层都有明确价值
-- 用户可以在任意层级获得有用信息
-- SEO友好，增加页面层级和内容深度
-- 便于数据管理和代码组织
-```
-
-### **跨层级快速跳转**
-```
-用户可以在任何层级快速跳转：
-- 月份页：快速切换到其他月份
-- 活动页：快速切换到其他活动类型
-- 地区页：快速切换到其他地区
-- 详情页：推荐同类活动、同地区活动、同月活动
-```
-
-## 内容优先级规划
-
-### **第一阶段：核心内容建设**
-```
-优先级1：重点月份重点活动
-例如：夏季花火（7-8月）
-├── /july/hanabi/tokyo     - 东京花火
-├── /july/hanabi/kanagawa  - 神奈川花火
-├── /august/hanabi/tokyo   - 东京花火
-└── /august/hanabi/kanagawa - 神奈川花火
-```
-
-### **第二阶段：扩展活动类型**
-```
-优先级2：同月份其他活动类型
-例如：夏季其他活动
-├── /july/matsuri/tokyo    - 东京祭祀
-├── /august/matsuri/tokyo  - 东京祭祀
-└── /july/events/tokyo     - 东京其他活动
-```
-
-### **第三阶段：全年内容补充**
-```
-优先级3：其他月份主要活动
-例如：/april/sakura/tokyo    - 4月东京樱花
-例如：/december/illumination/tokyo - 12月东京灯光秀
-└── 逐步覆盖全年12个月
-```
-
-
-
-## 设计原则
-
-### **内容原则**
-- 🇨🇳 **面向中国游客**：简体中文，符合中国游客习惯
-- 📍 **信息准确性**：确保日期、地点、交通信息准确
-- 🎆 **重点突出**：花火大会等热门活动为核心内容
-- 🗾 **关东专注**：专注关东地区旅游资源
-
-### **技术原则**
-- 🎯 **用户导向**：围绕用户旅游规划思维设计
-- 📱 **移动优先**：优先考虑移动设备体验
-- ⚡ **性能优化**：保持页面加载速度
-- 🔍 **SEO友好**：语义化URL和结构化数据
-
-### **开发原则**
-- ✅ **完成一个，检查一个**：每次完成后进行全面检查
-- 🎯 **目标导向**：围绕3次点击原则和用户旅程设计
-- 📁 **分批创建**：每批不超过300行，避免文件过大
-- 🔄 **迭代优化**：先建基础功能，再逐步完善
-
----
-
-**这个新架构将为用户提供更直观、更符合旅游规划思维的浏览体验，同时为开发提供清晰的组织结构和扩展路径。**
-
-
+原因：文件路径与URL不匹配
+解决：确保目录结构符合Next.js约定
+检查：page.tsx文件是否在正确位置
+``` 

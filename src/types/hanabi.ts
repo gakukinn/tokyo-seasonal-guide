@@ -52,9 +52,11 @@ export interface HanabiMapInfo {
 }
 
 export interface HanabiWeatherInfo {
+  month: string;
+  temperature: string;
+  humidity: string;
+  rainfall: string;
   recommendation: string;
-  rainPolicy: string;
-  note: string;
 }
 
 export interface HanabiSpecialFeatures {
@@ -74,13 +76,10 @@ export interface HanabiSpecial2025 {
 
 // 媒体内容类型定义
 export interface HanabiMedia {
-  type: 'video' | 'image';
+  type: 'image' | 'video';
   url: string;
-  thumbnail?: string; // 视频缩略图
   title: string;
-  description?: string;
-  duration?: string; // 视频时长
-  // 建议使用1:1比例（正方形）的媒体内容，适配手机和电脑
+  description: string;
 }
 
 // 关联推荐项目类型
@@ -95,8 +94,48 @@ export interface HanabiRecommendation {
 
 // 关联推荐集合类型
 export interface HanabiRelated {
-  regionRecommendations: HanabiRecommendation[]; // 同地区花火推荐
-  timeRecommendations: HanabiRecommendation[];   // 同时间花火推荐
+  sameMonth: string[];
+  sameRegion: string[];
+  recommended: string[];
+}
+
+// 新增动态数据字段
+export interface HanabiDynamicData {
+  // Walker Plus 数据源字段
+  popularity: {
+    wantToGo: number;        // 行ってみたい数
+    wentAndGood: number;     // 行ってよかった数
+    lastUpdated: string;     // 最后更新时间
+  };
+  
+  // 实时更新字段
+  schedule: {
+    confirmed: boolean;      // 是否确认举办
+    dateStatus: 'confirmed' | 'tentative' | 'cancelled';
+    updates: string[];       // 最新更新信息
+  };
+  
+  // 票务信息
+  ticketing: {
+    salesStart: string;      // 开始销售时间
+    salesEnd: string;        // 销售截止时间
+    availability: 'available' | 'sold-out' | 'not-yet';
+    officialUrl?: string;    // 官方票务链接
+  };
+  
+  // 会场详细信息
+  venueDetails: {
+    capacity?: number;       // 容纳人数
+    facilities: string[];    // 设施信息
+    restrictions: string[];  // 限制事项
+  };
+  
+  // 数据源信息
+  dataSources: {
+    primary: string;         // 主要数据源
+    lastSync: string;        // 最后同步时间
+    verification: boolean;   // 数据验证状态
+  };
 }
 
 export interface HanabiData {
@@ -126,6 +165,9 @@ export interface HanabiData {
   // 关联推荐
   related: HanabiRelated;
   
+  // 动态数据字段
+  dynamicData?: HanabiDynamicData;
+  
   venues: HanabiVenue[];
   access: HanabiAccess[];
   viewingSpots: HanabiViewingSpot[];
@@ -147,33 +189,14 @@ export interface HanabiData {
   month: number;
 }
 
-export interface Venue {
-  name: string;
-  location: string;
-  startTime: string;
-  features: string[];
-}
-
+// 保持向后兼容的类型别名
+export interface Venue extends HanabiVenue {}
+export interface Station extends HanabiStation {}
 export interface Access {
   venue: string;
   stations: HanabiStation[];
 }
-
-export interface Station {
-  name: string;
-  lines: string[];
-  walkTime: string;
-}
-
-export interface ViewingSpot {
-  name: string;
-  rating: number;
-  crowdLevel: 'Low' | 'Medium' | 'High' | 'Very High' | 'Controlled';
-  tips: string;
-  pros: string[];
-  cons: string[];
-}
-
+export interface ViewingSpot extends HanabiViewingSpot {}
 export interface History {
   established: number;
   significance: string;
@@ -185,17 +208,15 @@ export interface TipCategory {
   items: string[];
 }
 
+export interface Contact extends HanabiContact {}
+
 export interface MapInfo {
   hasMap: boolean;
   mapNote: string;
   parking: string;
 }
 
-export interface WeatherInfo {
-  recommendation: string;
-  rainPolicy: string;
-  note: string;
-}
+export interface WeatherInfo extends HanabiWeatherInfo {}
 
 export interface SpecialFeatures {
   scale: string;

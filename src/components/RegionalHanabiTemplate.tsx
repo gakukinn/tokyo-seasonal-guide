@@ -60,30 +60,68 @@ export default function RegionalHanabiTemplate({
 }: RegionalHanabiTemplateProps) {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
+  // 初始点赞数据 (从hanabi.walkerplus.com获取)
+  const initialLikes: Record<string, number> = {
+    'tokyo-racecourse': 152,
+    'katsushika': 98,
+    'sumida': 124,
+    'hachioji': 30,
+    'tachikawa': 34,
+    'mikurajima': 1
+  };
+  
+  // 从localStorage读取保存的点赞数据
+  const [likes, setLikes] = useState<Record<string, number>>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('hanabi-likes');
+      if (saved) {
+        const savedLikes = JSON.parse(saved);
+        // 合并初始数据和保存的数据，保存的数据优先
+        return { ...initialLikes, ...savedLikes };
+      }
+    }
+    return initialLikes;
+  });
+
   const getLevelColor = (level: string) => {
     return level === 'primary' 
-      ? 'from-pink-400 to-pink-600' 
-      : 'from-pink-300 to-pink-500';
+      ? 'from-pink-100 to-rose-200' 
+      : 'from-pink-50 to-rose-100';
   };
 
   const getCrowdLevelInfo = (level: string) => {
     switch (level) {
-      case 'high': return { text: '非常拥挤', color: 'bg-red-500', icon: '🔴' };
-      case 'medium': return { text: '适中', color: 'bg-yellow-500', icon: '🟡' };
-      case 'low': return { text: '相对宽松', color: 'bg-green-500', icon: '🟢' };
-      default: return { text: '未知', color: 'bg-gray-500', icon: '⚪' };
+      case 'high': return { text: '非常拥挤', color: 'bg-red-200', icon: '🔴' };
+      case 'medium': return { text: '适中', color: 'bg-yellow-200', icon: '🟡' };
+      case 'low': return { text: '相对宽松', color: 'bg-green-200', icon: '🟢' };
+      default: return { text: '未知', color: 'bg-gray-200', icon: '⚪' };
+    }
+  };
+
+  // 点赞处理函数
+  const handleLike = (eventId: string) => {
+    const newLikes = {
+      ...likes,
+      [eventId]: (likes[eventId] || 0) + 1
+    };
+    setLikes(newLikes);
+    
+    // 保存到localStorage
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('hanabi-likes', JSON.stringify(newLikes));
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-blue-50">
+    <div className="min-h-screen bg-blue-100">
       {/* 背景装饰 */}
-      <div className="absolute inset-0 bg-[url('/fireworks-pattern.svg')] opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('/fireworks-pattern.svg')] opacity-5"></div>
       
-      {/* 面包屑导航 */}
-      <nav className="relative z-10 bg-blue-300 border-b border-blue-400">
+      {/* 面包屑导航 - 第1段：蓝色 */}
+      <nav className="relative z-10 bg-blue-200 border-b border-blue-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center space-x-2 text-sm">
+          {/* 桌面端完整面包屑 */}
+          <div className="hidden md:flex items-center space-x-2 text-sm">
             <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors">
               首页
             </Link>
@@ -98,33 +136,42 @@ export default function RegionalHanabiTemplate({
             <span className="text-gray-600">›</span>
             <span className="text-gray-900 font-medium">{regionInfo.name}</span>
           </div>
+          
+          {/* 移动端简化导航 */}
+          <div className="md:hidden flex items-center justify-between">
+            <Link 
+              href={`/${monthInfo.urlPath}/hanabi`}
+              className="flex items-center space-x-2 text-gray-700 hover:text-gray-900 transition-colors"
+            >
+              <span>←</span>
+              <span className="text-sm">返回花火大会</span>
+            </Link>
+            <span className="text-gray-900 font-medium text-sm">{regionInfo.name}花火</span>
+          </div>
         </div>
       </nav>
 
       {/* 主要内容 */}
       <main className="relative z-10">
-        {/* 标题区域 */}
-        <section className="pt-16 pb-12 text-center">
+        {/* 标题区域 - 第2段：蓝色 */}
+        <section className="pt-12 pb-16 text-center bg-blue-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-center space-x-4 mb-6">
-              <div className="text-6xl">{regionInfo.icon}</div>
+            <div className="flex flex-col md:flex-row items-center justify-center md:space-x-4 mb-6">
               <div>
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-                  {monthInfo.month} <span className="text-blue-400">{regionInfo.name}花火</span>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
+                  <span className="text-4xl md:text-6xl mr-2">{regionInfo.icon}</span>
+                  <span className="block md:inline">{monthInfo.month} <span className="text-blue-400">{regionInfo.name}花火</span></span>
                 </h1>
-                <p className="text-xl text-gray-700">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                   {regionInfo.description}
                 </p>
               </div>
             </div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              {regionInfo.englishName}
-            </p>
           </div>
         </section>
 
-        {/* 工具栏 */}
-        <section className="py-8 bg-white/80 backdrop-blur-sm border-t border-blue-200">
+        {/* 工具栏 - 装饰性区域：蓝色 */}
+        <section className="py-6 bg-blue-100 border-t border-blue-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-end">
               {/* 视图模式 */}
@@ -132,16 +179,16 @@ export default function RegionalHanabiTemplate({
                 <span className="text-gray-800 font-medium">视图：</span>
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`p-2 rounded text-sm ${
-                    viewMode === 'grid' ? 'bg-pink-600 text-white' : 'bg-white border border-pink-200 text-gray-700'
+                  className={`p-2 md:p-2 min-w-[44px] min-h-[44px] rounded text-sm active:scale-95 transition-all ${
+                    viewMode === 'grid' ? 'bg-blue-300 text-gray-700' : 'bg-white border border-blue-100 text-gray-600'
                   }`}
                 >
                   🔳
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`p-2 rounded text-sm ${
-                    viewMode === 'list' ? 'bg-pink-600 text-white' : 'bg-white border border-pink-200 text-gray-700'
+                  className={`p-2 md:p-2 min-w-[44px] min-h-[44px] rounded text-sm active:scale-95 transition-all ${
+                    viewMode === 'list' ? 'bg-blue-300 text-gray-700' : 'bg-white border border-blue-100 text-gray-600'
                   }`}
                 >
                   📋
@@ -151,13 +198,13 @@ export default function RegionalHanabiTemplate({
           </div>
         </section>
 
-        {/* 花火大会列表 */}
-        <section className="py-16">
+        {/* 花火大会列表 - 主要内容区：蓝色 */}
+        <section className="py-12 bg-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className={`${
               viewMode === 'grid' 
-                ? 'grid grid-cols-1 lg:grid-cols-2 gap-8' 
-                : 'space-y-6'
+                ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 auto-rows-fr' 
+                : 'space-y-4 md:space-y-5'
             }`}>
               {events.map((event) => {
                 const crowdInfo = getCrowdLevelInfo(event.crowdLevel);
@@ -166,24 +213,37 @@ export default function RegionalHanabiTemplate({
                   return (
                     <div
                       key={event.id}
-                      className="bg-white border border-pink-200 rounded-xl p-6 hover:shadow-lg transition-all"
+                      className="bg-white border border-blue-100 rounded-xl p-4 md:p-6 hover:shadow-md transition-all"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
                           <div className="flex items-center space-x-4">
                             <div className={`w-3 h-3 rounded-full ${crowdInfo.color}`}></div>
-                            <div>
-                              <h3 className="text-xl font-bold text-gray-800">{event.name}</h3>
+                            <div className="flex-1">
+                              <h3 className="text-2xl md:text-xl font-bold text-gray-800">{event.name}</h3>
                               <p className="text-gray-600 text-sm">{event.area} · {event.specificDate}</p>
+                            </div>
+                            <div className="flex items-center space-x-4 text-sm text-gray-500">
+                              <span>⏰ {event.time}</span>
+                              <span>🚇 {event.station} ({event.walkingTime})</span>
+                              <span className="bg-pink-50 text-rose-500 px-2 py-1 rounded-full text-xs">{event.highlights[0]}</span>
                             </div>
                           </div>
                         </div>
                         <div className="flex items-center space-x-4 text-sm text-gray-600">
                           <span>👥 {event.visitors}</span>
                           <span>🎆 {event.fireworks}</span>
+                          <button 
+                            className="px-3 py-2 md:px-3 md:py-2 min-w-[44px] min-h-[44px] bg-white border border-blue-100 text-gray-600 rounded-lg hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center space-x-1"
+                            title="收藏"
+                            onClick={() => handleLike(event.id)}
+                          >
+                            <span className="text-red-500">❤️</span>
+                            <span className="text-xs font-medium">{likes[event.id] || 0}</span>
+                          </button>
                           <Link
                             href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
-                            className="bg-pink-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-pink-700 transition-all"
+                            className="bg-blue-300 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-400 active:scale-95 transition-all"
                           >
                             查看详情
                           </Link>
@@ -196,7 +256,7 @@ export default function RegionalHanabiTemplate({
                 return (
                   <div
                     key={event.id}
-                    className="bg-white border border-pink-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all group"
+                                          className="bg-white border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-pink-200 transition-all duration-300 group cursor-pointer"
                   >
                     {/* 图片和标签 */}
                     <div className={`relative h-48 bg-gradient-to-br ${getLevelColor(event.level)} flex items-center justify-center`}>
@@ -206,8 +266,8 @@ export default function RegionalHanabiTemplate({
                       <div className="absolute top-4 left-4">
                         <span className={`text-xs px-2 py-1 rounded-full ${
                           event.level === 'primary' 
-                            ? 'bg-white text-black' 
-                            : 'bg-black/30 text-white'
+                            ? 'bg-white/90 text-gray-700' 
+                            : 'bg-white/70 text-gray-600'
                         }`}>
                           {event.level === 'primary' ? '重点推荐' : '值得关注'}
                         </span>
@@ -215,59 +275,58 @@ export default function RegionalHanabiTemplate({
                       
                       <div className="absolute top-4 right-4 flex items-center space-x-1">
                         <span className="text-xs">{crowdInfo.icon}</span>
-                        <span className="text-xs bg-black/30 text-white px-2 py-1 rounded-full">
+                        <span className="text-xs bg-white/80 text-gray-600 px-2 py-1 rounded-full">
                           {crowdInfo.text}
                         </span>
                       </div>
                     </div>
 
                     {/* 内容区域 */}
-                    <div className="p-6">
+                    <div className="p-4 md:p-6">
                       <div className="mb-4">
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">{event.name}</h3>
-                        <p className="text-gray-600 text-sm">{event.englishName}</p>
+                        <h3 className="text-xl md:text-lg font-bold text-gray-800 mb-1 leading-tight">{event.name}</h3>
                       </div>
 
                       {/* 基本信息 */}
-                      <div className="grid grid-cols-2 gap-4 mb-4 text-sm">
-                        <div className="space-y-2">
+                      <div className="grid grid-cols-2 gap-2 md:gap-3 mb-3 md:mb-4 text-xs">
+                        <div className="space-y-1 md:space-y-2">
                           <div className="flex items-center space-x-2">
-                            <span>📅</span>
-                            <span className="text-gray-700">{event.specificDate}</span>
+                            <span className="text-sm">📅</span>
+                            <span className="text-sm md:text-xs text-gray-700 font-semibold">{event.specificDate}</span>
+                          </div>
+                          <div className="hidden md:flex items-center space-x-2">
+                            <span className="text-sm">⏰</span>
+                            <span className="text-gray-600">{event.time}</span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <span>⏰</span>
-                            <span className="text-gray-700">{event.time}</span>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <span>📍</span>
-                            <span className="text-gray-700">{event.area}</span>
+                            <span className="text-sm">📍</span>
+                            <span className="text-sm md:text-xs text-gray-600">{event.area}</span>
                           </div>
                         </div>
                         
-                        <div className="space-y-2">
+                        <div className="space-y-1 md:space-y-2">
                           <div className="flex items-center space-x-2">
-                            <span>👥</span>
-                            <span className="text-gray-700">{event.visitors}</span>
+                            <span className="text-sm">👥</span>
+                            <span className="text-sm md:text-xs text-blue-600 font-semibold">{event.visitors}</span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <span>🎆</span>
-                            <span className="text-gray-700">{event.fireworks}</span>
+                            <span className="text-sm">🎆</span>
+                            <span className="text-sm md:text-xs text-rose-600 font-semibold">{event.fireworks}</span>
                           </div>
-                          <div className="flex items-center space-x-2">
-                            <span>🚇</span>
-                            <span className="text-gray-700">{event.walkingTime}</span>
+                          <div className="hidden md:flex items-center space-x-2">
+                            <span className="text-sm">🚇</span>
+                            <span className="text-gray-600">{event.walkingTime}</span>
                           </div>
                         </div>
                       </div>
 
                       {/* 亮点标签 */}
-                      <div className="mb-4">
+                      <div className="mb-5">
                         <div className="flex flex-wrap gap-2">
-                          {event.highlights.map((highlight, idx) => (
+                          {event.highlights.slice(0, 2).map((highlight, idx) => (
                             <span 
                               key={idx}
-                              className="text-xs bg-pink-100 text-pink-600 px-2 py-1 rounded-full"
+                              className="text-xs bg-pink-50 text-rose-500 px-2 py-1 rounded-full"
                             >
                               {highlight}
                             </span>
@@ -276,35 +335,31 @@ export default function RegionalHanabiTemplate({
                       </div>
 
                       {/* 交通信息 */}
-                      <div className="mb-6 p-3 bg-pink-50 rounded-lg">
-                        <div className="flex items-center space-x-2 text-sm">
-                          <span>🚇</span>
-                          <span className="text-gray-600">最近车站：</span>
-                          <span className="text-gray-800">{event.station}</span>
-                          <span className="text-gray-600">({event.walkingTime})</span>
+                      <div className="mb-5 p-3 bg-blue-50 rounded-lg border border-blue-100">
+                        <div className="flex items-center space-x-2 text-xs min-w-0">
+                          <span className="text-sm flex-shrink-0">🚇</span>
+                          <span className="text-gray-500 flex-shrink-0">最近车站：</span>
+                          <span className="text-gray-700 font-medium truncate">{event.station}</span>
+                          <span className="text-gray-500 flex-shrink-0 hidden md:inline">({event.walkingTime})</span>
                         </div>
                       </div>
 
                       {/* 行动按钮 */}
-                      <div className="flex space-x-3">
+                      <div className="flex space-x-2">
+                        <button 
+                          className="px-3 py-3 md:px-3 md:py-3 min-w-[44px] min-h-[44px] bg-white border border-blue-100 text-gray-600 rounded-lg hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center space-x-1"
+                          title="收藏"
+                          onClick={() => handleLike(event.id)}
+                        >
+                          <span className="text-red-500">❤️</span>
+                          <span className="text-xs font-medium">{likes[event.id] || 0}</span>
+                        </button>
                         <Link
                           href={`/${monthInfo.urlPath}/hanabi/${regionInfo.urlSlug}/${event.id}`}
-                          className="flex-1 bg-gradient-to-r from-pink-400 to-blue-400 text-white font-semibold text-center py-3 rounded-lg hover:from-pink-500 hover:to-blue-500 transition-all"
+                          className="flex-1 bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium text-center py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all"
                         >
                           查看详情
                         </Link>
-                        <button 
-                          className="px-4 py-3 bg-white border border-pink-200 text-gray-700 rounded-lg hover:bg-pink-50 transition-all"
-                          title="查看地图"
-                        >
-                          📍
-                        </button>
-                        <button 
-                          className="px-4 py-3 bg-white border border-pink-200 text-gray-700 rounded-lg hover:bg-pink-50 transition-all"
-                          title="收藏"
-                        >
-                          ❤️
-                        </button>
                       </div>
                     </div>
                   </div>
@@ -314,16 +369,16 @@ export default function RegionalHanabiTemplate({
           </div>
         </section>
 
-        {/* 地区花火特色 */}
-        <section className="py-16 bg-white/80 backdrop-blur-sm border-t border-pink-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">{regionInfo.name}花火大会特色</h2>
+        {/* 地区花火特色 - 装饰性区域：蓝色 */}
+        <section className="py-12 bg-blue-100 border-t border-blue-200">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-gray-800 text-center mb-10">{regionInfo.name}花火大会特色</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               {regionInfo.features.map((feature, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-4xl mb-4">{feature.icon}</div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-3">{feature.title}</h3>
+                                                                     <div key={index} className="flex-1 min-w-0 max-w-xs text-center bg-white rounded-lg p-4 md:p-6 shadow-sm">
+                  <div className="text-3xl mb-3">{feature.icon}</div>
+                  <h3 className="text-base font-bold text-gray-800 mb-2">{feature.title}</h3>
                   <p className="text-gray-600 text-sm">
                     {feature.description}
                   </p>
@@ -333,19 +388,19 @@ export default function RegionalHanabiTemplate({
           </div>
         </section>
 
-        {/* 快速导航 */}
-        <section className="py-12 bg-white/80 backdrop-blur-sm border-t border-pink-200">
+        {/* 快速导航 - 主要内容区：蓝色 */}
+        <section className="py-10 bg-blue-50 border-t border-blue-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-800 mb-8">探索更多</h3>
-            <div className="flex flex-wrap justify-center gap-4">
+            <h3 className="text-xl font-bold text-gray-800 mb-6">快速导航</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {regionInfo.navigationLinks.map((link, index) => (
                 <Link
                   key={index}
                   href={link.href}
                   className={`${
                     link.isPrimary 
-                      ? 'bg-gradient-to-r from-pink-400 to-blue-400 text-white font-semibold px-6 py-3 rounded-full hover:from-pink-500 hover:to-blue-500 transition-all'
-                      : 'bg-white border-2 border-red-200 text-gray-800 font-semibold px-6 py-3 rounded-full hover:bg-red-50 hover:border-red-300 transition-all'
+                      ? 'bg-gradient-to-r from-pink-200 to-blue-200 text-gray-700 font-medium px-4 md:px-5 py-3 rounded-lg hover:from-pink-300 hover:to-blue-300 active:scale-95 transition-all'
+                      : 'bg-white border border-blue-100 text-gray-700 font-medium px-4 md:px-5 py-3 rounded-lg hover:bg-blue-50 hover:border-blue-200 active:scale-95 transition-all'
                   }`}
                 >
                   {link.label}

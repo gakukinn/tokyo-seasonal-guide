@@ -63,7 +63,7 @@ const saitamaHanabiEvents = [
   },
   {
     id: 'ogawa-tanabata',
-    name: '第77回 小川町七夕まつり花火大会',
+    name: '小川町七夕祭花火大会',
     englishName: 'Ogawa-machi Tanabata Matsuri Fireworks Festival',
     date: '7月26日',
     specificDate: '2025年7月26日(土)',
@@ -109,9 +109,9 @@ const saitamaMonthInfo = {
 
 const saitamaRegionInfo = {
   name: '埼玉',
-  englishName: '埼玉县拥有多样化的花火大会，从自卫队基地到市民祭典，每场都展现着地域特色与传统文化',
+  englishName: 'Saitama',
   icon: '🌸',
-  description: '关东内陆的夏夜花火祭典',
+  description: '关东内陆的夏夜花火祭典，从自卫队基地到市民祭典，每场都展现着地域特色与传统文化',
   urlSlug: 'saitama',
   features: [
     {
