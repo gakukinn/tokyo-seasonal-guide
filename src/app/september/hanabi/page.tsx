@@ -1,3 +1,11 @@
+/**
+ * 第三层页面 - 9月花火大会总览
+ * @layer 三层 (Activity Layer)
+ * @month 9月 
+ * @type 花火活动总览页面
+ * @path /september/hanabi
+ * @description 展示9月所有地区的花火大会分类导航
+ */
 'use client';
 
 import ActivityTemplate from '@/components/ActivityTemplate';
@@ -10,8 +18,8 @@ export default function SeptemberHanabiPage() {
       { id: 'saitama', count: 2, available: true, description: '交通便捷' },
       { id: 'chiba', count: 1, available: true, description: '海景特色' },
       { id: 'kanagawa', count: 2, available: true, description: '海景魅力' },
-      { id: 'koshinetsu', count: 1, available: true, description: '山岳景观' },
-      { id: 'kitakanto', count: 1, available: true, description: '自然风光' }
+      { id: 'kitakanto', count: 1, available: true, description: '自然风光' },
+      { id: 'koshinetsu', count: 1, available: true, description: '山岳景观' }
     ]
   };
 

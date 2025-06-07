@@ -1,0 +1,28 @@
+{
+  "images": {
+    "format": "优先使用WebP/AVIF格式",
+    "lazy": "启用图片懒加载",
+    "sizes": "响应式图片尺寸",
+    "compression": "压缩率80-90%"
+  },
+  "css": {
+    "critical": "内联关键CSS",
+    "unused": "移除未使用CSS",
+    "minification": "CSS压缩"
+  },
+  "javascript": {
+    "splitting": "代码分割",
+    "treeshaking": "Tree Shaking",
+    "minification": "JS压缩"
+  },
+  "caching": {
+    "static": "静态资源长期缓存",
+    "api": "API响应缓存",
+    "browser": "浏览器缓存策略"
+  },
+  "core_web_vitals": {
+    "LCP": "最大内容绘制 < 2.5s",
+    "FID": "首次输入延迟 < 100ms",
+    "CLS": "累积布局偏移 < 0.1"
+  }
+}

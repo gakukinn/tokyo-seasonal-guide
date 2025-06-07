@@ -180,21 +180,21 @@ export default function ActivityTemplate({
               >
                 ← 返回{monthInfo.chinese}
               </Link>
-              {regions.find(r => r.available) && (
+              {regions.find(r => r.available) && activityId === 'hanabi' && [7, 8, 9].includes(monthId) && (
                 <Link
                   href={
                     monthId === 7 ? "/august/hanabi" : 
                     monthId === 8 ? "/september/hanabi" : 
-                    monthId === 9 ? "/october/hanabi" :
-                    "/november/hanabi"
+                    monthId === 9 ? "/july/hanabi" :
+                    "/july/hanabi"
                   }
                   className="bg-gradient-to-r from-rose-300/90 to-blue-300/90 text-white font-semibold px-8 sm:px-12 py-4 sm:py-5 rounded-2xl hover:from-rose-400 hover:to-blue-400 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-xl backdrop-blur-sm hover:shadow-2xl text-center"
                 >
                   {
                     monthId === 7 ? "八月花火" : 
                     monthId === 8 ? "九月花火" : 
-                    monthId === 9 ? "十月花火" :
-                    "十一月花火"
+                    monthId === 9 ? "七月花火" :
+                    "七月花火"
                   } →
                 </Link>
               )}

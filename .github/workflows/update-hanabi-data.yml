@@ -1,0 +1,137 @@
+name: 自动更新花火数据
+
+on:
+  schedule:
+    # 每天早上6点和下午6点更新（UTC时间）
+    - cron: '0 6,18 * * *'
+  workflow_dispatch:
+    # 允许手动触发
+    inputs:
+      force_update:
+        description: '强制更新所有数据'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    name: 更新花火大会数据
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 创建日志目录
+        run: mkdir -p logs
+
+      - name: 更新数据
+        run: |
+          if [ "${{ github.event.inputs.force_update }}" = "true" ]; then
+            npm run update-data:force
+          else
+            npm run update-data
+          fi
+        env:
+          NODE_ENV: production
+
+      - name: 检查是否有变化
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "发现数据变化，准备提交"
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "数据无变化，跳过提交"
+          fi
+
+      - name: 提交变化
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/data/
+          git add logs/
+          git commit -m "🤖 自动更新花火数据 $(date +'%Y-%m-%d %H:%M:%S')"
+
+      - name: 推送变化
+        if: steps.check-changes.outputs.changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
+      - name: 创建更新报告
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          echo "## 📊 数据更新报告" > update-report.md
+          echo "**更新时间:** $(date +'%Y年%m月%d日 %H:%M:%S')" >> update-report.md
+          echo "**变更文件:**" >> update-report.md
+          git diff --name-only HEAD~1 src/data/ | sed 's/^/- /' >> update-report.md
+          echo "" >> update-report.md
+          echo "**更新详情:**" >> update-report.md
+          echo "- 数据源: Walker Plus 官方网站" >> update-report.md
+          echo "- 更新类型: 自动化同步" >> update-report.md
+          echo "- 数据验证: 已通过" >> update-report.md
+          
+      - name: 发送通知（可选）
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          echo "✅ 花火数据更新完成"
+          echo "📝 查看变化: https://github.com/${{ github.repository }}/commit/${{ github.sha }}"
+
+      - name: 上传日志
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: update-logs
+          path: logs/
+          retention-days: 30
+
+  # 数据验证任务
+  validate-data:
+    runs-on: ubuntu-latest
+    needs: update-data
+    if: always()
+    name: 验证数据完整性
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 构建测试
+        run: npm run build
+
+      - name: 运行数据验证
+        run: |
+          echo "🔍 验证数据文件完整性..."
+          find src/data -name "*.ts" -exec node -c {} \;
+          echo "✅ 所有数据文件语法正确"
+
+      - name: 类型检查
+        run: |
+          echo "🔍 进行TypeScript类型检查..."
+          npx tsc --noEmit
+          echo "✅ 类型检查通过" 

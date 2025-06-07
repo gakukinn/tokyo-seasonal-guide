@@ -3,9 +3,11 @@ import { HanabiData } from '../types/hanabi';
 export const hachioji: HanabiData = {
   id: 'hachioji',
   name: '八王子花火大会',
+  japaneseName: '第65回八王子花火大会',
+
   englishName: 'Hachioji Hanabi Taikai',
   year: 2025,
-  date: '2025年7月26日(土)',
+  date: '2025年7月1日',
   time: '19:00～20:15',
   duration: '75分钟',
   fireworksCount: '约4,000发',

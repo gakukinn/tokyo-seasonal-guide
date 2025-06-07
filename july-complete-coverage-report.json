@@ -1,0 +1,1723 @@
+{
+  "checkDate": "2025-06-07T06:33:19.998Z",
+  "summary": {
+    "totalFiles": 43,
+    "julyEvents": 43,
+    "nonJulyEvents": 0,
+    "problemFiles": 0,
+    "expectedRegions": 6,
+    "foundRegions": 6,
+    "missingRegions": []
+  },
+  "regionSummary": {
+    "甲信越": [
+      {
+        "filename": "level5-anime-classics-anisong-hanabi.ts",
+        "title": "动漫经典动画歌曲花火主图",
+        "region": "甲信越",
+        "regionTag": "山梨县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://animeclassics-hanabi.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-fuji-kawaguchi-lake-hanabi.ts",
+        "title": "富士山河口湖山开花火大会主图",
+        "region": "甲信越",
+        "regionTag": "山梨县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.town.fujikawaguchiko.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-gion-kashiwazaki-hanabi.ts",
+        "title": "未知活动",
+        "region": "甲信越",
+        "regionTag": "新潟县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.kashiwazaki.lg.jp/kashiwazakihanabi/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-nojiri-lake-hanabi.ts",
+        "title": "未知活动",
+        "region": "甲信越",
+        "regionTag": "长野县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.shinano-machi.com/event"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-sanjo-natsumatsuri-hanabi.ts",
+        "title": "三条市合并20周年记念第21回三条夏祭大花火大会主图",
+        "region": "甲信越",
+        "regionTag": "新潟县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://sanjo-natsumatsuri.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-suzaka-minna-hanabi.ts",
+        "title": "第38回须坂大家花火大会主图",
+        "region": "甲信越",
+        "regionTag": "长野县",
+        "regionPath": "",
+        "eventDate": "2025年7月20日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.suzaka.nagano.jp/"
+        ],
+        "hasOfficialSite": true
+      }
+    ],
+    "千叶": [
+      {
+        "filename": "level5-july-hanabi-chiba-futtsu.ts",
+        "title": "富津海岸花火",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.futtsu.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-marines.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月11日(金)～8月11日(祝)の特定日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.marines.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.motherfarm.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.oamishirasato.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-sanmu.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.sammu.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-shirahama.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日(土)・20日(日)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.mboso-etoko.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-futtsu.ts",
+        "title": "富津市民花火大会精彩瞬间",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://futtsu-hanabi.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-marines.ts",
+        "title": "千叶罗德花火精彩瞬间",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月11日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.marines.co.jp/event/fireworks/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-motherfarm.ts",
+        "title": "母亲牧场夏夜农场花火",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.motherfarm.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-oamishirasato.ts",
+        "title": "大网白里花火大会海岸观赏",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.oamishirasato.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-shirahama-ama.ts",
+        "title": "水中花火",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://amamatsuri.com/"
+        ],
+        "hasOfficialSite": true
+      }
+    ],
+    "埼玉": [
+      {
+        "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+        "title": "未知活动",
+        "region": "埼玉",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月29日(火)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.kamogawa-kanko.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-iruma-base.ts",
+        "title": "入间基地花火大会精彩片段",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月23日(水)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.mod.go.jp/asdf/iruma/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kamogawa.ts",
+        "title": "鸭川市民花火大会全景",
+        "region": "埼玉",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月29日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://kamotabi.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-koshigaya.ts",
+        "title": "越谷花火大会夜空绽放",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.koshigaya-sightseeing.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-metsza-nordic.ts",
+        "title": "梅兹塔北欧花火",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月12日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://metsa-hanno.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+        "title": "小川町七夕祭花火大会",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-saitama-owada.ts",
+        "title": "埼玉市花火大会大和田公园会场",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月27日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://visitsaitamacity.jp/events/28"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-seibu-en.ts",
+        "title": "西武园游乐园大火祭",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.seibu-leisure.co.jp/amusementpark/"
+        ],
+        "hasOfficialSite": true
+      }
+    ],
+    "神奈川": [
+      {
+        "filename": "level5-july-hanabi-kamakura.ts",
+        "title": "镰仓花火大会水中花火",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月18日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.trip-kamakura.com/site/kamakura-hanabi/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+        "title": "未知活动",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月18日(金)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.kamakura-info.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+        "title": "未知活动",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日・12日・8月10日・9月6日・14日等",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.yokohama.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+        "title": "未知活动",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日・20日・26日、8月2日・9日・10日・16日・23日、9月13日・14日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "http://www.seaparadise.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-seaparadise.ts",
+        "title": "八景岛花火交响曲音与光的盛宴",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.seaparadise.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-yokohama-night.ts",
+        "title": "横浜夜间花火短时精彩演出",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.yokohama-sparkling-twilight.com/"
+        ],
+        "hasOfficialSite": true
+      }
+    ],
+    "东京": [
+      {
+        "filename": "level5-july-hanabi-katsushika-noryo.ts",
+        "title": "第59回葛饰纳凉花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月22日(火)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.katsushika.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-mikurajima.ts",
+        "title": "御藏岛花火大会夜空绽放",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月31日(木)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.mikurasima.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tachikawa-showa.ts",
+        "title": "立川祭国营昭和纪念公园花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://hanabi.tokyo-tachikawa.org/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+        "title": "未知活动",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月1日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.hkc.or.jp/fireworks/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+        "title": "葛饰納涼花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月22日(火)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+        "title": "东京竞马场花火2025预告片",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月2日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://hanabitokyo.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-sumida.ts",
+        "title": "隅田川花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.sumidagawa-hanabi.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+        "title": "立川诏和纪念公园花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://hanabi.tokyo-tachikawa.org/"
+        ],
+        "hasOfficialSite": true
+      }
+    ],
+    "北关东": [
+      {
+        "filename": "level5-mito-hanabi.ts",
+        "title": "水戸偕楽園花火大会 大型菊花火",
+        "region": "北关东",
+        "regionTag": "茨城県",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://mitokoumon.com/koumon/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-moka-hanabi.ts",
+        "title": "真岡市夏祭大花火大会 超大型花火",
+        "region": "北关东",
+        "regionTag": "栃木県",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.moka-kankou.org/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-tamura-hanabi.ts",
+        "title": "玉村花火大会 四重芯菊花火",
+        "region": "北关东",
+        "regionTag": "群馬県",
+        "regionPath": "/july/hanabi/kitakanto",
+        "eventDate": "2025年7月12日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.town.tamamura.lg.jp/docs/2025031800014/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-tatebayashi-hanabi.ts",
+        "title": "館林手筒花火大会 伝統手筒花火",
+        "region": "北关东",
+        "regionTag": "群馬県",
+        "regionPath": "/july/hanabi/kitakanto",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.tatebayashi.gunma.jp/"
+        ],
+        "hasOfficialSite": true
+      }
+    ]
+  },
+  "details": {
+    "julyEvents": [
+      {
+        "filename": "level5-anime-classics-anisong-hanabi.ts",
+        "title": "动漫经典动画歌曲花火主图",
+        "region": "甲信越",
+        "regionTag": "山梨县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://animeclassics-hanabi.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-fuji-kawaguchi-lake-hanabi.ts",
+        "title": "富士山河口湖山开花火大会主图",
+        "region": "甲信越",
+        "regionTag": "山梨县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.town.fujikawaguchiko.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-gion-kashiwazaki-hanabi.ts",
+        "title": "未知活动",
+        "region": "甲信越",
+        "regionTag": "新潟县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.kashiwazaki.lg.jp/kashiwazakihanabi/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-futtsu.ts",
+        "title": "富津海岸花火",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.futtsu.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+        "title": "未知活动",
+        "region": "埼玉",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月29日(火)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.kamogawa-kanko.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-marines.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月11日(金)～8月11日(祝)の特定日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.marines.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.motherfarm.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.oamishirasato.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-sanmu.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.sammu.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-shirahama.ts",
+        "title": "未知活动",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日(土)・20日(日)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.mboso-etoko.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-futtsu.ts",
+        "title": "富津市民花火大会精彩瞬间",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://futtsu-hanabi.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-iruma-base.ts",
+        "title": "入间基地花火大会精彩片段",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月23日(水)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.mod.go.jp/asdf/iruma/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kamakura.ts",
+        "title": "镰仓花火大会水中花火",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月18日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.trip-kamakura.com/site/kamakura-hanabi/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kamogawa.ts",
+        "title": "鸭川市民花火大会全景",
+        "region": "埼玉",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月29日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://kamotabi.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+        "title": "未知活动",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月18日(金)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.kamakura-info.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+        "title": "未知活动",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日・12日・8月10日・9月6日・14日等",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.yokohama.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+        "title": "未知活动",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日・20日・26日、8月2日・9日・10日・16日・23日、9月13日・14日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "http://www.seaparadise.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-katsushika-noryo.ts",
+        "title": "第59回葛饰纳凉花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月22日(火)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.katsushika.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-koshigaya.ts",
+        "title": "越谷花火大会夜空绽放",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.koshigaya-sightseeing.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-marines.ts",
+        "title": "千叶罗德花火精彩瞬间",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月11日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.marines.co.jp/event/fireworks/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-metsza-nordic.ts",
+        "title": "梅兹塔北欧花火",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月12日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://metsa-hanno.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-mikurajima.ts",
+        "title": "御藏岛花火大会夜空绽放",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月31日(木)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.mikurasima.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-motherfarm.ts",
+        "title": "母亲牧场夏夜农场花火",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.motherfarm.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-oamishirasato.ts",
+        "title": "大网白里花火大会海岸观赏",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.oamishirasato.lg.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+        "title": "小川町七夕祭花火大会",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-saitama-owada.ts",
+        "title": "埼玉市花火大会大和田公园会场",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月27日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://visitsaitamacity.jp/events/28"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-seaparadise.ts",
+        "title": "八景岛花火交响曲音与光的盛宴",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.seaparadise.co.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-seibu-en.ts",
+        "title": "西武园游乐园大火祭",
+        "region": "埼玉",
+        "regionTag": "埼玉县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.seibu-leisure.co.jp/amusementpark/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-shirahama-ama.ts",
+        "title": "水中花火",
+        "region": "千叶",
+        "regionTag": "千叶县",
+        "regionPath": "",
+        "eventDate": "2025年7月19日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://amamatsuri.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tachikawa-showa.ts",
+        "title": "立川祭国营昭和纪念公园花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://hanabi.tokyo-tachikawa.org/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+        "title": "未知活动",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月1日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.hkc.or.jp/fireworks/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+        "title": "葛饰納涼花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月22日(火)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+        "title": "东京竞马场花火2025预告片",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月2日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://hanabitokyo.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-sumida.ts",
+        "title": "隅田川花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.sumidagawa-hanabi.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+        "title": "立川诏和纪念公园花火大会精彩瞬间",
+        "region": "东京",
+        "regionTag": "东京都",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://hanabi.tokyo-tachikawa.org/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-july-hanabi-yokohama-night.ts",
+        "title": "横浜夜间花火短时精彩演出",
+        "region": "神奈川",
+        "regionTag": "神奈川县",
+        "regionPath": "",
+        "eventDate": "2025年7月5日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.yokohama-sparkling-twilight.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-mito-hanabi.ts",
+        "title": "水戸偕楽園花火大会 大型菊花火",
+        "region": "北关东",
+        "regionTag": "茨城県",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://mitokoumon.com/koumon/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-moka-hanabi.ts",
+        "title": "真岡市夏祭大花火大会 超大型花火",
+        "region": "北关东",
+        "regionTag": "栃木県",
+        "regionPath": "",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.moka-kankou.org/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-nojiri-lake-hanabi.ts",
+        "title": "未知活动",
+        "region": "甲信越",
+        "regionTag": "长野县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.shinano-machi.com/event"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-sanjo-natsumatsuri-hanabi.ts",
+        "title": "三条市合并20周年记念第21回三条夏祭大花火大会主图",
+        "region": "甲信越",
+        "regionTag": "新潟县",
+        "regionPath": "",
+        "eventDate": "2025年7月26日(土)",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://sanjo-natsumatsuri.com/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-suzaka-minna-hanabi.ts",
+        "title": "第38回须坂大家花火大会主图",
+        "region": "甲信越",
+        "regionTag": "长野县",
+        "regionPath": "",
+        "eventDate": "2025年7月20日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.suzaka.nagano.jp/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-tamura-hanabi.ts",
+        "title": "玉村花火大会 四重芯菊花火",
+        "region": "北关东",
+        "regionTag": "群馬県",
+        "regionPath": "/july/hanabi/kitakanto",
+        "eventDate": "2025年7月12日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.town.tamamura.lg.jp/docs/2025031800014/"
+        ],
+        "hasOfficialSite": true
+      },
+      {
+        "filename": "level5-tatebayashi-hanabi.ts",
+        "title": "館林手筒花火大会 伝統手筒花火",
+        "region": "北关东",
+        "regionTag": "群馬県",
+        "regionPath": "/july/hanabi/kitakanto",
+        "eventDate": "2025年7月26日",
+        "isJulyEvent": true,
+        "officialWebsites": [
+          "https://www.city.tatebayashi.gunma.jp/"
+        ],
+        "hasOfficialSite": true
+      }
+    ],
+    "nonJulyEvents": [],
+    "regionSummary": {
+      "甲信越": [
+        {
+          "filename": "level5-anime-classics-anisong-hanabi.ts",
+          "title": "动漫经典动画歌曲花火主图",
+          "region": "甲信越",
+          "regionTag": "山梨县",
+          "regionPath": "",
+          "eventDate": "2025年7月5日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://animeclassics-hanabi.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-fuji-kawaguchi-lake-hanabi.ts",
+          "title": "富士山河口湖山开花火大会主图",
+          "region": "甲信越",
+          "regionTag": "山梨县",
+          "regionPath": "",
+          "eventDate": "2025年7月5日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.town.fujikawaguchiko.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-gion-kashiwazaki-hanabi.ts",
+          "title": "未知活动",
+          "region": "甲信越",
+          "regionTag": "新潟县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.kashiwazaki.lg.jp/kashiwazakihanabi/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-nojiri-lake-hanabi.ts",
+          "title": "未知活动",
+          "region": "甲信越",
+          "regionTag": "长野县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.shinano-machi.com/event"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-sanjo-natsumatsuri-hanabi.ts",
+          "title": "三条市合并20周年记念第21回三条夏祭大花火大会主图",
+          "region": "甲信越",
+          "regionTag": "新潟县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://sanjo-natsumatsuri.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-suzaka-minna-hanabi.ts",
+          "title": "第38回须坂大家花火大会主图",
+          "region": "甲信越",
+          "regionTag": "长野县",
+          "regionPath": "",
+          "eventDate": "2025年7月20日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.suzaka.nagano.jp/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "千叶": [
+        {
+          "filename": "level5-july-hanabi-chiba-futtsu.ts",
+          "title": "富津海岸花火",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.futtsu.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-marines.ts",
+          "title": "未知活动",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月11日(金)～8月11日(祝)の特定日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.marines.co.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+          "title": "未知活动",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.motherfarm.co.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+          "title": "未知活动",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.oamishirasato.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-sanmu.ts",
+          "title": "未知活动",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.sammu.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-shirahama.ts",
+          "title": "未知活动",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月19日(土)・20日(日)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.mboso-etoko.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-futtsu.ts",
+          "title": "富津市民花火大会精彩瞬间",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://futtsu-hanabi.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-marines.ts",
+          "title": "千叶罗德花火精彩瞬间",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月11日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.marines.co.jp/event/fireworks/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-motherfarm.ts",
+          "title": "母亲牧场夏夜农场花火",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.motherfarm.co.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-oamishirasato.ts",
+          "title": "大网白里花火大会海岸观赏",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.oamishirasato.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-shirahama-ama.ts",
+          "title": "水中花火",
+          "region": "千叶",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月19日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://amamatsuri.com/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "埼玉": [
+        {
+          "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+          "title": "未知活动",
+          "region": "埼玉",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月29日(火)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.kamogawa-kanko.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-iruma-base.ts",
+          "title": "入间基地花火大会精彩片段",
+          "region": "埼玉",
+          "regionTag": "埼玉县",
+          "regionPath": "",
+          "eventDate": "2025年7月23日(水)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.mod.go.jp/asdf/iruma/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-kamogawa.ts",
+          "title": "鸭川市民花火大会全景",
+          "region": "埼玉",
+          "regionTag": "千叶县",
+          "regionPath": "",
+          "eventDate": "2025年7月29日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://kamotabi.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-koshigaya.ts",
+          "title": "越谷花火大会夜空绽放",
+          "region": "埼玉",
+          "regionTag": "埼玉县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.koshigaya-sightseeing.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-metsza-nordic.ts",
+          "title": "梅兹塔北欧花火",
+          "region": "埼玉",
+          "regionTag": "埼玉县",
+          "regionPath": "",
+          "eventDate": "2025年7月12日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://metsa-hanno.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+          "title": "小川町七夕祭花火大会",
+          "region": "埼玉",
+          "regionTag": "埼玉县",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-saitama-owada.ts",
+          "title": "埼玉市花火大会大和田公园会场",
+          "region": "埼玉",
+          "regionTag": "埼玉县",
+          "regionPath": "",
+          "eventDate": "2025年7月27日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://visitsaitamacity.jp/events/28"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-seibu-en.ts",
+          "title": "西武园游乐园大火祭",
+          "region": "埼玉",
+          "regionTag": "埼玉县",
+          "regionPath": "",
+          "eventDate": "2025年7月19日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.seibu-leisure.co.jp/amusementpark/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "神奈川": [
+        {
+          "filename": "level5-july-hanabi-kamakura.ts",
+          "title": "镰仓花火大会水中花火",
+          "region": "神奈川",
+          "regionTag": "神奈川县",
+          "regionPath": "",
+          "eventDate": "2025年7月18日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.trip-kamakura.com/site/kamakura-hanabi/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+          "title": "未知活动",
+          "region": "神奈川",
+          "regionTag": "神奈川县",
+          "regionPath": "",
+          "eventDate": "2025年7月18日(金)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.kamakura-info.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+          "title": "未知活动",
+          "region": "神奈川",
+          "regionTag": "神奈川县",
+          "regionPath": "",
+          "eventDate": "2025年7月5日・12日・8月10日・9月6日・14日等",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.yokohama.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+          "title": "未知活动",
+          "region": "神奈川",
+          "regionTag": "神奈川县",
+          "regionPath": "",
+          "eventDate": "2025年7月19日・20日・26日、8月2日・9日・10日・16日・23日、9月13日・14日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "http://www.seaparadise.co.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-seaparadise.ts",
+          "title": "八景岛花火交响曲音与光的盛宴",
+          "region": "神奈川",
+          "regionTag": "神奈川县",
+          "regionPath": "",
+          "eventDate": "2025年7月19日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.seaparadise.co.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-yokohama-night.ts",
+          "title": "横浜夜间花火短时精彩演出",
+          "region": "神奈川",
+          "regionTag": "神奈川县",
+          "regionPath": "",
+          "eventDate": "2025年7月5日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.yokohama-sparkling-twilight.com/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "东京": [
+        {
+          "filename": "level5-july-hanabi-katsushika-noryo.ts",
+          "title": "第59回葛饰纳凉花火大会精彩瞬间",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月22日(火)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.katsushika.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-mikurajima.ts",
+          "title": "御藏岛花火大会夜空绽放",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月31日(木)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.mikurasima.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tachikawa-showa.ts",
+          "title": "立川祭国营昭和纪念公园花火大会精彩瞬间",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://hanabi.tokyo-tachikawa.org/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+          "title": "未知活动",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月1日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.hkc.or.jp/fireworks/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+          "title": "葛饰納涼花火大会精彩瞬间",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月22日(火)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+          "title": "东京竞马场花火2025预告片",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月2日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://hanabitokyo.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-sumida.ts",
+          "title": "隅田川花火大会精彩瞬间",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.sumidagawa-hanabi.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+          "title": "立川诏和纪念公园花火大会精彩瞬间",
+          "region": "东京",
+          "regionTag": "东京都",
+          "regionPath": "",
+          "eventDate": "2025年7月26日(土)",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://hanabi.tokyo-tachikawa.org/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "北关东": [
+        {
+          "filename": "level5-mito-hanabi.ts",
+          "title": "水戸偕楽園花火大会 大型菊花火",
+          "region": "北关东",
+          "regionTag": "茨城県",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://mitokoumon.com/koumon/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-moka-hanabi.ts",
+          "title": "真岡市夏祭大花火大会 超大型花火",
+          "region": "北关东",
+          "regionTag": "栃木県",
+          "regionPath": "",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.moka-kankou.org/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-tamura-hanabi.ts",
+          "title": "玉村花火大会 四重芯菊花火",
+          "region": "北关东",
+          "regionTag": "群馬県",
+          "regionPath": "/july/hanabi/kitakanto",
+          "eventDate": "2025年7月12日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.town.tamamura.lg.jp/docs/2025031800014/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-tatebayashi-hanabi.ts",
+          "title": "館林手筒花火大会 伝統手筒花火",
+          "region": "北关东",
+          "regionTag": "群馬県",
+          "regionPath": "/july/hanabi/kitakanto",
+          "eventDate": "2025年7月26日",
+          "isJulyEvent": true,
+          "officialWebsites": [
+            "https://www.city.tatebayashi.gunma.jp/"
+          ],
+          "hasOfficialSite": true
+        }
+      ]
+    },
+    "problemFiles": []
+  }
+}

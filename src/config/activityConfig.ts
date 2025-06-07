@@ -111,8 +111,8 @@ export const activityCategories = {
     description: '夏日烟花的绚烂盛典',
     icon: '🎆',
     template: 'regional',
-    // 固定地区顺序：第一行：东京，埼玉，千叶 第二行：神奈川，甲越信，北关东
-    regions: ['tokyo', 'saitama', 'chiba', 'kanagawa', 'koshinetsu', 'kitakanto']
+    // 固定地区顺序：第一行：东京，埼玉，千叶 第二行：神奈川，北关东，甲越信
+    regions: ['tokyo', 'saitama', 'chiba', 'kanagawa', 'kitakanto', 'koshinetsu']
   },
   matsuri: {
     id: 'matsuri',

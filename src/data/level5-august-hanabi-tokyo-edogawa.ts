@@ -30,7 +30,7 @@ export const edogawaData: HanabiData = {
       {
         id: 'itabashi',
         name: '板桥花火大会',
-        date: '8月2日',
+        date: '2025年8月2日',
         location: '荒川河川敷',
         visitors: '57万人',
         link: '/august/hanabi/tokyo/itabashi'
@@ -38,7 +38,7 @@ export const edogawaData: HanabiData = {
       {
         id: 'kozushima',
         name: '神津岛花火大会',
-        date: '8月4日',
+        date: '2025年8月4日',
         location: '神津岛港',
         visitors: '1000人',
         link: '/august/hanabi/tokyo/kozushima'
@@ -46,7 +46,7 @@ export const edogawaData: HanabiData = {
       {
         id: 'okutama',
         name: '奥多摩纳凉花火',
-        date: '8月9日',
+        date: '2025年8月9日',
         location: '爱宕山广场',
         visitors: '1万人',
         link: '/august/hanabi/tokyo/okutama'
@@ -56,7 +56,7 @@ export const edogawaData: HanabiData = {
       {
         id: 'itabashi',
         name: '板桥花火大会',
-        date: '8月2日',
+        date: '2025年8月2日',
         location: '荒川河川敷',
         visitors: '57万人',
         link: '/august/hanabi/tokyo/itabashi'
@@ -64,7 +64,7 @@ export const edogawaData: HanabiData = {
       {
         id: 'akishima',
         name: '昭岛市民花火大会',
-        date: '8月23日',
+        date: '2025年8月23日',
         location: '昭岛市民球场',
         visitors: '4万5000人',
         link: '/august/hanabi/tokyo/akishima'
@@ -212,4 +212,5 @@ export const edogawaData: HanabiData = {
     rainPolicy: '小雨举行，恶劣天气延期或取消',
     note: '河川敷风较大，注意保暖'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 

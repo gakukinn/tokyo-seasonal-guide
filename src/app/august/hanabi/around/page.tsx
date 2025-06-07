@@ -1,3 +1,12 @@
+/**
+ * 第四层页面 - 展示8月around地区所有花火大会列表，包含查看详情链接
+ * @layer 四层 (Regional Layer)
+ * @month 8月
+ * @region around
+ * @type 地区花火页面
+ * @path /august/hanabi/around
+ * @description 展示8月around地区所有花火大会列表，包含查看详情链接
+ */
 'use client';
 
 import React from 'react';
@@ -28,7 +37,8 @@ export default function AugustAroundHanabiPage() {
       station: '富士急行河口湖駅',
       walkingTime: '徒歩15分',
       mapUrl: 'https://maps.google.com/kawaguchi-lake',
-      image: '/images/kawaguchi-lake-fireworks.jpg'
+      image: '/images/kawaguchi-lake-fireworks.jpg',
+      likes: 15
     },
     {
       id: 'nagaoka-festival-fireworks',
@@ -53,7 +63,8 @@ export default function AugustAroundHanabiPage() {
       station: 'JR長岡駅',
       walkingTime: '徒歩約30分',
       mapUrl: 'https://maps.google.com/nagaoka-fireworks',
-      image: '/images/nagaoka-fireworks.jpg'
+      image: '/images/nagaoka-fireworks.jpg',
+      likes: 45
     },
     {
       id: 'suwa-lake-fireworks',
@@ -78,7 +89,8 @@ export default function AugustAroundHanabiPage() {
       station: 'JR上諏訪駅',
       walkingTime: '徒歩10分',
       mapUrl: 'https://maps.google.com/suwa-lake-fireworks',
-      image: '/images/suwa-lake-fireworks.jpg'
+      image: '/images/suwa-lake-fireworks.jpg',
+      likes: 38
     }
   ];
 
@@ -121,7 +133,7 @@ export default function AugustAroundHanabiPage() {
 
   const monthInfo = {
     month: '8月',
-    monthName: '盛夏花火月',
+    monthName: '八月',
     urlPath: 'august'
   };
 

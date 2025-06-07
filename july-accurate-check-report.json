@@ -1,0 +1,238 @@
+{
+  "timestamp": "2025-06-07T06:37:40.481Z",
+  "summary": {
+    "totalExpected": 30,
+    "totalFound": 22,
+    "accuracy": 73
+  },
+  "regions": {
+    "东京": {
+      "expected": 6,
+      "level4Count": 0,
+      "level5Count": 6,
+      "missingFiles": [],
+      "websiteInfo": [
+        {
+          "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+          "title": "东京竞马场花火2025预告片",
+          "officialWebsites": [
+            "https://hanabitokyo.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-katsushika-noryo.ts",
+          "title": "第59回葛饰纳凉花火大会精彩瞬间",
+          "officialWebsites": [
+            "https://www.city.katsushika.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-sumida.ts",
+          "title": "隅田川花火大会精彩瞬间",
+          "officialWebsites": [
+            "https://www.sumidagawa-hanabi.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+          "title": "未知活动",
+          "officialWebsites": [
+            "https://www.hkc.or.jp/fireworks/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+          "title": "立川诏和纪念公园花火大会精彩瞬间",
+          "officialWebsites": [
+            "https://hanabi.tokyo-tachikawa.org/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-mikurajima.ts",
+          "title": "御藏岛花火大会夜空绽放",
+          "officialWebsites": [
+            "https://www.mikurasima.jp/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "officialSiteCoverage": 100
+    },
+    "埼玉": {
+      "expected": 6,
+      "level4Count": 6,
+      "level5Count": 6,
+      "missingFiles": [],
+      "websiteInfo": [
+        {
+          "filename": "level5-july-hanabi-iruma-base.ts",
+          "title": "入间基地花火大会精彩片段",
+          "officialWebsites": [
+            "https://www.mod.go.jp/asdf/iruma/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-koshigaya.ts",
+          "title": "越谷花火大会夜空绽放",
+          "officialWebsites": [
+            "https://www.koshigaya-sightseeing.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+          "title": "小川町七夕祭花火大会",
+          "officialWebsites": [
+            "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-saitama-owada.ts",
+          "title": "埼玉市花火大会大和田公园会场",
+          "officialWebsites": [
+            "https://visitsaitamacity.jp/events/28"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-seibu-en.ts",
+          "title": "西武园游乐园大火祭",
+          "officialWebsites": [
+            "https://www.seibu-leisure.co.jp/amusementpark/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-july-hanabi-metsza-nordic.ts",
+          "title": "梅兹塔北欧花火",
+          "officialWebsites": [
+            "https://metsa-hanno.com/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "officialSiteCoverage": 100
+    },
+    "千叶": {
+      "expected": 6,
+      "level4Count": 0,
+      "level5Count": 0,
+      "missingFiles": [],
+      "websiteInfo": [],
+      "officialSiteCoverage": 0
+    },
+    "神奈川": {
+      "expected": 3,
+      "level4Count": 0,
+      "level5Count": 0,
+      "missingFiles": [],
+      "websiteInfo": [],
+      "officialSiteCoverage": 0
+    },
+    "北关东": {
+      "expected": 4,
+      "level4Count": 0,
+      "level5Count": 4,
+      "missingFiles": [],
+      "websiteInfo": [
+        {
+          "filename": "level5-tamura-hanabi.ts",
+          "title": "玉村花火大会 四重芯菊花火",
+          "officialWebsites": [
+            "https://www.town.tamamura.lg.jp/docs/2025031800014/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-mito-hanabi.ts",
+          "title": "水戸偕楽園花火大会 大型菊花火",
+          "officialWebsites": [
+            "https://mitokoumon.com/koumon/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-moka-hanabi.ts",
+          "title": "真岡市夏祭大花火大会 超大型花火",
+          "officialWebsites": [
+            "https://www.moka-kankou.org/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-tatebayashi-hanabi.ts",
+          "title": "館林手筒花火大会 伝統手筒花火",
+          "officialWebsites": [
+            "https://www.city.tatebayashi.gunma.jp/"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "officialSiteCoverage": 100
+    },
+    "甲信越": {
+      "expected": 5,
+      "level4Count": 0,
+      "level5Count": 6,
+      "missingFiles": [],
+      "websiteInfo": [
+        {
+          "filename": "level5-gion-kashiwazaki-hanabi.ts",
+          "title": "未知活动",
+          "officialWebsites": [
+            "https://www.city.kashiwazaki.lg.jp/kashiwazakihanabi/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-fuji-kawaguchi-lake-hanabi.ts",
+          "title": "富士山河口湖山开花火大会主图",
+          "officialWebsites": [
+            "https://www.town.fujikawaguchiko.lg.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-suzaka-minna-hanabi.ts",
+          "title": "第38回须坂大家花火大会主图",
+          "officialWebsites": [
+            "https://www.city.suzaka.nagano.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-anime-classics-anisong-hanabi.ts",
+          "title": "动漫经典动画歌曲花火主图",
+          "officialWebsites": [
+            "https://animeclassics-hanabi.jp/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-sanjo-natsumatsuri-hanabi.ts",
+          "title": "三条市合并20周年记念第21回三条夏祭大花火大会主图",
+          "officialWebsites": [
+            "https://sanjo-natsumatsuri.com/"
+          ],
+          "hasOfficialSite": true
+        },
+        {
+          "filename": "level5-nojiri-lake-hanabi.ts",
+          "title": "未知活动",
+          "officialWebsites": [
+            "https://www.shinano-machi.com/event"
+          ],
+          "hasOfficialSite": true
+        }
+      ],
+      "officialSiteCoverage": 100
+    }
+  }
+}

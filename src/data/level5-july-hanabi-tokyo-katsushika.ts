@@ -3,6 +3,8 @@ import { HanabiData } from '../types/hanabi';
 export const katsushikaData: HanabiData = {
   id: 'katsushika',
   name: '第59回 葛飾納涼花火大会',
+  japaneseName: '第48回葛飾納涼花火大会',
+
   englishName: 'Katsushika Fireworks Festival',
   year: 2025,
   date: '2025年7月22日(火)',
@@ -30,7 +32,7 @@ export const katsushikaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川两岸',
         visitors: '91万人',
         link: '/hanabi/detail/sumida'
@@ -38,7 +40,7 @@ export const katsushikaData: HanabiData = {
       {
         id: 'edogawa',
         name: '江戸川花火大会',
-        date: '8月2日',
+        date: '2025年7月2日',
         location: '江戸川河川敷',
         visitors: '14万人',
         link: '/hanabi/detail/edogawa'
@@ -46,7 +48,7 @@ export const katsushikaData: HanabiData = {
       {
         id: 'tachikawa',
         name: '立川昭和纪念公园花火',
-        date: '7月12日',
+        date: '2025年7月12日',
         location: '昭和纪念公园',
         visitors: '25万人',
         link: '/hanabi/detail/tachikawa'
@@ -56,7 +58,7 @@ export const katsushikaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川两岸',
         visitors: '91万人',
         link: '/hanabi/detail/sumida'
@@ -64,7 +66,7 @@ export const katsushikaData: HanabiData = {
       {
         id: 'tachikawa',
         name: '立川昭和纪念公园花火',
-        date: '7月12日',
+        date: '2025年7月12日',
         location: '昭和纪念公园',
         visitors: '25万人',
         link: '/hanabi/detail/tachikawa'

@@ -1,0 +1,460 @@
+{
+  "summary": {
+    "totalFiles": 71,
+    "violations": 71,
+    "compliant": 0,
+    "complianceRate": "0.0"
+  },
+  "violations": [
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-anime-classics-anisong-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-akishima-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-asaka-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-edogawa-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-hanabi-tokyo-akishima.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-hanabi-tokyo-edogawa.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-hanabi-tokyo-kozushima.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-hanabi-tokyo-okutama.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-higashimatsuyama-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-ina-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-itabashi-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-iwatsuki-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-jingu-gaien-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-kozushima-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-kumagaya-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-okutama-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-omigawa-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-saitama-omagi-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-august-todabashi-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-fuji-kawaguchi-lake-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-gion-kashiwazaki-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-chiba.ts",
+      "error": "数据解析失败: Expected ',' or ']' after array element in JSON at position 580 (line 22 column 6)",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-futtsu.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-kamogawa.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-marines.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-motherfarm.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-oamishirasato.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-sanmu.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-chiba-shirahama.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-futtsu.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-hachioji.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-iruma-base.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-kamakura.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-kamogawa.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-kanagawa-kamakura.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-kanagawa-nightflowers.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-kanagawa-seaparadise.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-katsushika-noryo.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-koshigaya.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-marines.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-metsza-nordic.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-mikurajima.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-motherfarm.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-oamishirasato.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-ogawa-tanabata.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-saitama-owada.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-seaparadise.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-seibu-en.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-shirahama-ama.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tachikawa-showa.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-chofu.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-edogawa.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-hachioji.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-itabashi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-jingu.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-katsushika.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-keibajo.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-racecourse.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-setagaya.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-sumida.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-tokyo-tachikawa.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-hanabi-yokohama-night.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-kanagawa.ts",
+      "error": "数据解析失败: Expected ',' or ']' after array element in JSON at position 585 (line 22 column 6)",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-july-koshinetsu.ts",
+      "error": "数据解析失败: Expected ',' or ']' after array element in JSON at position 510 (line 22 column 6)",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-mito-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-moka-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-nojiri-lake-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-sanjo-natsumatsuri-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-suzaka-minna-hanabi.ts",
+      "error": "数据解析失败: 无法从文件中提取数据",
+      "severity": "CRITICAL"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tamura-hanabi.ts",
+      "error": "数据约束违规",
+      "details": [
+        {
+          "path": "#/required",
+          "message": "must have required property 'id'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        },
+        {
+          "path": "#/required",
+          "message": "must have required property 'name'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        },
+        {
+          "path": "#/required",
+          "message": "must have required property 'japaneseName'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        },
+        {
+          "path": "#/required",
+          "message": "must have required property 'officialSource'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        }
+      ],
+      "severity": "CRITICAL",
+      "recommendation": "必须添加officialSource字段并提供Walker Plus官方验证"
+    },
+    {
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tatebayashi-hanabi.ts",
+      "error": "数据约束违规",
+      "details": [
+        {
+          "path": "#/required",
+          "message": "must have required property 'id'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        },
+        {
+          "path": "#/required",
+          "message": "must have required property 'name'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        },
+        {
+          "path": "#/required",
+          "message": "must have required property 'japaneseName'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        },
+        {
+          "path": "#/required",
+          "message": "must have required property 'officialSource'",
+          "value": {
+            "prefecture": "群馬県",
+            "region": "北关东",
+            "regionPath": "/july/hanabi/kitakanto",
+            "month": "七月",
+            "monthPath": "/july/hanabi"
+          }
+        }
+      ],
+      "severity": "CRITICAL",
+      "recommendation": "必须添加officialSource字段并提供Walker Plus官方验证"
+    }
+  ],
+  "timestamp": "2025-06-07T05:23:57.973Z"
+}

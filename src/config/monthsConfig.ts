@@ -451,44 +451,23 @@ export const monthsConfig: Record<number, MonthConfig> = {
     },
     activities: [
       {
-        id: 'hanabi',
-        name: '花火大会',
-        description: '秋夜花火盛典',
-        icon: '🎆',
-        color: 'from-rose-100 to-white'
-      },
-      {
         id: 'autumn-leaves',
         name: '红叶观赏',
         description: '御岳山等赏枫名所',
         icon: '🍁',
-        color: 'from-white to-blue-100'
-      },
-      {
-        id: 'festivals',
-        name: '祭典活动',
-        description: '寺庙祭典、文化祭',
-        icon: '🎪',
-        color: 'from-blue-100 to-blue-200'
-      },
-      {
-        id: 'film-festival',
-        name: '东京国际影展',
-        description: '电影迷的盛宴',
-        icon: '🎬',
         color: 'from-rose-100 to-white'
       },
       {
-        id: 'halloween',
-        name: '万圣节活动',
-        description: '池袋Cosplay、三丽鸥彩虹乐园',
-        icon: '🎃',
+        id: 'traditional-festivals',
+        name: '传统祭典',
+        description: '寺庙祭典、文化祭、万圣节庆典',
+        icon: '🏮',
         color: 'from-white to-blue-100'
       },
       {
-        id: 'art-culture',
+        id: 'arts-culture',
         name: '艺术文化',
-        description: '美术展、书展、文化活动',
+        description: '美术活动、影展及书展',
         icon: '🎨',
         color: 'from-blue-100 to-blue-200'
       }

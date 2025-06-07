@@ -1,0 +1,105 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nightSky" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1a1a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a20;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="bigFirework" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#ff4757;stop-opacity:0.9" />
+      <stop offset="40%" style="stop-color:#ff6348;stop-opacity:0.7" />
+      <stop offset="70%" style="stop-color:#1dd1a1;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#3742fa;stop-opacity:0.3" />
+    </radialGradient>
+    <radialGradient id="middleFirework" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6348;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ffd700;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#a55eea;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#26de81;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 夜空背景 -->
+  <rect width="100%" height="100%" fill="url(#nightSky)"/>
+  
+  <!-- 星星 -->
+  <circle cx="80" cy="60" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="180" cy="100" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="320" cy="80" r="1" fill="#ffffff" opacity="0.9"/>
+  <circle cx="580" cy="90" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="700" cy="50" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="650" cy="130" r="1" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- 主花火 - 大型菊花火 -->
+  <g transform="translate(400, 180)">
+    <circle r="120" fill="url(#bigFirework)" opacity="0.9"/>
+    <!-- 多重射线模拟菊花火效果 -->
+    <g opacity="0.9">
+      <line x1="0" y1="0" x2="0" y2="-140" stroke="#ffd700" stroke-width="4"/>
+      <line x1="0" y1="0" x2="99" y2="-99" stroke="#ff4757" stroke-width="3.5"/>
+      <line x1="0" y1="0" x2="140" y2="0" stroke="#ff6348" stroke-width="4"/>
+      <line x1="0" y1="0" x2="99" y2="99" stroke="#1dd1a1" stroke-width="3.5"/>
+      <line x1="0" y1="0" x2="0" y2="140" stroke="#3742fa" stroke-width="4"/>
+      <line x1="0" y1="0" x2="-99" y2="99" stroke="#ffd700" stroke-width="3.5"/>
+      <line x1="0" y1="0" x2="-140" y2="0" stroke="#ff4757" stroke-width="4"/>
+      <line x1="0" y1="0" x2="-99" y2="-99" stroke="#ff6348" stroke-width="3.5"/>
+    </g>
+    <!-- 中层射线 -->
+    <g opacity="0.8">
+      <line x1="0" y1="0" x2="35" y2="-121" stroke="#ff4757" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="121" y2="-35" stroke="#1dd1a1" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="121" y2="35" stroke="#3742fa" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="35" y2="121" stroke="#ffd700" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="-35" y2="121" stroke="#ff6348" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="-121" y2="35" stroke="#ff4757" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="-121" y2="-35" stroke="#1dd1a1" stroke-width="2.5"/>
+      <line x1="0" y1="0" x2="-35" y2="-121" stroke="#3742fa" stroke-width="2.5"/>
+    </g>
+    <!-- 中心光点 -->
+    <circle r="12" fill="#ffffff" opacity="0.95"/>
+  </g>
+  
+  <!-- 副花火 - 左侧 -->
+  <g transform="translate(180, 400)">
+    <circle r="70" fill="url(#middleFirework)" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="-85" stroke="#ff6348" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="60" y2="-60" stroke="#ffd700" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="85" y2="0" stroke="#a55eea" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="60" y2="60" stroke="#26de81" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="0" y2="85" stroke="#ff6348" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-60" y2="60" stroke="#ffd700" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-85" y2="0" stroke="#a55eea" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-60" y2="-60" stroke="#26de81" stroke-width="2.5" opacity="0.7"/>
+    <circle r="7" fill="#ffffff" opacity="0.9"/>
+  </g>
+  
+  <!-- 副花火 - 右侧 -->
+  <g transform="translate(620, 450)">
+    <circle r="60" fill="url(#bigFirework)" opacity="0.7"/>
+    <line x1="0" y1="0" x2="0" y2="-75" stroke="#3742fa" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="53" y2="-53" stroke="#1dd1a1" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="75" y2="0" stroke="#ffd700" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="53" y2="53" stroke="#ff4757" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="75" stroke="#ff6348" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-53" y2="53" stroke="#3742fa" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="-75" y2="0" stroke="#1dd1a1" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-53" y2="-53" stroke="#ffd700" stroke-width="2" opacity="0.6"/>
+    <circle r="6" fill="#ffffff" opacity="0.8"/>
+  </g>
+  
+  <!-- 小花火散点 -->
+  <circle cx="300" cy="550" r="3" fill="#ff4757" opacity="0.6"/>
+  <circle cx="500" cy="580" r="2.5" fill="#1dd1a1" opacity="0.5"/>
+  <circle cx="120" cy="600" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="680" cy="620" r="3" fill="#a55eea" opacity="0.5"/>
+  
+  <!-- 湖面倒影效果 -->
+  <ellipse cx="400" cy="700" rx="200" ry="20" fill="#1a1a3e" opacity="0.4"/>
+  <ellipse cx="180" cy="720" rx="80" ry="8" fill="#ff6348" opacity="0.3"/>
+  <ellipse cx="620" cy="730" rx="70" ry="7" fill="#3742fa" opacity="0.3"/>
+  
+  <!-- 文字标识 -->
+  <text x="400" y="770" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="bold" opacity="0.9">
+    水戸偕楽園花火大会 大型菊花火
+  </text>
+</svg> 

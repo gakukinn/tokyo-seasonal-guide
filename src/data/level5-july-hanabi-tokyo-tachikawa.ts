@@ -2,7 +2,9 @@ import { HanabiData } from '../types/hanabi';
 
 export const tachikawaData: HanabiData = {
   id: 'tachikawa',
-  name: '立川祭国营昭和纪念公园花火大会',
+  name: '立川昭和纪念公园花火大会',
+  japaneseName: '第67回 立川まつり国営昭和記念公園花火大会',
+
   englishName: 'Tachikawa Matsuri Showa Kinen Park Fireworks Festival',
   year: 2025,
   date: '2025年7月26日(土)',
@@ -30,7 +32,7 @@ export const tachikawaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川两岸',
         visitors: '91万人',
         link: '/july/hanabi/tokyo/sumida'
@@ -38,7 +40,7 @@ export const tachikawaData: HanabiData = {
       {
         id: 'katsushika',
         name: '葛飾納涼花火大会',
-        date: '7月22日',
+        date: '2025年7月22日',
         location: '葛飾柴又',
         visitors: '77万人',
         link: '/july/hanabi/tokyo/katsushika'
@@ -46,7 +48,7 @@ export const tachikawaData: HanabiData = {
       {
         id: 'hachioji',
         name: '八王子花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '八王子市',
         visitors: '9万人',
         link: '/july/hanabi/tokyo/hachioji'
@@ -56,7 +58,7 @@ export const tachikawaData: HanabiData = {
       {
         id: 'katsushika',
         name: '葛飾納涼花火大会',
-        date: '7月22日',
+        date: '2025年7月22日',
         location: '葛飾柴又',
         visitors: '77万人',
         link: '/july/hanabi/tokyo/katsushika'
@@ -64,7 +66,7 @@ export const tachikawaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川两岸',
         visitors: '91万人',
         link: '/july/hanabi/tokyo/sumida'
@@ -190,6 +192,10 @@ export const tachikawaData: HanabiData = {
   },
 
   weatherInfo: {
+    month: '7月',
+    temperature: '平均最高温度30℃，最低温度23℃',
+    humidity: '相对湿度65-75%',
+    rainfall: '7月平均降雨量153mm',
     recommendation: '建议出发前确认最新天气预报',
     rainPolicy: '少雨决行，荒天中止（无延期）',
     note: '建议携带雨具以备不时之需'

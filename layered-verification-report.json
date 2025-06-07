@@ -1,0 +1,203 @@
+{
+  "timestamp": "2025-06-07T05:34:01.223Z",
+  "summary": {
+    "level5": {
+      "total": 71,
+      "verified": 69
+    },
+    "level4": {
+      "total": 18,
+      "verified": 10
+    },
+    "violations": [
+      {
+        "level": 5,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tamura-hanabi.ts",
+        "type": "MISSING_OFFICIAL_SITE",
+        "issues": [
+          "缺少公式サイト链接"
+        ]
+      },
+      {
+        "level": 5,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tatebayashi-hanabi.ts",
+        "type": "MISSING_OFFICIAL_SITE",
+        "issues": [
+          "缺少公式サイト链接"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-chiba-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-kanagawa-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-koshinetsu-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-tokyo-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-chiba-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-kanagawa-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-kitakanto-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      },
+      {
+        "level": 4,
+        "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-koshinetsu-hanabi.ts",
+        "type": "NO_CORRESPONDING_LEVEL5",
+        "issues": [
+          "无法找到对应的五层详细页面"
+        ]
+      }
+    ]
+  },
+  "verificationChain": [
+    [
+      "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tamura-hanabi.ts",
+      {
+        "filePath": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tamura-hanabi.ts",
+        "hasOfficialSite": false,
+        "officialSiteUrl": null,
+        "isVerified": false,
+        "issues": [
+          "缺少公式サイト链接"
+        ]
+      }
+    ],
+    [
+      "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tatebayashi-hanabi.ts",
+      {
+        "filePath": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tatebayashi-hanabi.ts",
+        "hasOfficialSite": false,
+        "officialSiteUrl": null,
+        "isVerified": false,
+        "issues": [
+          "缺少公式サイト链接"
+        ]
+      }
+    ]
+  ],
+  "violations": [
+    {
+      "level": 5,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tamura-hanabi.ts",
+      "type": "MISSING_OFFICIAL_SITE",
+      "issues": [
+        "缺少公式サイト链接"
+      ]
+    },
+    {
+      "level": 5,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level5-tatebayashi-hanabi.ts",
+      "type": "MISSING_OFFICIAL_SITE",
+      "issues": [
+        "缺少公式サイト链接"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-chiba-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-kanagawa-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-koshinetsu-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-august-tokyo-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-chiba-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-kanagawa-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-kitakanto-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    },
+    {
+      "level": 4,
+      "file": "C:\\Users\\GAKU\\Desktop\\hanabi-guide\\src\\data\\level4-september-koshinetsu-hanabi.ts",
+      "type": "NO_CORRESPONDING_LEVEL5",
+      "issues": [
+        "无法找到对应的五层详细页面"
+      ]
+    }
+  ]
+}

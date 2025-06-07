@@ -30,7 +30,7 @@ export const okutamaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年8月26日',
         location: '隅田川河川敷',
         visitors: '91万人',
         link: '/hanabi/detail/sumida'
@@ -38,7 +38,7 @@ export const okutamaData: HanabiData = {
       {
         id: 'tachikawa',
         name: '立川昭和纪念公园花火',
-        date: '7月26日',
+        date: '2025年8月26日',
         location: '昭和纪念公园',
         visitors: '72万人',
         link: '/hanabi/detail/tachikawa'
@@ -48,7 +48,7 @@ export const okutamaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年8月26日',
         location: '隅田川河川敷',
         visitors: '91万人',
         link: '/hanabi/detail/sumida'
@@ -161,4 +161,5 @@ export const okutamaData: HanabiData = {
     atmosphere: '自然与花火的和谐融合',
     collaboration: '与同日举办的祭祀活动联动'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 

@@ -73,7 +73,7 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">{monthConfig.chinese}精彩活动分类</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {monthConfig.activities.map((activity) => (
+              {monthConfig.activities.slice(0, 3).map((activity) => (
                 <Link
                   key={activity.id}
                   href={`/${getMonthPath(monthConfig.id)}/${activity.id}`}
@@ -149,23 +149,28 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-10">快速导航</h3>
             <div className="flex flex-wrap justify-center gap-8">
+              {/* 上一个月活动 */}
               <Link
-                href={`/${getMonthPath(navigation.next.id)}`}
+                href={`/${getMonthPath(navigation.prev.id)}`}
                 className="bg-white/80 border-2 border-blue-300/60 text-gray-700 font-semibold px-12 py-5 rounded-2xl hover:bg-white hover:border-blue-400/80 hover:text-gray-800 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-lg backdrop-blur-sm hover:shadow-2xl"
               >
-                {navigation.next.name}活动 →
+                ← {navigation.prev.name}活动
               </Link>
-              <Link
-                href={`/${getMonthPath(monthConfig.id)}/${monthConfig.activities[0].id}`}
-                className="bg-gradient-to-r from-rose-300/90 to-blue-300/90 text-white font-semibold px-12 py-5 rounded-2xl hover:from-rose-400 hover:to-blue-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-xl backdrop-blur-sm hover:shadow-2xl"
-              >
-                {monthConfig.activities[0].icon} {monthConfig.chinese}{monthConfig.activities[0].name} →
-              </Link>
+              
+              {/* 返回首页 */}
               <Link
                 href="/"
-                className="bg-white/80 border-2 border-rose-300/60 text-gray-700 font-semibold px-12 py-5 rounded-2xl hover:bg-white hover:border-rose-400/80 hover:text-gray-800 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-lg backdrop-blur-sm hover:shadow-2xl"
+                className="bg-gradient-to-r from-blue-300/90 to-purple-300/90 text-white font-semibold px-12 py-5 rounded-2xl hover:from-blue-400 hover:to-purple-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-xl backdrop-blur-sm hover:shadow-2xl"
               >
-                ← 返回首页
+                返回首页
+              </Link>
+              
+              {/* 下一个月活动 */}
+              <Link
+                href={`/${getMonthPath(navigation.next.id)}`}
+                className="bg-gradient-to-r from-pink-300/90 to-blue-300/90 text-white font-semibold px-12 py-5 rounded-2xl hover:from-pink-400 hover:to-blue-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-xl backdrop-blur-sm hover:shadow-2xl"
+              >
+                {navigation.next.name}活动 →
               </Link>
             </div>
             

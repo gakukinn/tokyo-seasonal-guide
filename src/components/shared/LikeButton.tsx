@@ -6,7 +6,7 @@ import { REGIONAL_CONFIG } from '@/config/regional-template';
 interface LikeButtonProps {
   eventId: string;
   initialLikes?: number;
-  onLike?: (eventId: string, newCount: number) => void;
+  onLike?: (eventId: string) => void;
   className?: string;
   size?: 'sm' | 'md' | 'lg';
 }
@@ -21,33 +21,17 @@ export default function LikeButton({
   const [likes, setLikes] = useState(initialLikes);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // 从localStorage读取点赞数据
+  // 使用传入的初始值，不从localStorage读取（因为父组件已经管理了）
   useEffect(() => {
-    try {
-      const stored = localStorage.getItem(`likes_${eventId}`);
-      if (stored) {
-        setLikes(parseInt(stored, 10));
-      }
-    } catch (error) {
-      console.warn('Failed to load likes from localStorage:', error);
-    }
-  }, [eventId]);
+    setLikes(initialLikes);
+  }, [initialLikes]);
 
   // 处理点赞
   const handleLike = () => {
-    const newCount = likes + 1;
-    setLikes(newCount);
     setIsAnimating(true);
 
-    // 保存到localStorage
-    try {
-      localStorage.setItem(`likes_${eventId}`, newCount.toString());
-    } catch (error) {
-      console.warn('Failed to save likes to localStorage:', error);
-    }
-
     // 回调通知父组件
-    onLike?.(eventId, newCount);
+    onLike?.(eventId);
 
     // 动画结束后重置状态
     setTimeout(() => setIsAnimating(false), 200);

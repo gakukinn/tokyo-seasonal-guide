@@ -21,6 +21,7 @@ interface MediaDisplayProps {
 
 export default function MediaDisplay({ media, themeColors, eventName }: MediaDisplayProps) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   if (!media || media.length === 0) {
     // 如果没有媒体内容，显示默认占位符
@@ -96,11 +97,25 @@ export default function MediaDisplay({ media, themeColors, eventName }: MediaDis
             </div>
           ) : (
             <div className="relative w-full h-0 pb-[100%]"> {/* 1:1 比例 */}
+              {imageError ? (
+                // 图片加载失败时显示占位符
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100">
+                  <div className="text-6xl mb-4">🎆</div>
+                  <p className="text-gray-600 text-sm text-center px-4">
+                    {currentMedia.title}
+                  </p>
+                  <p className="text-gray-400 text-xs mt-2">
+                    图片即将上传
+                  </p>
+                </div>
+              ) : (
               <img
                 src={currentMedia.url}
                 alt={currentMedia.title}
                 className="absolute inset-0 w-full h-full object-cover"
+                  onError={() => setImageError(true)}
               />
+              )}
             </div>
           )}
         </div>

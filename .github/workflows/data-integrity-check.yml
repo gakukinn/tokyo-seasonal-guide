@@ -1,0 +1,62 @@
+name: 数据完整性强制验证
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'src/**/*.ts'
+      - 'src/**/*.js'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src/**/*.ts'
+      - 'src/**/*.js'
+
+jobs:
+  data-integrity-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 安装依赖
+      run: |
+        npm ci
+        npm install ajv ajv-formats
+        
+    - name: 运行数据完整性验证
+      run: |
+        echo "🚨 开始强制数据完整性验证..."
+        node scripts/enforce-data-integrity.js
+        
+    - name: 上传验证报告
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: data-integrity-report
+        path: data-integrity-report.json
+        
+    - name: 验证失败处理
+      if: failure()
+      run: |
+        echo "❌ 数据完整性验证失败！"
+        echo "📋 未通过验证的文件包含以下问题："
+        echo "  - 缺少 officialSource 字段"
+        echo "  - 缺少 Walker Plus 官方链接验证"
+        echo "  - 缺少用户确认信息"
+        echo ""
+        echo "🔧 修复方法："
+        echo "1. 为每个花火数据文件添加 officialSource 验证字段"
+        echo "2. 向用户请求 Walker Plus 官方链接"
+        echo "3. 记录用户验证和确认信息"
+        echo "4. 重新提交代码"
+        echo ""
+        echo "⚠️  重要提醒：绝不允许提交未经官方验证的花火数据！"
+        exit 1 

@@ -1,0 +1,716 @@
+{
+  "timestamp": "2025-06-07T08:39:20.063Z",
+  "stats": {
+    "totalLevel5Files": 74,
+    "hasOfficialWebsite": 68,
+    "noOfficialWebsite": 0,
+    "onlyWalkerPlus": 6
+  },
+  "results": [
+    {
+      "filename": "level5-anime-classics-anisong-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://animeclassics-hanabi.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0419e549588/"
+      ]
+    },
+    {
+      "filename": "level5-august-akishima-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://akishima-kujiramatsuri.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-asaka-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.sainatsusai.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-ashikaga-hanabi.ts",
+      "hasNonWalkerPlusWebsite": false,
+      "onlyWalkerPlus": true,
+      "websites": [],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0309e00831/"
+      ]
+    },
+    {
+      "filename": "level5-august-edogawa-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.edogawa.tokyo.jp/hanabi/index.html"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-hanabi-choshi-minato.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1528515862127-84d8eee71ca6?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.choshi.chiba.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e00411/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-ichikawa.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1548142813-c9e7e4e89a1e?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.ichikawa.lg.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e01102/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-kisarazu.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.kisarazu.lg.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e00916/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-makuhari-beach.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1553949345-eb786bb3f7ba?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.chiba.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e00869/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-matsudo.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.matsudo.chiba.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e00979/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-narashino.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.mod.go.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e07621/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-teganuma.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.abiko.chiba.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0312e00930/"
+      ]
+    },
+    {
+      "filename": "level5-august-hanabi-tokyo-akishima.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.akishima.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-hanabi-tokyo-edogawa.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.edogawa.tokyo.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-hanabi-tokyo-kozushima.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.vill.kouzushima.tokyo.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-hanabi-tokyo-okutama.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.town.okutama.tokyo.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-higashimatsuyama-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.higashimatsuyama-kanko.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-hitachinaka-hanabi.ts",
+      "hasNonWalkerPlusWebsite": false,
+      "onlyWalkerPlus": true,
+      "websites": [],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0308e00709/"
+      ]
+    },
+    {
+      "filename": "level5-august-ina-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://inakanko.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-itabashi-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.edogawa.tokyo.jp/hanabi/index.html"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-iwatsuki-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://visitsaitamacity.jp/events/30"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-jingu-gaien-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.jinguhanabi.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-koga-hanabi.ts",
+      "hasNonWalkerPlusWebsite": false,
+      "onlyWalkerPlus": true,
+      "websites": [],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0308e00705/"
+      ]
+    },
+    {
+      "filename": "level5-august-kozushima-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://kozushima.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-kumagaya-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.kumagayahanabi.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-maebashi-hanabi.ts",
+      "hasNonWalkerPlusWebsite": false,
+      "onlyWalkerPlus": true,
+      "websites": [],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0310e00707/"
+      ]
+    },
+    {
+      "filename": "level5-august-okutama-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.town.okutama.tokyo.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-omigawa-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.katori.lg.jp/sightseeing/gyoji/natsu/hanabi.html"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-saitama-omagi-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.saitama.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-takasaki-hanabi.ts",
+      "hasNonWalkerPlusWebsite": false,
+      "onlyWalkerPlus": true,
+      "websites": [],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0310e00708/"
+      ]
+    },
+    {
+      "filename": "level5-august-todabashi-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.todabashi-hanabi.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-august-toride-hanabi.ts",
+      "hasNonWalkerPlusWebsite": false,
+      "onlyWalkerPlus": true,
+      "websites": [],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0308e00706/"
+      ]
+    },
+    {
+      "filename": "level5-fuji-kawaguchi-lake-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.town.fujikawaguchiko.lg.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0419e00245/"
+      ]
+    },
+    {
+      "filename": "level5-gion-kashiwazaki-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.kashiwazaki.lg.jp/kashiwazakihanabi/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-futtsu.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.futtsu.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.kamogawa-kanko.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-marines.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.marines.co.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.motherfarm.co.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.oamishirasato.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-sanmu.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.sammu.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-chiba-shirahama.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.mboso-etoko.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-futtsu.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://futtsu-hanabi.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-iruma-base.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.mod.go.jp/asdf/iruma/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-kamakura.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.trip-kamakura.com/site/kamakura-hanabi/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-kamogawa.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://kamotabi.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.kamakura-info.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.yokohama.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "http://www.seaparadise.co.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-katsushika-noryo.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1533671978801-8959e8ebc9e9?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.city.katsushika.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-koshigaya.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.koshigaya-sightseeing.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-marines.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.marines.co.jp/event/fireworks/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-metsza-nordic.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://metsa-hanno.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-mikurajima.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop&crop=center&auto=format&q=80",
+        "https://www.mikurasima.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-motherfarm.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.motherfarm.co.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-oamishirasato.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.oamishirasato.lg.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-saitama-owada.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://visitsaitamacity.jp/events/28"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-seaparadise.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.seaparadise.co.jp/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-seibu-en.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.seibu-leisure.co.jp/amusementpark/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-shirahama-ama.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://amamatsuri.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-tachikawa-showa.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://hanabi.tokyo-tachikawa.org/",
+        "https://images.unsplash.com/photo-1595364009305-e2b36ad9c0a4?w=800&h=800&fit=crop&crop=center&auto=format&q=80"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.hkc.or.jp/fireworks/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://hanabitokyo.com/",
+        "https://www.youtube.com/embed/sample-keibajo-video"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-tokyo-sumida.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.sumidagawa-hanabi.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://hanabi.tokyo-tachikawa.org/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-july-hanabi-yokohama-night.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.yokohama-sparkling-twilight.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-mito-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://mitokoumon.com/koumon/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0308e00896/"
+      ]
+    },
+    {
+      "filename": "level5-moka-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.moka-kankou.org/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0309e00887/"
+      ]
+    },
+    {
+      "filename": "level5-nojiri-lake-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.shinano-machi.com/event"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-sanjo-natsumatsuri-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://sanjo-natsumatsuri.com/"
+      ],
+      "walkerPlusLinks": []
+    },
+    {
+      "filename": "level5-suzaka-minna-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.suzaka.nagano.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0420e467527/"
+      ]
+    },
+    {
+      "filename": "level5-tamura-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.town.tamamura.lg.jp/docs/2025031800014/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0310e00986/"
+      ]
+    },
+    {
+      "filename": "level5-tatebayashi-hanabi.ts",
+      "hasNonWalkerPlusWebsite": true,
+      "onlyWalkerPlus": false,
+      "websites": [
+        "https://www.city.tatebayashi.gunma.jp/"
+      ],
+      "walkerPlusLinks": [
+        "https://hanabi.walkerplus.com/detail/ar0310e305052/"
+      ]
+    }
+  ]
+}

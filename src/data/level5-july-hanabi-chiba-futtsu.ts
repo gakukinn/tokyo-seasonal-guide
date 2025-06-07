@@ -3,6 +3,8 @@ import { HanabiData } from '../types/hanabi';
 export const futtsuData: HanabiData = {
   id: 'futtsu',
   name: '「東京湾口道路建設促進」第10回 富津市民花火大会',
+  japaneseName: '「東京湾口道路建設促進」第10回 富津市民花火大会',
+
   englishName: 'Futtsu Citizens Fireworks Festival',
   year: 2025,
   date: '2025年7月26日(土)',
@@ -38,7 +40,7 @@ export const futtsuData: HanabiData = {
       {
         id: 'kamogawa',
         name: '鸭川市民花火大会',
-        date: '7月29日',
+        date: '2025年7月29日',
         location: '前原横渚海岸',
         visitors: '4万人',
         link: '/july/hanabi/chiba/kamogawa'
@@ -46,7 +48,7 @@ export const futtsuData: HanabiData = {
       {
         id: 'sanmu',
         name: '山武市サマーカーニバル',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '蓮沼海浜公園',
         visitors: '1万9000人',
         link: '/july/hanabi/chiba/sanmu'
@@ -56,7 +58,7 @@ export const futtsuData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川',
         visitors: '91万人',
         link: '/july/hanabi/tokyo/sumida'
@@ -64,7 +66,7 @@ export const futtsuData: HanabiData = {
       {
         id: 'edogawa',
         name: '江戸川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '江戸川河川敷',
         visitors: '90万人',
         link: '/july/hanabi/tokyo/edogawa'
@@ -72,7 +74,7 @@ export const futtsuData: HanabiData = {
       {
         id: 'oamishirasato',
         name: '大网白里花火',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '白里海水浴场',
         visitors: '2万8000人',
         link: '/july/hanabi/chiba/oamishirasato'

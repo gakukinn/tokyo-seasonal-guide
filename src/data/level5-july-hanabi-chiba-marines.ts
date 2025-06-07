@@ -3,6 +3,8 @@ import { HanabiData } from '../types/hanabi';
 export const marinesData: HanabiData = {
   id: 'marines',
   name: 'MARINES HANABI (マリーンズ花火)',
+  japaneseName: 'MARINES HANABI',
+
   englishName: 'Marines Hanabi',
   year: 2025,
   date: '2025年7月11日(金)～8月11日(祝)の特定日',
@@ -30,7 +32,7 @@ export const marinesData: HanabiData = {
       {
         id: 'futtsu',
         name: '富津市民花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '富津海水浴场',
         visitors: '5万人',
         link: '/july/hanabi/chiba/futtsu'
@@ -38,7 +40,7 @@ export const marinesData: HanabiData = {
       {
         id: 'oamishirasato',
         name: '大网白里花火',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '白里海水浴场',
         visitors: '2万8000人',
         link: '/july/hanabi/chiba/oamishirasato'
@@ -46,7 +48,7 @@ export const marinesData: HanabiData = {
       {
         id: 'kamogawa',
         name: '鸭川市民花火大会',
-        date: '7月29日',
+        date: '2025年7月29日',
         location: '前原横渚海岸',
         visitors: '4万人',
         link: '/july/hanabi/chiba/kamogawa'
@@ -56,7 +58,7 @@ export const marinesData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川',
         visitors: '91万人',
         link: '/july/hanabi/tokyo/sumida'
@@ -64,7 +66,7 @@ export const marinesData: HanabiData = {
       {
         id: 'edogawa',
         name: '江戸川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '江戸川河川敷',
         visitors: '90万人',
         link: '/july/hanabi/tokyo/edogawa'
@@ -208,4 +210,5 @@ export const marinesData: HanabiData = {
     rainPolicy: '野球開催に準ずる',
     note: 'スタジアム内なので天候影響限定的'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 

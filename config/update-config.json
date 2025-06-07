@@ -1,0 +1,67 @@
+{
+  "updateSettings": {
+    "enabled": true,
+    "frequency": {
+      "daily": "06:00",
+      "interval": 12,
+      "maxRetries": 3
+    },
+    "sources": {
+      "walkerPlus": {
+        "baseUrl": "https://hanabi.walkerplus.com",
+        "regions": {
+          "ar0313": "tokyo",
+          "ar0311": "saitama", 
+          "ar0312": "chiba",
+          "ar0314": "kanagawa",
+          "ar0300": "kitakanto",
+          "ar0400": "koshinetsu"
+        },
+        "rateLimit": {
+          "requests": 1,
+          "period": 2000,
+          "concurrent": 1
+        }
+      }
+    },
+    "validation": {
+      "required": ["name", "date"],
+      "minLength": {
+        "name": 3,
+        "location": 2
+      },
+      "patterns": {
+        "date": "^\\d{1,2}月\\d{1,2}日",
+        "visitors": "約?\\d+万?人?"
+      }
+    },
+    "output": {
+      "format": "typescript",
+      "backup": true,
+      "compress": false
+    },
+    "notification": {
+      "enabled": false,
+      "webhook": "",
+      "email": ""
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/update.log",
+    "maxSize": "10MB",
+    "retention": "30d"
+  },
+  "security": {
+    "userAgent": "Mozilla/5.0 (compatible; HanabiGuide/1.0)",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "ja,en-US;q=0.7,en;q=0.3",
+      "Cache-Control": "no-cache"
+    },
+    "proxy": {
+      "enabled": false,
+      "url": ""
+    }
+  }
+} 

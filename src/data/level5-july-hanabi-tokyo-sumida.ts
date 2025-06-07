@@ -1,8 +1,19 @@
+/**
+ * 第五层数据文件 - 隅田川花火大会详情数据
+ * @layer 五层 (Detail Data)
+ * @month 7月
+ * @region 东京
+ * @event 隅田川花火大会
+ * @type 花火详情数据文件
+ * @contains 完整的花火大会信息：基本信息、会场、交通、观赏攻略、历史背景等
+ * @usage 供 /july/hanabi/tokyo/sumida 页面使用
+ */
 import { HanabiData } from '../types/hanabi';
 
 export const sumidaData: HanabiData = {
   id: 'sumida',
   name: '第48回 隅田川花火大会',
+  japaneseName: '第48回 隅田川花火大会の打ち上げ数・日程など',
   englishName: 'Sumida River Fireworks Festival',
   year: 2025,
   date: '2025年7月26日(土)',
@@ -21,61 +32,61 @@ export const sumidaData: HanabiData = {
     timeTag: '7月',
     regionTag: '东京都',
     typeTag: '花火',
-    layerTag: 'Layer 4详情页'
+    layerTag: 'Layer 5详情页'
   },
 
   // 关联推荐 - 双维度轮回设计
   related: {
     regionRecommendations: [
       {
-        id: 'edogawa',
-        name: '江戸川花火大会',
-        date: '7月27日',
-        location: '江戸川河川敷',
-        visitors: '90万人',
-        link: '/hanabi/detail/edogawa'
+        id: 'tokyo-keibajo-hanabi',
+        name: '东京竞马场花火2025',
+        date: '2025年7月2日',
+        location: 'JRA东京竞马场',
+        visitors: '非公表',
+        link: '/july/hanabi/tokyo/tokyo-keibajo-hanabi'
       },
       {
-        id: 'katsushika',
-        name: '葛飾納涼花火大会',
-        date: '7月22日',
-        location: '葛飾柴又',
+        id: 'katsushika-noryo-hanabi',
+        name: '第59回葛饰纳凉花火大会',
+        date: '2025年7月22日',
+        location: '葛饰区柴又',
+        visitors: '约77万人',
+        link: '/july/hanabi/tokyo/katsushika-noryo-hanabi'
+      },
+      {
+        id: 'tachikawa-showa-kinen-hanabi',
+        name: '立川昭和纪念公园花火大会',
+        date: '2025年7月26日',
+        location: '国营昭和纪念公园',
         visitors: '32万人',
-        link: '/hanabi/detail/katsushika'
-      },
-      {
-        id: 'tachikawa',
-        name: '立川昭和纪念公园花火',
-        date: '7月12日',
-        location: '昭和纪念公园',
-        visitors: '25万人',
-        link: '/hanabi/detail/tachikawa'
+        link: '/july/hanabi/tokyo/tachikawa-showa-kinen-hanabi'
       }
     ],
     timeRecommendations: [
       {
-        id: 'edogawa',
-        name: '江戸川花火大会',
-        date: '7月27日',
-        location: '江戸川河川敷',
-        visitors: '90万人',
-        link: '/hanabi/detail/edogawa'
+        id: 'kamakura-hanabi',
+        name: '第77回镰仓花火大会',
+        date: '2025年7月18日',
+        location: '神奈川县镰仓市',
+        visitors: '约16万人',
+        link: '/july/hanabi/kanagawa/kamakura'
       },
       {
-        id: 'katsushika',
-        name: '葛飾納涼花火大会',
-        date: '7月22日',
-        location: '葛飾柴又',
-        visitors: '32万人',
-        link: '/hanabi/detail/katsushika'
+        id: 'futtsu-hanabi',
+        name: '富津市民花火大会',
+        date: '2025年7月26日',
+        location: '千叶县富津市',
+        visitors: '约5万人',
+        link: '/july/hanabi/chiba/futtsu'
       },
       {
-        id: 'tachikawa',
-        name: '立川昭和纪念公园花火',
-        date: '7月12日',
-        location: '昭和纪念公园',
-        visitors: '25万人',
-        link: '/hanabi/detail/tachikawa'
+        id: 'mito-hanabi',
+        name: '水戸偕楽園花火大会',
+        date: "7月26日",
+        location: '茨城县水户市',
+        visitors: '约23万人',
+        link: '/july/hanabi/kitakanto/mito-hanabi'
       }
     ]
   },
@@ -84,24 +95,12 @@ export const sumidaData: HanabiData = {
     {
       name: '第一会场',
       location: '桜橋下流～言問橋上流',
-      startTime: '19:00',
-      features: [
-        '传统花火竞技大会',
-        '创意花火表演',
-        '最佳摄影角度',
-        '花火师技艺比拼'
-      ]
+      startTime: '19:00'
     },
     {
       name: '第二会场', 
       location: '駒形橋下流～厩橋上流',
-      startTime: '19:30',
-      features: [
-        '创新花火设计',
-        '音乐同步表演',
-        '东京晴空塔背景',
-        '现代花火艺术'
-      ]
+      startTime: '19:30'
     }
   ],
 
@@ -230,6 +229,10 @@ export const sumidaData: HanabiData = {
   },
 
   weatherInfo: {
+    month: '7月',
+    temperature: '25-30°C',
+    humidity: '70-80%',
+    rainfall: '中等',
     recommendation: '建议出发前查看当日天气预报',
     rainPolicy: '小雨决行（恶劣天气时中止）',
     note: '夏季多雨，请携带雨具'

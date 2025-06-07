@@ -3,6 +3,8 @@ import { HanabiData } from '../types/hanabi';
 export const kamogawaData: HanabiData = {
   id: 'kamogawa',
   name: '鴨川市民花火大会',
+  japaneseName: '鴨川市民花火大会',
+
   englishName: 'Kamogawa Citizens Fireworks Festival',
   year: 2025,
   date: '2025年7月29日(火)',
@@ -38,7 +40,7 @@ export const kamogawaData: HanabiData = {
       {
         id: 'futtsu',
         name: '富津市民花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '富津海水浴场',
         visitors: '5万人',
         link: '/july/hanabi/chiba/futtsu'
@@ -46,7 +48,7 @@ export const kamogawaData: HanabiData = {
       {
         id: 'oamishirasato',
         name: '大网白里花火',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '白里海水浴场',
         visitors: '2万8000人',
         link: '/july/hanabi/chiba/oamishirasato'
@@ -56,7 +58,7 @@ export const kamogawaData: HanabiData = {
       {
         id: 'adachi',
         name: '足立の花火',
-        date: '7月19日',
+        date: '2025年7月19日',
         location: '荒川河川敷',
         visitors: '60万人',
         link: '/july/hanabi/tokyo/adachi'
@@ -64,7 +66,7 @@ export const kamogawaData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川',
         visitors: '91万人',
         link: '/july/hanabi/tokyo/sumida'
@@ -203,4 +205,5 @@ export const kamogawaData: HanabiData = {
     rainPolicy: '小雨決行、荒天時は翌日延期',
     note: '海岸のため天候変化に注意'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 

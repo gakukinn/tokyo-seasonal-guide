@@ -1,0 +1,102 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nightSky" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1a1a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a20;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="handHeldFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#ff6348;stop-opacity:0.9" />
+      <stop offset="40%" style="stop-color:#ffd700;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#87ceeb;stop-opacity:0.3" />
+    </linearGradient>
+    <radialGradient id="aerialFirework" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ff6b9d;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#c44569;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#3742fa;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 夜空背景 -->
+  <rect width="100%" height="100%" fill="url(#nightSky)"/>
+  
+  <!-- 星星 -->
+  <circle cx="90" cy="70" r="2" fill="#ffffff" opacity="0.7"/>
+  <circle cx="190" cy="110" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="330" cy="85" r="1" fill="#ffffff" opacity="0.8"/>
+  <circle cx="590" cy="95" r="2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="710" cy="60" r="1.5" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- 手筒花火 - 主要特色 -->
+  <!-- 第一支手筒花火 -->
+  <g transform="translate(300, 600)">
+    <!-- 手筒花火筒身 -->
+    <rect x="-8" y="-50" width="16" height="50" fill="#8B4513" stroke="#654321" stroke-width="1"/>
+    <!-- 火柱 -->
+    <rect x="-25" y="-300" width="50" height="250" fill="url(#handHeldFlame)" opacity="0.9"/>
+    <!-- 火花散射 -->
+    <circle cx="0" cy="-320" r="3" fill="#ffd700" opacity="0.8"/>
+    <circle cx="-15" cy="-310" r="2" fill="#ff6348" opacity="0.7"/>
+    <circle cx="18" cy="-315" r="2.5" fill="#ff4757" opacity="0.8"/>
+    <circle cx="-8" cy="-335" r="2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="12" cy="-340" r="1.5" fill="#87ceeb" opacity="0.7"/>
+  </g>
+  
+  <!-- 第二支手筒花火 -->
+  <g transform="translate(500, 620)">
+    <rect x="-8" y="-50" width="16" height="50" fill="#8B4513" stroke="#654321" stroke-width="1"/>
+    <rect x="-22" y="-280" width="44" height="230" fill="url(#handHeldFlame)" opacity="0.8"/>
+    <circle cx="0" cy="-300" r="3" fill="#ffd700" opacity="0.8"/>
+    <circle cx="-12" cy="-290" r="2" fill="#ff6348" opacity="0.7"/>
+    <circle cx="15" cy="-295" r="2.5" fill="#ff4757" opacity="0.8"/>
+    <circle cx="-6" cy="-315" r="2" fill="#ffffff" opacity="0.9"/>
+  </g>
+  
+  <!-- 空中花火 - 传统花火配合 -->
+  <g transform="translate(400, 200)">
+    <circle r="80" fill="url(#aerialFirework)" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="-95" stroke="#ffd700" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="67" y2="-67" stroke="#ff6b9d" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="95" y2="0" stroke="#c44569" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="67" y2="67" stroke="#3742fa" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="0" y2="95" stroke="#ffd700" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-67" y2="67" stroke="#ff6b9d" stroke-width="2.5" opacity="0.7"/>
+    <line x1="0" y1="0" x2="-95" y2="0" stroke="#c44569" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-67" y2="-67" stroke="#3742fa" stroke-width="2.5" opacity="0.7"/>
+    <circle r="8" fill="#ffffff" opacity="0.9"/>
+  </g>
+  
+  <!-- 小型空中花火 -->
+  <g transform="translate(650, 350)">
+    <circle r="45" fill="url(#aerialFirework)" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="-55" stroke="#ff6b9d" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="39" y2="-39" stroke="#ffd700" stroke-width="1.5" opacity="0.5"/>
+    <line x1="0" y1="0" x2="55" y2="0" stroke="#c44569" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="39" y2="39" stroke="#3742fa" stroke-width="1.5" opacity="0.5"/>
+    <circle r="5" fill="#ffffff" opacity="0.8"/>
+  </g>
+  
+  <!-- 手筒花火的火花效果 -->
+  <circle cx="280" cy="280" r="2" fill="#ffd700" opacity="0.7"/>
+  <circle cx="320" cy="270" r="1.5" fill="#ff6348" opacity="0.6"/>
+  <circle cx="480" cy="300" r="2" fill="#ff4757" opacity="0.7"/>
+  <circle cx="520" cy="290" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="310" cy="250" r="1" fill="#87ceeb" opacity="0.6"/>
+  <circle cx="490" cy="260" r="1" fill="#ffd700" opacity="0.6"/>
+  
+  <!-- 地面人影轮廓 -->
+  <ellipse cx="300" cy="630" rx="15" ry="8" fill="#333333" opacity="0.5"/>
+  <ellipse cx="500" cy="650" rx="15" ry="8" fill="#333333" opacity="0.5"/>
+  
+  <!-- 手筒花火的传统特色说明 -->
+  <text x="400" y="750" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold" opacity="0.9">
+    館林手筒花火大会 伝統手筒花火
+  </text>
+  
+  <!-- 小字说明 -->
+  <text x="400" y="775" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" opacity="0.7">
+    三河地方传承的手筒花火技艺
+  </text>
+</svg> 

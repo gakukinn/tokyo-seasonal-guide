@@ -1,0 +1,922 @@
+{
+  "checkDate": "2025-06-07T06:30:13.343Z",
+  "totalFiles": 33,
+  "withOfficialSites": 33,
+  "withoutOfficialSites": 0,
+  "regionSummary": {
+    "千叶": [
+      {
+        "filename": "level5-july-hanabi-chiba-futtsu.ts",
+        "region": "千叶",
+        "title": "富津海岸花火",
+        "websites": [
+          "https://www.city.futtsu.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.123456789!2d139.8234567890!3d35.3123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022abcdef123456%3A0x123456789abcdef!2z5a-M5rSl5rW36Kq-5rag!5e0!3m2!1szh-CN!2sjp!4v1698835200000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.kamogawa-kanko.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-marines.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.marines.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.motherfarm.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.city.oamishirasato.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-sanmu.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.city.sammu.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-shirahama.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.mboso-etoko.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-futtsu.ts",
+        "region": "千叶",
+        "title": "富津市民花火大会精彩瞬间",
+        "websites": [
+          "https://futtsu-hanabi.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6!2d139.8!3d35.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE4JzAwLjAiTiAxMznCsDQ4JzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kamogawa.ts",
+        "region": "千叶",
+        "title": "鸭川市民花火大会全景",
+        "websites": [
+          "https://kamotabi.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.2!2d140.098!3d35.112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601894b2b8abf9eb%3A0x1234567890!2z6pit5bed5biC5YmN5Y6f5qiq5rGa5rW36bqt!5e0!3m2!1sja!2sjp!4v1234567890"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-marines.ts",
+        "region": "千叶",
+        "title": "千叶罗德花火精彩瞬间",
+        "websites": [
+          "https://www.marines.co.jp/event/fireworks/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.0331!3d35.6447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2sZOZO%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0!5e0!3m2!1sja!2sjp!4v1234567890!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-motherfarm.ts",
+        "region": "千叶",
+        "title": "母亲牧场夏夜农场花火",
+        "websites": [
+          "https://www.motherfarm.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-oamishirasato.ts",
+        "region": "千叶",
+        "title": "大网白里花火大会海岸观赏",
+        "websites": [
+          "https://www.city.oamishirasato.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-shirahama-ama.ts",
+        "region": "千叶",
+        "title": "水中花火",
+        "websites": [
+          "https://amamatsuri.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.123!2d139.845678!3d34.905123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f5a1b2c3d4e%3A0x1234567890abcdef!2z55m955ub57eP5L2Q55uX!5e0!3m2!1sja!2sjp!4v1621234567890!5m2!1sja!2sjp"
+        ]
+      }
+    ],
+    "埼玉": [
+      {
+        "filename": "level5-july-hanabi-iruma-base.ts",
+        "region": "埼玉",
+        "title": "入间基地花火大会精彩片段",
+        "websites": [
+          "https://www.mod.go.jp/asdf/iruma/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.0123456789!2d139.4123456!3d35.8234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e6a1234567%3A0x1234567890abcdef!2s%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A%E5%85%A5%E9%96%93%E5%9F%BA%E5%9C%B0!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-koshigaya.ts",
+        "region": "埼玉",
+        "title": "越谷花火大会夜空绽放",
+        "websites": [
+          "https://www.koshigaya-sightseeing.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.0123456789!2d139.7123456!3d35.8834567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c3a1234567%3A0x1234567890abcdef!2s%E8%B6%8A%E8%B0%B7%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%B8%82%E6%B0%91%E4%BC%9A%E9%A4%A8!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-metsza-nordic.ts",
+        "region": "埼玉",
+        "title": "梅兹塔北欧花火",
+        "websites": [
+          "https://metsa-hanno.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.6!2d139.3336!3d35.8567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e2c7a7b8f123%3A0x789abc123def456!2z44Oh44OD44C444O844CA77yI5aKr546J44Kr5p2R77yJ!5e0!3m2!1sja!2sjp!4v1640000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+        "region": "埼玉",
+        "title": "小川町七夕祭花火大会",
+        "websites": [
+          "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.3431!3d36.0536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f0c8c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2z5bCP5bed55S65bCP5bed55S65rWe!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-saitama-owada.ts",
+        "region": "埼玉",
+        "title": "埼玉市花火大会大和田公园会场",
+        "websites": [
+          "https://visitsaitamacity.jp/events/28",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.6464!3d35.9309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c2d4d4d4d4d4%3A0x4d4d4d4d4d4d4d4d!2z5aSn5ZKM55Sw5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-seibu-en.ts",
+        "region": "埼玉",
+        "title": "西武园游乐园大火祭",
+        "websites": [
+          "https://www.seibu-leisure.co.jp/amusementpark/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.4464!3d35.7608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c2d4d4d4d4d4%3A0x4d4d4d4d4d4d4d4d!2z6KW_5q2m5ZyS44Om44OX44GI44KT44Gh!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      }
+    ],
+    "神奈川": [
+      {
+        "filename": "level5-july-hanabi-kamakura.ts",
+        "region": "神奈川",
+        "title": "镰仓花火大会水中花火",
+        "websites": [
+          "https://www.trip-kamakura.com/site/kamakura-hanabi/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.123456789!2d139.5123456789!3d35.3123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z由比滨海岸!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+        "region": "神奈川",
+        "title": "未知活动",
+        "websites": [
+          "https://www.kamakura-info.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+        "region": "神奈川",
+        "title": "未知活动",
+        "websites": [
+          "https://www.city.yokohama.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+        "region": "神奈川",
+        "title": "未知活动",
+        "websites": [
+          "http://www.seaparadise.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-seaparadise.ts",
+        "region": "神奈川",
+        "title": "八景岛花火交响曲音与光的盛宴",
+        "websites": [
+          "https://www.seaparadise.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.234567890!2d139.6345678901!3d35.3456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ceab123456%3A0x123456789abcdef1!2z5YWr5pmv5bO25rW35pal5rak6Iul!5e0!3m2!1sja!2sjp!4v1698123456790!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-yokohama-night.ts",
+        "region": "神奈川",
+        "title": "横浜夜间花火短时精彩演出",
+        "websites": [
+          "https://www.yokohama-sparkling-twilight.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.123456789!2d139.6234567890!3d35.4534567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c7b12345678%3A0x123456789abcdef0!2z5qiq5rWc5rip!5e0!3m2!1sja!2sjp!4v1698123456789!5m2!1sja!2sjp"
+        ]
+      }
+    ],
+    "东京": [
+      {
+        "filename": "level5-july-hanabi-katsushika-noryo.ts",
+        "region": "东京",
+        "title": "第59回葛饰纳凉花火大会精彩瞬间",
+        "websites": [
+          "https://www.city.katsushika.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.567890123456!2d139.8631!3d35.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c2eb3b3b3b3%3A0x1234567890abcdef!2z6JGJ6aWzIOaftOWPiOmHjeuQgOWgtA!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-mikurajima.ts",
+        "region": "东京",
+        "title": "御藏岛花火大会夜空绽放",
+        "websites": [
+          "https://www.mikurasima.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.123456789012!2d139.6043456!3d33.8695432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184c5ea3b3b3b3%3A0x1234567890abcdef!2z5b6h6JeP5bO25riv!5e0!3m2!1sja!2sjp!4v1234567890456"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tachikawa-showa.ts",
+        "region": "东京",
+        "title": "立川祭国营昭和纪念公园花火大会精彩瞬间",
+        "websites": [
+          "https://hanabi.tokyo-tachikawa.org/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.234567890123!2d139.4087!3d35.6973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0000000000%3A0x1234567890abcdef!2z5Zu96JCl5pit5ZKM6KiY5b-15YWs5ZyS!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+        "region": "东京",
+        "title": "未知活动",
+        "websites": [
+          "https://www.hkc.or.jp/fireworks/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5!2d139.3397!3d35.6581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5a-M5aOr5qOu5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1635724800000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+        "region": "东京",
+        "title": "葛饰納涼花火大会精彩瞬间",
+        "websites": [
+          "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.654321098765!2d139.84123456789012!3d35.73567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188abc123456789%3A0x1234567890abcdef!2z6JCS5aOr6aOB6Iqx54Gr5aSn5Lya!5e0!3m2!1szh-CN!2sjp!4v1698836000000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+        "region": "东京",
+        "title": "东京竞马场花火2025预告片",
+        "websites": [
+          "https://hanabitokyo.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.123456789!2d139.4812345!3d35.6656789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f123456789ab%3A0x123456789abcdef0!2z5p2x5Lqs56uL6LSs5aC0!5e0!3m2!1szh-CN!2sjp!4v1698836200000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-sumida.ts",
+        "region": "东京",
+        "title": "隅田川花火大会精彩瞬间",
+        "websites": [
+          "https://www.sumidagawa-hanabi.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.1234567890123!2d139.80123456789012!3d35.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0abc12345%3A0x1234567890abcdef!2z6ZqF55Sw5bed6Iqx54Gr5aSn5Lya!5e0!3m2!1szh-CN!2sjp!4v1698835200000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+        "region": "东京",
+        "title": "立川诏和纪念公园花火大会精彩瞬间",
+        "websites": [
+          "https://hanabi.tokyo-tachikawa.org/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.012345678901!2d139.41234567890123!3d35.70567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e9876543210a%3A0x1234567890abcdef!2z56uL5bed5biC5piO5LiL6Kq_5biD!5e0!3m2!1szh-CN!2sjp!4v1698835700000!5m2!1szh-CN!2sjp"
+        ]
+      }
+    ]
+  },
+  "details": {
+    "withOfficialSites": [
+      {
+        "filename": "level5-july-hanabi-chiba-futtsu.ts",
+        "region": "千叶",
+        "title": "富津海岸花火",
+        "websites": [
+          "https://www.city.futtsu.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.123456789!2d139.8234567890!3d35.3123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022abcdef123456%3A0x123456789abcdef!2z5a-M5rSl5rW36Kq-5rag!5e0!3m2!1szh-CN!2sjp!4v1698835200000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.kamogawa-kanko.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-marines.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.marines.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.motherfarm.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.city.oamishirasato.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-sanmu.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.city.sammu.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-chiba-shirahama.ts",
+        "region": "千叶",
+        "title": "未知活动",
+        "websites": [
+          "https://www.mboso-etoko.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-futtsu.ts",
+        "region": "千叶",
+        "title": "富津市民花火大会精彩瞬间",
+        "websites": [
+          "https://futtsu-hanabi.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6!2d139.8!3d35.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE4JzAwLjAiTiAxMznCsDQ4JzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-iruma-base.ts",
+        "region": "埼玉",
+        "title": "入间基地花火大会精彩片段",
+        "websites": [
+          "https://www.mod.go.jp/asdf/iruma/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.0123456789!2d139.4123456!3d35.8234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e6a1234567%3A0x1234567890abcdef!2s%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A%E5%85%A5%E9%96%93%E5%9F%BA%E5%9C%B0!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kamakura.ts",
+        "region": "神奈川",
+        "title": "镰仓花火大会水中花火",
+        "websites": [
+          "https://www.trip-kamakura.com/site/kamakura-hanabi/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.123456789!2d139.5123456789!3d35.3123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z由比滨海岸!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kamogawa.ts",
+        "region": "千叶",
+        "title": "鸭川市民花火大会全景",
+        "websites": [
+          "https://kamotabi.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.2!2d140.098!3d35.112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601894b2b8abf9eb%3A0x1234567890!2z6pit5bed5biC5YmN5Y6f5qiq5rGa5rW36bqt!5e0!3m2!1sja!2sjp!4v1234567890"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+        "region": "神奈川",
+        "title": "未知活动",
+        "websites": [
+          "https://www.kamakura-info.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+        "region": "神奈川",
+        "title": "未知活动",
+        "websites": [
+          "https://www.city.yokohama.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+        "region": "神奈川",
+        "title": "未知活动",
+        "websites": [
+          "http://www.seaparadise.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-katsushika-noryo.ts",
+        "region": "东京",
+        "title": "第59回葛饰纳凉花火大会精彩瞬间",
+        "websites": [
+          "https://www.city.katsushika.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.567890123456!2d139.8631!3d35.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c2eb3b3b3b3%3A0x1234567890abcdef!2z6JGJ6aWzIOaftOWPiOmHjeuQgOWgtA!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-koshigaya.ts",
+        "region": "埼玉",
+        "title": "越谷花火大会夜空绽放",
+        "websites": [
+          "https://www.koshigaya-sightseeing.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.0123456789!2d139.7123456!3d35.8834567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c3a1234567%3A0x1234567890abcdef!2s%E8%B6%8A%E8%B0%B7%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%B8%82%E6%B0%91%E4%BC%9A%E9%A4%A8!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-marines.ts",
+        "region": "千叶",
+        "title": "千叶罗德花火精彩瞬间",
+        "websites": [
+          "https://www.marines.co.jp/event/fireworks/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.0331!3d35.6447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2sZOZO%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0!5e0!3m2!1sja!2sjp!4v1234567890!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-metsza-nordic.ts",
+        "region": "埼玉",
+        "title": "梅兹塔北欧花火",
+        "websites": [
+          "https://metsa-hanno.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.6!2d139.3336!3d35.8567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e2c7a7b8f123%3A0x789abc123def456!2z44Oh44OD44C444O844CA77yI5aKr546J44Kr5p2R77yJ!5e0!3m2!1sja!2sjp!4v1640000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-mikurajima.ts",
+        "region": "东京",
+        "title": "御藏岛花火大会夜空绽放",
+        "websites": [
+          "https://www.mikurasima.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.123456789012!2d139.6043456!3d33.8695432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184c5ea3b3b3b3%3A0x1234567890abcdef!2z5b6h6JeP5bO25riv!5e0!3m2!1sja!2sjp!4v1234567890456"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-motherfarm.ts",
+        "region": "千叶",
+        "title": "母亲牧场夏夜农场花火",
+        "websites": [
+          "https://www.motherfarm.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-oamishirasato.ts",
+        "region": "千叶",
+        "title": "大网白里花火大会海岸观赏",
+        "websites": [
+          "https://www.city.oamishirasato.lg.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+        "region": "埼玉",
+        "title": "小川町七夕祭花火大会",
+        "websites": [
+          "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.3431!3d36.0536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f0c8c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2z5bCP5bed55S65bCP5bed55S65rWe!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-saitama-owada.ts",
+        "region": "埼玉",
+        "title": "埼玉市花火大会大和田公园会场",
+        "websites": [
+          "https://visitsaitamacity.jp/events/28",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.6464!3d35.9309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c2d4d4d4d4d4%3A0x4d4d4d4d4d4d4d4d!2z5aSn5ZKM55Sw5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-seaparadise.ts",
+        "region": "神奈川",
+        "title": "八景岛花火交响曲音与光的盛宴",
+        "websites": [
+          "https://www.seaparadise.co.jp/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.234567890!2d139.6345678901!3d35.3456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ceab123456%3A0x123456789abcdef1!2z5YWr5pmv5bO25rW35pal5rak6Iul!5e0!3m2!1sja!2sjp!4v1698123456790!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-seibu-en.ts",
+        "region": "埼玉",
+        "title": "西武园游乐园大火祭",
+        "websites": [
+          "https://www.seibu-leisure.co.jp/amusementpark/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.4464!3d35.7608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c2d4d4d4d4d4%3A0x4d4d4d4d4d4d4d4d!2z6KW_5q2m5ZyS44Om44OX44GI44KT44Gh!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-shirahama-ama.ts",
+        "region": "千叶",
+        "title": "水中花火",
+        "websites": [
+          "https://amamatsuri.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.123!2d139.845678!3d34.905123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f5a1b2c3d4e%3A0x1234567890abcdef!2z55m955ub57eP5L2Q55uX!5e0!3m2!1sja!2sjp!4v1621234567890!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tachikawa-showa.ts",
+        "region": "东京",
+        "title": "立川祭国营昭和纪念公园花火大会精彩瞬间",
+        "websites": [
+          "https://hanabi.tokyo-tachikawa.org/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.234567890123!2d139.4087!3d35.6973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0000000000%3A0x1234567890abcdef!2z5Zu96JCl5pit5ZKM6KiY5b-15YWs5ZyS!5e0!3m2!1sja!2sjp!4v1234567890123"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+        "region": "东京",
+        "title": "未知活动",
+        "websites": [
+          "https://www.hkc.or.jp/fireworks/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5!2d139.3397!3d35.6581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5a-M5aOr5qOu5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1635724800000!5m2!1sja!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+        "region": "东京",
+        "title": "葛饰納涼花火大会精彩瞬间",
+        "websites": [
+          "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.654321098765!2d139.84123456789012!3d35.73567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188abc123456789%3A0x1234567890abcdef!2z6JCS5aOr6aOB6Iqx54Gr5aSn5Lya!5e0!3m2!1szh-CN!2sjp!4v1698836000000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+        "region": "东京",
+        "title": "东京竞马场花火2025预告片",
+        "websites": [
+          "https://hanabitokyo.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.123456789!2d139.4812345!3d35.6656789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f123456789ab%3A0x123456789abcdef0!2z5p2x5Lqs56uL6LSs5aC0!5e0!3m2!1szh-CN!2sjp!4v1698836200000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-sumida.ts",
+        "region": "东京",
+        "title": "隅田川花火大会精彩瞬间",
+        "websites": [
+          "https://www.sumidagawa-hanabi.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.1234567890123!2d139.80123456789012!3d35.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0abc12345%3A0x1234567890abcdef!2z6ZqF55Sw5bed6Iqx54Gr5aSn5Lya!5e0!3m2!1szh-CN!2sjp!4v1698835200000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+        "region": "东京",
+        "title": "立川诏和纪念公园花火大会精彩瞬间",
+        "websites": [
+          "https://hanabi.tokyo-tachikawa.org/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.012345678901!2d139.41234567890123!3d35.70567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e9876543210a%3A0x1234567890abcdef!2z56uL5bed5biC5piO5LiL6Kq_5biD!5e0!3m2!1szh-CN!2sjp!4v1698835700000!5m2!1szh-CN!2sjp"
+        ]
+      },
+      {
+        "filename": "level5-july-hanabi-yokohama-night.ts",
+        "region": "神奈川",
+        "title": "横浜夜间花火短时精彩演出",
+        "websites": [
+          "https://www.yokohama-sparkling-twilight.com/",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.123456789!2d139.6234567890!3d35.4534567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c7b12345678%3A0x123456789abcdef0!2z5qiq5rWc5rip!5e0!3m2!1sja!2sjp!4v1698123456789!5m2!1sja!2sjp"
+        ]
+      }
+    ],
+    "withoutOfficialSites": [],
+    "regionSummary": {
+      "千叶": [
+        {
+          "filename": "level5-july-hanabi-chiba-futtsu.ts",
+          "region": "千叶",
+          "title": "富津海岸花火",
+          "websites": [
+            "https://www.city.futtsu.lg.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.123456789!2d139.8234567890!3d35.3123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022abcdef123456%3A0x123456789abcdef!2z5a-M5rSl5rW36Kq-5rag!5e0!3m2!1szh-CN!2sjp!4v1698835200000!5m2!1szh-CN!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-kamogawa.ts",
+          "region": "千叶",
+          "title": "未知活动",
+          "websites": [
+            "https://www.kamogawa-kanko.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-marines.ts",
+          "region": "千叶",
+          "title": "未知活动",
+          "websites": [
+            "https://www.marines.co.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-motherfarm.ts",
+          "region": "千叶",
+          "title": "未知活动",
+          "websites": [
+            "https://www.motherfarm.co.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-oamishirasato.ts",
+          "region": "千叶",
+          "title": "未知活动",
+          "websites": [
+            "https://www.city.oamishirasato.lg.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-sanmu.ts",
+          "region": "千叶",
+          "title": "未知活动",
+          "websites": [
+            "https://www.city.sammu.lg.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-chiba-shirahama.ts",
+          "region": "千叶",
+          "title": "未知活动",
+          "websites": [
+            "https://www.mboso-etoko.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-futtsu.ts",
+          "region": "千叶",
+          "title": "富津市民花火大会精彩瞬间",
+          "websites": [
+            "https://futtsu-hanabi.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6!2d139.8!3d35.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE4JzAwLjAiTiAxMznCsDQ4JzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-kamogawa.ts",
+          "region": "千叶",
+          "title": "鸭川市民花火大会全景",
+          "websites": [
+            "https://kamotabi.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.2!2d140.098!3d35.112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601894b2b8abf9eb%3A0x1234567890!2z6pit5bed5biC5YmN5Y6f5qiq5rGa5rW36bqt!5e0!3m2!1sja!2sjp!4v1234567890"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-marines.ts",
+          "region": "千叶",
+          "title": "千叶罗德花火精彩瞬间",
+          "websites": [
+            "https://www.marines.co.jp/event/fireworks/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.0331!3d35.6447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2sZOZO%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A0!5e0!3m2!1sja!2sjp!4v1234567890!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-motherfarm.ts",
+          "region": "千叶",
+          "title": "母亲牧场夏夜农场花火",
+          "websites": [
+            "https://www.motherfarm.co.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-oamishirasato.ts",
+          "region": "千叶",
+          "title": "大网白里花火大会海岸观赏",
+          "websites": [
+            "https://www.city.oamishirasato.lg.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.69!3d35.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-shirahama-ama.ts",
+          "region": "千叶",
+          "title": "水中花火",
+          "websites": [
+            "https://amamatsuri.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.123!2d139.845678!3d34.905123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f5a1b2c3d4e%3A0x1234567890abcdef!2z55m955ub57eP5L2Q55uX!5e0!3m2!1sja!2sjp!4v1621234567890!5m2!1sja!2sjp"
+          ]
+        }
+      ],
+      "埼玉": [
+        {
+          "filename": "level5-july-hanabi-iruma-base.ts",
+          "region": "埼玉",
+          "title": "入间基地花火大会精彩片段",
+          "websites": [
+            "https://www.mod.go.jp/asdf/iruma/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.0123456789!2d139.4123456!3d35.8234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e6a1234567%3A0x1234567890abcdef!2s%E8%88%AA%E7%A9%BA%E8%87%AA%E8%A1%9B%E9%9A%8A%E5%85%A5%E9%96%93%E5%9F%BA%E5%9C%B0!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-koshigaya.ts",
+          "region": "埼玉",
+          "title": "越谷花火大会夜空绽放",
+          "websites": [
+            "https://www.koshigaya-sightseeing.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.0123456789!2d139.7123456!3d35.8834567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c3a1234567%3A0x1234567890abcdef!2s%E8%B6%8A%E8%B0%B7%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%B8%82%E6%B0%91%E4%BC%9A%E9%A4%A8!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-metsza-nordic.ts",
+          "region": "埼玉",
+          "title": "梅兹塔北欧花火",
+          "websites": [
+            "https://metsa-hanno.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.6!2d139.3336!3d35.8567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e2c7a7b8f123%3A0x789abc123def456!2z44Oh44OD44C444O844CA77yI5aKr546J44Kr5p2R77yJ!5e0!3m2!1sja!2sjp!4v1640000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-ogawa-tanabata.ts",
+          "region": "埼玉",
+          "title": "小川町七夕祭花火大会",
+          "websites": [
+            "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.3431!3d36.0536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f0c8c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2z5bCP5bed55S65bCP5bed55S65rWe!5e0!3m2!1sja!2sjp!4v1234567890123"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-saitama-owada.ts",
+          "region": "埼玉",
+          "title": "埼玉市花火大会大和田公园会场",
+          "websites": [
+            "https://visitsaitamacity.jp/events/28",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.6464!3d35.9309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c2d4d4d4d4d4%3A0x4d4d4d4d4d4d4d4d!2z5aSn5ZKM55Sw5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1234567890123"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-seibu-en.ts",
+          "region": "埼玉",
+          "title": "西武园游乐园大火祭",
+          "websites": [
+            "https://www.seibu-leisure.co.jp/amusementpark/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.5!2d139.4464!3d35.7608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c2d4d4d4d4d4%3A0x4d4d4d4d4d4d4d4d!2z6KW_5q2m5ZyS44Om44OX44GI44KT44Gh!5e0!3m2!1sja!2sjp!4v1234567890123"
+          ]
+        }
+      ],
+      "神奈川": [
+        {
+          "filename": "level5-july-hanabi-kamakura.ts",
+          "region": "神奈川",
+          "title": "镰仓花火大会水中花火",
+          "websites": [
+            "https://www.trip-kamakura.com/site/kamakura-hanabi/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.123456789!2d139.5123456789!3d35.3123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z由比滨海岸!5e0!3m2!1sja!2sjp!4v1234567890123"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-kanagawa-kamakura.ts",
+          "region": "神奈川",
+          "title": "未知活动",
+          "websites": [
+            "https://www.kamakura-info.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-kanagawa-nightflowers.ts",
+          "region": "神奈川",
+          "title": "未知活动",
+          "websites": [
+            "https://www.city.yokohama.lg.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-kanagawa-seaparadise.ts",
+          "region": "神奈川",
+          "title": "未知活动",
+          "websites": [
+            "http://www.seaparadise.co.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-seaparadise.ts",
+          "region": "神奈川",
+          "title": "八景岛花火交响曲音与光的盛宴",
+          "websites": [
+            "https://www.seaparadise.co.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.234567890!2d139.6345678901!3d35.3456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ceab123456%3A0x123456789abcdef1!2z5YWr5pmv5bO25rW35pal5rak6Iul!5e0!3m2!1sja!2sjp!4v1698123456790!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-yokohama-night.ts",
+          "region": "神奈川",
+          "title": "横浜夜间花火短时精彩演出",
+          "websites": [
+            "https://www.yokohama-sparkling-twilight.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.123456789!2d139.6234567890!3d35.4534567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c7b12345678%3A0x123456789abcdef0!2z5qiq5rWc5rip!5e0!3m2!1sja!2sjp!4v1698123456789!5m2!1sja!2sjp"
+          ]
+        }
+      ],
+      "东京": [
+        {
+          "filename": "level5-july-hanabi-katsushika-noryo.ts",
+          "region": "东京",
+          "title": "第59回葛饰纳凉花火大会精彩瞬间",
+          "websites": [
+            "https://www.city.katsushika.lg.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.567890123456!2d139.8631!3d35.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c2eb3b3b3b3%3A0x1234567890abcdef!2z6JGJ6aWzIOaftOWPiOmHjeuQgOWgtA!5e0!3m2!1sja!2sjp!4v1234567890123"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-mikurajima.ts",
+          "region": "东京",
+          "title": "御藏岛花火大会夜空绽放",
+          "websites": [
+            "https://www.mikurasima.jp/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.123456789012!2d139.6043456!3d33.8695432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184c5ea3b3b3b3%3A0x1234567890abcdef!2z5b6h6JeP5bO25riv!5e0!3m2!1sja!2sjp!4v1234567890456"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-tachikawa-showa.ts",
+          "region": "东京",
+          "title": "立川祭国营昭和纪念公园花火大会精彩瞬间",
+          "websites": [
+            "https://hanabi.tokyo-tachikawa.org/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.234567890123!2d139.4087!3d35.6973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0000000000%3A0x1234567890abcdef!2z5Zu96JCl5pit5ZKM6KiY5b-15YWs5ZyS!5e0!3m2!1sja!2sjp!4v1234567890123"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-hachioji.ts",
+          "region": "东京",
+          "title": "未知活动",
+          "websites": [
+            "https://www.hkc.or.jp/fireworks/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5!2d139.3397!3d35.6581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5a-M5aOr5qOu5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1635724800000!5m2!1sja!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-katsushika.ts",
+          "region": "东京",
+          "title": "葛饰納涼花火大会精彩瞬间",
+          "websites": [
+            "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.654321098765!2d139.84123456789012!3d35.73567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188abc123456789%3A0x1234567890abcdef!2z6JCS5aOr6aOB6Iqx54Gr5aSn5Lya!5e0!3m2!1szh-CN!2sjp!4v1698836000000!5m2!1szh-CN!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-keibajo.ts",
+          "region": "东京",
+          "title": "东京竞马场花火2025预告片",
+          "websites": [
+            "https://hanabitokyo.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.123456789!2d139.4812345!3d35.6656789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f123456789ab%3A0x123456789abcdef0!2z5p2x5Lqs56uL6LSs5aC0!5e0!3m2!1szh-CN!2sjp!4v1698836200000!5m2!1szh-CN!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-sumida.ts",
+          "region": "东京",
+          "title": "隅田川花火大会精彩瞬间",
+          "websites": [
+            "https://www.sumidagawa-hanabi.com/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.1234567890123!2d139.80123456789012!3d35.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0abc12345%3A0x1234567890abcdef!2z6ZqF55Sw5bed6Iqx54Gr5aSn5Lya!5e0!3m2!1szh-CN!2sjp!4v1698835200000!5m2!1szh-CN!2sjp"
+          ]
+        },
+        {
+          "filename": "level5-july-hanabi-tokyo-tachikawa.ts",
+          "region": "东京",
+          "title": "立川诏和纪念公园花火大会精彩瞬间",
+          "websites": [
+            "https://hanabi.tokyo-tachikawa.org/",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.012345678901!2d139.41234567890123!3d35.70567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e9876543210a%3A0x1234567890abcdef!2z56uL5bed5biC5piO5LiL6Kq_5biD!5e0!3m2!1szh-CN!2sjp!4v1698835700000!5m2!1szh-CN!2sjp"
+          ]
+        }
+      ]
+    }
+  }
+}

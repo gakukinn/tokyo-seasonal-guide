@@ -3,6 +3,8 @@ import { HanabiData } from '../types/hanabi';
 export const nightflowersData: HanabiData = {
   id: 'nightflowers',
   name: '横滨ナイトフラワーズ2025',
+  japaneseName: 'よこはま夜景×HANABI 2025',
+
   englishName: 'Yokohama Night Flowers 2025',
   year: 2025,
   date: '2025年7月5日・12日・8月10日・9月6日・14日等',
@@ -30,7 +32,7 @@ export const nightflowersData: HanabiData = {
       {
         id: 'kamakura',
         name: '镰仓花火大会',
-        date: '7月18日',
+        date: '2025年7月18日',
         location: '由比之滨海岸',
         visitors: '16万人',
         link: '/july/hanabi/kanagawa/kamakura'
@@ -38,7 +40,7 @@ export const nightflowersData: HanabiData = {
       {
         id: 'seaparadise',
         name: '八景岛花火シンフォニア',
-        date: '7月19日・20日・26日',
+        date: '2025年7月19日',
         location: '八景岛海洋天堂',
         visitors: '非公开',
         link: '/july/hanabi/kanagawa/seaparadise'
@@ -48,7 +50,7 @@ export const nightflowersData: HanabiData = {
       {
         id: 'kamakura',
         name: '镰仓花火大会',
-        date: '7月18日',
+        date: '2025年7月18日',
         location: '由比之滨海岸',
         visitors: '16万人',
         link: '/july/hanabi/kanagawa/kamakura'
@@ -211,4 +213,5 @@ export const nightflowersData: HanabiData = {
     tradition: '每月定期开催的新企划',
     atmosphere: '短时间集中的都市花火体验'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 

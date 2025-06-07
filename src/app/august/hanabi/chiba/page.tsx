@@ -1,6 +1,15 @@
+/**
+ * 第四层页面 - 8月千叶花火大会
+ * @layer 四层 (Regional Layer)
+ * @month 8月
+ * @region 千叶
+ * @type 地区花火页面
+ * @description 展示8月千叶地区所有花火大会列表，包含查看详情链接
+ */
 'use client';
 
 import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
+import { events, regionInfo, monthInfo } from '@/data/level4-august-chiba-hanabi';
 
 // 8月千叶花火大会数据 - 按官方时间排序 (数据来源: Walker Plus 2025)
 const chibaEvents = [
@@ -160,7 +169,7 @@ const chibaEvents = [
 
 const chibaMonthInfo = {
   month: '八月',
-  monthName: '叶月',
+  monthName: '八月',
   urlPath: 'august'
 };
 
@@ -212,7 +221,7 @@ const chibaRegionInfo = {
 export default function AugustChibaHanabiPage() {
   return (
     <RegionalHanabiTemplate
-      events={chibaEvents}
+      events={events}
       regionInfo={chibaRegionInfo}
       monthInfo={chibaMonthInfo}
     />

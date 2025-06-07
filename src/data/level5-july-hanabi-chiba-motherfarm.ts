@@ -3,9 +3,11 @@ import { HanabiData } from '../types/hanabi';
 export const motherfarmData: HanabiData = {
   id: 'motherfarm',
   name: 'マザー牧場 サマーナイトファーム',
+  japaneseName: 'マザー牧場 サマーナイトファーム',
+
   englishName: 'Mother Farm Summer Night Farm',
   year: 2025,
-  date: '7月26日(土)・27日(日)、8月2日(土)・3日(日)・9日(土)～17日(日)・23日(土)・24日(日)・30日(土)・31日(日)',
+  date: '2025年7月26日',
   time: '20:00～',
   duration: '约30分钟',
   fireworksCount: '未定',
@@ -30,7 +32,7 @@ export const motherfarmData: HanabiData = {
       {
         id: 'futtsu',
         name: '富津市民花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '富津海水浴场',
         visitors: '5万人',
         link: '/july/hanabi/chiba/futtsu'
@@ -38,7 +40,7 @@ export const motherfarmData: HanabiData = {
       {
         id: 'oamishirasato',
         name: '大网白里花火',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '白里海水浴场',
         visitors: '2万8000人',
         link: '/july/hanabi/chiba/oamishirasato'
@@ -46,7 +48,7 @@ export const motherfarmData: HanabiData = {
       {
         id: 'marines',
         name: 'MARINES HANABI',
-        date: '7月11日～8月11日',
+        date: '2025年7月11日',
         location: 'ZOZOマリンスタジアム',
         visitors: '3万人',
         link: '/july/hanabi/chiba/marines'
@@ -56,7 +58,7 @@ export const motherfarmData: HanabiData = {
       {
         id: 'sumida',
         name: '隅田川花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '隅田川',
         visitors: '91万人',
         link: '/july/hanabi/tokyo/sumida'
@@ -64,7 +66,7 @@ export const motherfarmData: HanabiData = {
       {
         id: 'sanmu',
         name: '山武市サマーカーニバル',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '蓮沼海浜公園',
         visitors: '1万9000人',
         link: '/july/hanabi/chiba/sanmu'
@@ -72,7 +74,7 @@ export const motherfarmData: HanabiData = {
       {
         id: 'futtsu',
         name: '富津市民花火大会',
-        date: '7月26日',
+        date: '2025年7月26日',
         location: '富津海水浴场',
         visitors: '5万人',
         link: '/july/hanabi/chiba/futtsu'
@@ -208,4 +210,5 @@ export const motherfarmData: HanabiData = {
     rainPolicy: '小雨決行、荒天時は中止',
     note: '動物の体調により一部プログラム変更の可能性'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7!2d140.03!3d35.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285c9b9d4a2a7%3A0x123456789!2z5Y2D6JGJ55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 

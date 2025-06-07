@@ -10,7 +10,7 @@ export interface HanabiVenue {
   name: string;
   location: string;
   startTime: string;
-  features: string[];
+  features?: string[];
 }
 
 export interface HanabiAccess {
@@ -57,6 +57,8 @@ export interface HanabiWeatherInfo {
   humidity: string;
   rainfall: string;
   recommendation: string;
+  rainPolicy?: string;
+  note?: string;
 }
 
 export interface HanabiSpecialFeatures {
@@ -80,6 +82,8 @@ export interface HanabiMedia {
   url: string;
   title: string;
   description: string;
+  thumbnail?: string;  // 视频缩略图（可选）
+  duration?: string;   // 视频时长（可选）
 }
 
 // 关联推荐项目类型
@@ -94,17 +98,19 @@ export interface HanabiRecommendation {
 
 // 关联推荐集合类型
 export interface HanabiRelated {
-  sameMonth: string[];
-  sameRegion: string[];
-  recommended: string[];
+  regionRecommendations: HanabiRecommendation[];
+  timeRecommendations: HanabiRecommendation[];
+  sameMonth?: string[];
+  sameRegion?: string[];
+  recommended?: string[];
 }
 
 // 新增动态数据字段
 export interface HanabiDynamicData {
   // Walker Plus 数据源字段
   popularity: {
-    wantToGo: number;        // 行ってみたい数
-    wentAndGood: number;     // 行ってよかった数
+    wantToGo: number;        // 想去参加数
+    wentAndGood: number;     // 参加评价数
     lastUpdated: string;     // 最后更新时间
   };
   
@@ -141,6 +147,7 @@ export interface HanabiDynamicData {
 export interface HanabiData {
   id: string;
   name: string;
+  japaneseName?: string;
   englishName: string;
   year: number;
   date: string;

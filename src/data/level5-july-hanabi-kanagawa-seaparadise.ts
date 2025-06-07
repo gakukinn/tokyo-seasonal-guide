@@ -3,6 +3,8 @@ import { HanabiData } from '../types/hanabi';
 export const seaparadiseData: HanabiData = {
   id: 'seaparadise',
   name: '横滨・八景岛海洋天堂「花火シンフォニア」',
+  japaneseName: '横浜・八景島シーパラダイス「花火シンフォニア」',
+
   englishName: 'Yokohama Hakkeijima Sea Paradise Fireworks Symphonia',
   year: 2025,
   date: '2025年7月19日・20日・26日、8月2日・9日・10日・16日・23日、9月13日・14日',
@@ -30,7 +32,7 @@ export const seaparadiseData: HanabiData = {
       {
         id: 'nightflowers',
         name: '横滨ナイトフラワーズ',
-        date: '7月5日・12日',
+        date: '2025年7月5日',
         location: '横滨港',
         visitors: '未公开',
         link: '/july/hanabi/kanagawa/nightflowers'
@@ -38,7 +40,7 @@ export const seaparadiseData: HanabiData = {
       {
         id: 'kamakura',
         name: '镰仓花火大会',
-        date: '7月18日',
+        date: '2025年7月18日',
         location: '由比之滨海岸',
         visitors: '16万人',
         link: '/july/hanabi/kanagawa/kamakura'
@@ -48,7 +50,7 @@ export const seaparadiseData: HanabiData = {
       {
         id: 'kamakura',
         name: '镰仓花火大会',
-        date: '7月18日',
+        date: '2025年7月18日',
         location: '由比之滨海岸',
         visitors: '16万人',
         link: '/july/hanabi/kanagawa/kamakura'
@@ -187,4 +189,5 @@ export const seaparadiseData: HanabiData = {
     tradition: '音と光のエンターテインメント花火',
     atmosphere: '家庭友好的海洋主题花火体验'
   }
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.2!2d139.62!3d35.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0c0c0c0c0c%3A0x0c0c0c0c0c0c0c0c!2z56We5aWI5bed55yM!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 }; 
