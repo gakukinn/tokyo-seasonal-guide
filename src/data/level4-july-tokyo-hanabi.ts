@@ -52,7 +52,7 @@ export const events: HanabiEvent[] = [
    crowdLevel: 'high',
    station: '府中本町',
    walkingTime: '5分钟',
-   detailLink: "/july/hanabi/tokyo/tokyo-racecourse-fireworks",
+   detailLink: "/july/hanabi/tokyo/keibajo",
  },
  {
    id: 'katsushika-fireworks',
@@ -68,7 +68,7 @@ export const events: HanabiEvent[] = [
    crowdLevel: 'high',
    station: '柴又',
    walkingTime: '10分钟',
-   detailLink: "/july/hanabi/tokyo/katsushika-fireworks",
+   detailLink: "/july/hanabi/tokyo/katsushika-noryo",
  },
  {
    id: 'sumidagawa-fireworks',
@@ -84,7 +84,7 @@ export const events: HanabiEvent[] = [
    crowdLevel: 'high',
    station: '浅草',
    walkingTime: '15分钟',
-   detailLink: "/july/hanabi/tokyo/sumidagawa-fireworks",
+   detailLink: "/july/hanabi/tokyo/sumida",
  },
  {
    id: 'hachioji-fireworks',
@@ -100,7 +100,7 @@ export const events: HanabiEvent[] = [
    crowdLevel: 'medium',
    station: '西八王子',
    walkingTime: '15分钟',
-   detailLink: "/july/hanabi/tokyo/hachioji-fireworks",
+   detailLink: "/july/hanabi/tokyo/hachioji",
  },
  {
    id: 'tachikawa-showa-kinen-park-fireworks',
@@ -116,7 +116,7 @@ export const events: HanabiEvent[] = [
    crowdLevel: 'high',
    station: '立川',
    walkingTime: '15分钟',
-   detailLink: "/july/hanabi/tokyo/tachikawa-showa-kinen-park-fireworks",
+   detailLink: "/july/hanabi/tokyo/tachikawa-showa",
  },
  {
    id: 'mikurajima-fireworks',
@@ -132,7 +132,7 @@ export const events: HanabiEvent[] = [
    crowdLevel: 'low',
    station: '御藏岛港',
    walkingTime: '5分钟',
-   detailLink: "/july/hanabi/tokyo/mikurajima-fireworks",
+   detailLink: "/july/hanabi/tokyo/mikurajima",
  },
 ];
 

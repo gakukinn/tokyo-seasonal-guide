@@ -212,7 +212,8 @@ export default function HanabiDetailTemplate({ data, regionKey }: HanabiDetailTe
            { id: 'venues', name: '会场信息', icon: '📍' },
            { id: 'access', name: '交通指南', icon: '🚇' },
            { id: 'viewing', name: '观赏攻略', icon: '👀' },
-           { id: 'tips', name: '实用建议', icon: '💡' }
+           { id: 'tips', name: '实用建议', icon: '💡' },
+           ...(data.id === 'chofu-hanabi-2025' ? [{ id: 'walker-sync', name: '数据同步', icon: '🔄' }] : [])
          ].map((tab) => (
  <button
  key={tab.id}
@@ -274,7 +275,7 @@ export default function HanabiDetailTemplate({ data, regionKey }: HanabiDetailTe
  </div>
  ))}
  {data.venues.length > 2 && (
-                 <p className="text-blue-600 text-xs mt-2">点击&ldquo;会场信息&rdquo;查看全部{data.venues.length}个会场</p>
+ <p className="text-blue-600 text-xs mt-2">点击"会场信息"查看全部{data.venues.length}个会场</p>
  )}
  </div>
  </div>
@@ -426,7 +427,17 @@ export default function HanabiDetailTemplate({ data, regionKey }: HanabiDetailTe
          </div>
          )}
 
-
+         {selectedTab === 'walker-sync' && data.id === 'chofu-hanabi-2025' && (
+           <div className="space-y-6">
+             <h3 className="text-2xl font-bold text-gray-800 mb-4">Walker Plus 数据同步</h3>
+             <p className="text-gray-600 mb-6">
+               实时对比官方数据源，确保调布花火信息的准确性和时效性
+             </p>
+             <div className="bg-blue-50 p-4 rounded-lg">
+               <p className="text-blue-700">数据同步功能开发中...</p>
+             </div>
+           </div>
+         )}
          </div>
          </div>
          </section>

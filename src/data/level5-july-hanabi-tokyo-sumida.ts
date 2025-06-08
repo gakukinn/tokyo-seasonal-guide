@@ -45,7 +45,7 @@ export const sumidaData: HanabiData = {
  date: '2025年7月2日',
  location: 'JRA东京竞马场',
  visitors: '非公表',
- link: '/july/hanabi/tokyo/tokyo-keibajo-hanabi'
+      link: '/july/hanabi/tokyo/keibajo'
  },
  {
  id: 'katsushika-noryo-hanabi',
@@ -53,7 +53,7 @@ export const sumidaData: HanabiData = {
  date: '2025年7月22日',
  location: '葛饰区柴又',
  visitors: '约77万人',
- link: '/july/hanabi/tokyo/katsushika-noryo-hanabi'
+      link: '/july/hanabi/tokyo/katsushika-noryo'
  },
  {
  id: 'tachikawa-showa-kinen-hanabi',
@@ -61,7 +61,7 @@ export const sumidaData: HanabiData = {
  date: '2025年7月26日',
  location: '国营昭和纪念公园',
  visitors: '32万人',
- link: '/july/hanabi/tokyo/tachikawa-showa-kinen-hanabi'
+      link: '/july/hanabi/tokyo/tachikawa-showa'
  }
  ],
  timeRecommendations: [
