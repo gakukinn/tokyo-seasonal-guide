@@ -1,23 +1,23 @@
 /**
- * 第五层页面 - ina完整详情信息，包含交通、观赏、历史等
+ * 第五层页面 - 伊奈花火大会详情
  * @layer 五层 (Detail Layer)
  * @month 8月
  * @region 埼玉
  * @event ina
  * @type 花火详情页面
  * @path /august/hanabi/saitama/ina
- * @description ina完整详情信息，包含交通、观赏、历史等
+ * @description 伊奈花火大会完整详情信息，包含交通、观赏、历史等
  */
 'use client';
 
-import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { inaHanabiData } from '@/data/level5-august-ina-hanabi';
 
 export default function InaHanabiPage() {
   return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>伊奈花火大会</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
+    <HanabiDetailTemplate 
+      data={inaHanabiData}
+      regionKey="saitama"
+    />
   );
 } 

@@ -1,23 +1,23 @@
 /**
- * 第五层页面 - itabashi完整详情信息，包含交通、观赏、历史等
+ * 第五层页面 - 板桥区花火大会详情
  * @layer 五层 (Detail Layer)
  * @month 8月
  * @region 东京
  * @event itabashi
  * @type 花火详情页面
  * @path /august/hanabi/tokyo/itabashi
- * @description itabashi完整详情信息，包含交通、观赏、历史等
+ * @description 板桥区花火大会完整详情信息，包含交通、观赏、历史等
  */
 'use client';
 
-import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { itabashiHanabiData } from '@/data/level5-august-itabashi-hanabi';
 
 export default function ItabashiDetailPage() {
   return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>板橋区花火大会</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
+    <HanabiDetailTemplate 
+      data={itabashiHanabiData}
+      regionKey="tokyo"
+    />
   );
 } 
