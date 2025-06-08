@@ -8,17 +8,18 @@
  * @path /august/hanabi/chiba/omigawa
  * @description omigawa完整详情信息，包含交通、观赏、历史等
  */
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { hanabiDetailData } from '@/data/level5-august-omigawa-hanabi';
+'use client';
+
+import React from 'react';
 
 export default function OmigawaHanabiPage() {
- return <HanabiDetailTemplate data={hanabiDetailData} regionKey="chiba" />;
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>小見川花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 }
 
-export async function generateMetadata() {
- return {
- title: `${hanabiDetailData.name} | 2025年花火大会`,
- description: `${hanabiDetailData.name}：${hanabiDetailData.history.significance}。${hanabiDetailData.expectedVisitors}，${hanabiDetailData.fireworksCount}`,
- keywords: ['花火大会', '千叶', '小见川', '利根川', '全国尺玉大赛', '2025年'],
- };
-} 
+ 
