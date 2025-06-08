@@ -11,8 +11,8 @@
 'use client';
 
 import React from 'react';
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { mitoHanabiData } from '@/data/level5-mito-hanabi';
+import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
+import { mitoHanabiData } from '../../../../../data/level5-mito-hanabi';
 
 export default function MitoHanabiPage() {
   return <HanabiDetailTemplate data={mitoHanabiData} regionKey="kitakanto" />;
