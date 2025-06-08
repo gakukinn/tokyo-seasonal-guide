@@ -1,57 +1,32 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://your-domain.vercel.app' // 替换为您的实际域名
+  const baseUrl = 'https://tokyo-seasonal-guide.vercel.app'
 
-  // 基础页面
-  const staticPages = [
+  return [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      changeFrequency: 'weekly',
       priority: 1,
     },
-    // 月份页面
-    ...['january', 'february', 'march', 'april', 'may', 'june', 
-        'july', 'august', 'september', 'october', 'november', 'december'].map(month => ({
-      url: `${baseUrl}/${month}`,
+    {
+      url: `${baseUrl}/july`,
       lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      changeFrequency: 'monthly',
       priority: 0.8,
-    })),
-    // 花火活动页面
-    {
-      url: `${baseUrl}/july/hanabi`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
     },
     {
-      url: `${baseUrl}/august/hanabi`,
+      url: `${baseUrl}/august`,
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
-      url: `${baseUrl}/september/hanabi`,
+      url: `${baseUrl}/september`,
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    }
   ]
-
-  // 地区页面
-  const regions = ['tokyo', 'kanagawa', 'saitama', 'chiba', 'kitakanto', 'koshinetsu']
-  const months = ['july', 'august', 'september']
-  
-  const regionPages = months.flatMap(month =>
-    regions.map(region => ({
-      url: `${baseUrl}/${month}/hanabi/${region}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    }))
-  )
-
-  return [...staticPages, ...regionPages]
 } 
