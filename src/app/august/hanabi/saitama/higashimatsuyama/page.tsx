@@ -13,11 +13,11 @@ import { higashimatsuyamaHanabiData } from '@/data/level5-august-higashimatsuyam
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '第26回东松山花火大会 | 2025年8月23日 | 关东花火攻略',
-  description: '2019年台风19号水害复兴重生的象征，市民参与型花火大会的完美重启。2025年8月23日19:00开始，约6万人参加，约5000发花火。',
-  keywords: '东松山花火大会,都幾川,花火,烟花,2025,8月,埼玉,关东,复兴',
+ title: '第26回东松山花火大会 | 2025年8月23日 | 关东花火攻略',
+ description: '2019年台风19号水害复兴重生的象征，市民参与型花火大会的完美重启。2025年8月23日19:00开始，约6万人参加，约5000发花火。',
+ keywords: '东松山花火大会,都幾川,花火,烟花,2025,8月,埼玉,关东,复兴',
 };
 
 export default function HigashimatsuyamaHanabiPage() {
-  return <HanabiDetailTemplate data={higashimatsuyamaHanabiData} regionKey="saitama" />;
+ return <HanabiDetailTemplate data={higashimatsuyamaHanabiData} regionKey="saitama" />;
 } 

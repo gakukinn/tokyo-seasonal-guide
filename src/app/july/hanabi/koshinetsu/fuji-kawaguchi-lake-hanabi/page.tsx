@@ -12,10 +12,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { fujiKawaguchiData } from '@/data/level5-fuji-kawaguchi-lake-hanabi';
 
 export default function FujiKawaguchiLakeHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={fujiKawaguchiData} 
-      regionKey="koshinetsu"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={fujiKawaguchiData} 
+ regionKey="koshinetsu"
+ />
+ );
 } 

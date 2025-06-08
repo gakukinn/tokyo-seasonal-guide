@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { choshiMinatoHanabiData } from '@/data/level5-august-hanabi-choshi-minato';
 
 export default function ChoshiMinatoHanabiPage() {
-  return <HanabiDetailTemplate data={choshiMinatoHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={choshiMinatoHanabiData} regionKey="chiba" />;
 } 

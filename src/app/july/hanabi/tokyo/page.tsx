@@ -10,14 +10,14 @@
 'use client';
 
 import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
-import { tokyoHanabiEvents, regionInfo, monthInfo } from '@/data/level4-july-tokyo-hanabi';
+import { events, regionInfo, monthInfo } from '@/data/level4-july-tokyo-hanabi';
 
 export default function TokyoHanabiPage() {
-  return (
-    <RegionalHanabiTemplate
-      events={tokyoHanabiEvents}
-      regionInfo={regionInfo}
-      monthInfo={monthInfo}
-    />
-  );
+ return (
+ <RegionalHanabiTemplate
+ events={events}
+ regionInfo={regionInfo}
+ monthInfo={monthInfo}
+ />
+ );
 } 

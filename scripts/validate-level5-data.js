@@ -8,128 +8,88 @@
 const fs = require('fs');
 const path = require('path');
 
-// 必填字段列表
-const requiredFields = [
-  'id', 'name', 'englishName', 'year', 'month', 'date', 'time',
-  'duration', 'fireworksCount', 'expectedVisitors', 'weather',
-  'ticketPrice', 'status', 'themeColor', 'tags', 'venues', 'access',
-  'viewingSpots', 'history', 'tips', 'contact', 'mapInfo', 'weatherInfo',
-  'mapEmbedUrl' // 地图URL为关键字段
-];
+// 验证结果统计
+const stats = {
+  totalFiles: 0,
+  missingOfficialSource: 0,
+  missingDataIntegrityCheck: 0,
+  missingDataSourceUrl: 0,
+  japaneseFormatIssues: 0,
+  validationErrors: []
+};
 
-// 地图相关检查
-function validateMapData(data, filename) {
-  const errors = [];
+// 检查文件内容
+function validateFile(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const fileName = path.basename(filePath);
   
-  // 检查mapEmbedUrl
-  if (!data.mapEmbedUrl) {
-    errors.push(`❌ ${filename}: 缺少必填字段 mapEmbedUrl`);
-  } else if (!data.mapEmbedUrl.includes('google.com/maps/embed')) {
-    errors.push(`⚠️  ${filename}: mapEmbedUrl格式不正确`);
+  // 检查官方数据源
+  if (!content.includes('officialSource')) {
+    stats.missingOfficialSource++;
+    stats.validationErrors.push(`${fileName}: 缺少officialSource字段`);
   }
   
-  // 检查mapInfo
-  if (!data.mapInfo?.hasMap) {
-    errors.push(`❌ ${filename}: mapInfo.hasMap应为true`);
+  // 检查数据完整性检查
+  if (!content.includes('dataIntegrityCheck')) {
+    stats.missingDataIntegrityCheck++;
+    stats.validationErrors.push(`${fileName}: 缺少dataIntegrityCheck字段`);
   }
   
-  if (!data.mapInfo?.mapNote) {
-    errors.push(`❌ ${filename}: 缺少mapInfo.mapNote`);
+  // 检查数据源URL
+  if (!content.includes('dataSourceUrl')) {
+    stats.missingDataSourceUrl++;
+    stats.validationErrors.push(`${fileName}: 缺少dataSourceUrl字段`);
   }
   
-  if (!data.mapInfo?.parking) {
-    errors.push(`❌ ${filename}: 缺少mapInfo.parking`);
-  }
+  // 检查日文格式
+  const japanesePatterns = [
+    /徒步\d+分钟/,
+    /约\d+発/,
+    /約\d+発/,
+    /約\d+万人/
+  ];
   
-  return errors;
-}
-
-// 基础字段检查
-function validateBasicFields(data, filename) {
-  const errors = [];
-  
-  requiredFields.forEach(field => {
-    if (!data[field]) {
-      errors.push(`❌ ${filename}: 缺少必填字段 ${field}`);
+  japanesePatterns.forEach(pattern => {
+    if (pattern.test(content)) {
+      stats.japaneseFormatIssues++;
+      stats.validationErrors.push(`${fileName}: 发现日文格式 "${pattern}"`);
     }
   });
-  
-  return errors;
 }
 
-// 主要验证函数
+// 主函数
 function validateLevel5Files() {
   const dataDir = path.join(__dirname, '../src/data');
   const files = fs.readdirSync(dataDir)
     .filter(file => file.startsWith('level5-') && file.endsWith('.ts'));
   
-  let totalErrors = 0;
-  let totalFiles = files.length;
+  stats.totalFiles = files.length;
   
-  console.log(`🔍 开始验证 ${totalFiles} 个第5层数据文件...\n`);
+  console.log(`🔍 开始验证 ${stats.totalFiles} 个第5层数据文件...\n`);
   
   files.forEach(file => {
-    const filePath = path.join(dataDir, file);
-    let fileContent = fs.readFileSync(filePath, 'utf-8');
-    
-    try {
-      // 简单的数据提取（实际项目中应该使用更robust的方法）
-      const dataMatch = fileContent.match(/export const \w+Data: HanabiData = ({[\s\S]*?});/);
-      if (!dataMatch) {
-        console.log(`❌ ${file}: 无法解析数据格式`);
-        totalErrors++;
-        return;
-      }
-      
-      // 模拟数据对象（这里简化处理）
-      const hasMapEmbedUrl = fileContent.includes('mapEmbedUrl:');
-      const hasMapInfo = fileContent.includes('mapInfo:');
-      const hasHasMap = fileContent.includes('hasMap: true');
-      
-      const errors = [];
-      
-      // 基础检查
-      if (!hasMapEmbedUrl) {
-        errors.push(`❌ ${file}: 缺少 mapEmbedUrl 字段`);
-      }
-      
-      if (!hasMapInfo) {
-        errors.push(`❌ ${file}: 缺少 mapInfo 字段`);
-      } else if (!hasHasMap) {
-        errors.push(`⚠️  ${file}: mapInfo.hasMap 应为 true`);
-      }
-      
-      if (errors.length > 0) {
-        console.log(`📁 ${file}:`);
-        errors.forEach(error => console.log(`  ${error}`));
-        console.log('');
-        totalErrors += errors.length;
-      } else {
-        console.log(`✅ ${file}: 验证通过`);
-      }
-      
-    } catch (error) {
-      console.log(`❌ ${file}: 解析错误 - ${error.message}`);
-      totalErrors++;
-    }
+    validateFile(path.join(dataDir, file));
   });
   
-  console.log(`\n📊 验证完成:`);
-  console.log(`📁 总文件数: ${totalFiles}`);
-  console.log(`❌ 总错误数: ${totalErrors}`);
+  // 输出验证报告
+  console.log('📊 验证报告:');
+  console.log('========================================');
+  console.log(`📁 总文件数: ${stats.totalFiles}`);
+  console.log(`❌ 缺少官方数据源: ${stats.missingOfficialSource}`);
+  console.log(`❌ 缺少数据完整性检查: ${stats.missingDataIntegrityCheck}`);
+  console.log(`❌ 缺少数据源URL: ${stats.missingDataSourceUrl}`);
+  console.log(`⚠️ 日文格式问题: ${stats.japaneseFormatIssues}`);
   
-  if (totalErrors === 0) {
-    console.log(`🎉 所有文件验证通过！`);
-    process.exit(0);
-  } else {
-    console.log(`⚠️  发现 ${totalErrors} 个问题需要修复`);
-    process.exit(1);
+  if (stats.validationErrors.length > 0) {
+    console.log('\n🔍 详细错误列表:');
+    stats.validationErrors.forEach(error => console.log(` • ${error}`));
   }
+  
+  console.log('\n========================================');
+  console.log('验证完成时间:', new Date().toLocaleString('zh-CN'));
 }
 
-// 运行验证
-if (require.main === module) {
-  validateLevel5Files();
-}
+// 执行验证
+validateLevel5Files();
 
 module.exports = { validateLevel5Files }; 

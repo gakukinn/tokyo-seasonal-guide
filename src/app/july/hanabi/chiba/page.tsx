@@ -9,21 +9,15 @@
  */
 'use client';
 
-import { Metadata } from 'next';
 import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
 import { chibaHanabiEvents, regionInfo, monthInfo } from '@/data/level4-july-chiba-hanabi';
 
-export const metadata: Metadata = {
-  title: '千叶花火大会 - 7月 | 关东地区花火指南',
-  description: '房总半岛的海岸花火盛典。从东京湾到太平洋，体验千叶独特的海风花火之美。',
-};
-
 export default function ChibaJulyHanabiPage() {
-  return (
-    <RegionalHanabiTemplate 
-      events={chibaHanabiEvents}
-      regionInfo={regionInfo}
-      monthInfo={monthInfo}
-    />
-  );
+ return (
+ <RegionalHanabiTemplate 
+ events={chibaHanabiEvents}
+ regionInfo={regionInfo}
+ monthInfo={monthInfo}
+ />
+ );
 } 

@@ -14,10 +14,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { mokaHanabiData } from '@/data/level5-moka-hanabi';
 
 export default function MokaHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={mokaHanabiData}
-      regionKey="kitakanto"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={mokaHanabiData}
+ regionKey="kitakanto"
+ />
+ );
 } 

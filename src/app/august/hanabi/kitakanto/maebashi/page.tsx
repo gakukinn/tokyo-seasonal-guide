@@ -14,10 +14,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { maebashiHanabiData } from '@/data/level5-august-maebashi-hanabi';
 
 export default function MaebashiHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={maebashiHanabiData}
-      regionKey="kitakanto"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={maebashiHanabiData}
+ regionKey="kitakanto"
+ />
+ );
 } 

@@ -10,14 +10,14 @@
 'use client';
 
 import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
-import { koshinetsuHanabiData, koshinetsuRegionInfo, koshinetsuMonthInfo } from '@/data/level4-july-koshinetsu-hanabi';
+import { koshinetsuHanabiEvents, regionInfo, monthInfo } from '@/data/level4-july-koshinetsu-hanabi';
 
 export default function KoshinetsuHanabiPage() {
-  return (
-    <RegionalHanabiTemplate 
-      events={koshinetsuHanabiData}
-      regionInfo={koshinetsuRegionInfo}
-      monthInfo={koshinetsuMonthInfo}
-    />
-  );
+ return (
+ <RegionalHanabiTemplate 
+ events={koshinetsuHanabiEvents}
+ regionInfo={regionInfo}
+ monthInfo={monthInfo}
+ />
+ );
 } 

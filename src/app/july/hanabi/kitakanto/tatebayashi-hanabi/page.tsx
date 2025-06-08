@@ -14,10 +14,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { tatebayashiHanabiData } from '@/data/level5-tatebayashi-hanabi';
 
 export default function TatebayashiHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={tatebayashiHanabiData}
-      regionKey="kitakanto"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={tatebayashiHanabiData}
+ regionKey="kitakanto"
+ />
+ );
 } 

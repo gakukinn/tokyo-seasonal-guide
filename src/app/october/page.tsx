@@ -1,5 +1,5 @@
 import MonthTemplate from '@/components/MonthTemplate';
 
 export default function OctoberPage() {
-  return <MonthTemplate monthId={10} />;
+ return <MonthTemplate monthId={10} />;
 } 

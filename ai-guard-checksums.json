@@ -1,0 +1,17 @@
+{
+  "scripts/accuracy-enforcer.js": {
+    "checksum": "d9b54943c7c2d3a717d38e5c880c3623",
+    "lastBackup": "2025-06-07T12:24:45.386Z",
+    "protected": true
+  },
+  "src/components/HanabiDetailTemplate.tsx": {
+    "checksum": "f005a92ad821695604abb9c79cd86620",
+    "lastBackup": "2025-06-07T12:24:45.387Z",
+    "protected": true
+  },
+  "src/components/RegionalHanabiTemplate.tsx": {
+    "checksum": "e9c47e4d85014fc6a8c309a0696ec9c4",
+    "lastBackup": "2025-06-07T12:24:45.388Z",
+    "protected": true
+  }
+}

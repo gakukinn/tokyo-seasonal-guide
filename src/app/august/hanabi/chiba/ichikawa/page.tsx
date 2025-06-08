@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { ichikawaHanabiData } from '@/data/level5-august-hanabi-ichikawa';
 
 export default function IchikawaHanabiPage() {
-  return <HanabiDetailTemplate data={ichikawaHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={ichikawaHanabiData} regionKey="chiba" />;
 } 

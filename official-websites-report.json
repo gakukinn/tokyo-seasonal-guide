@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-06-07T09:00:19.675Z",
+  "summary": {
+    "total": 9,
+    "accessible": 9,
+    "failed": 0
+  },
+  "details": [
+    {
+      "name": "chiba-futtsu",
+      "url": "https://www.city.futtsu.lg.jp/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "chiba-oamishirasato",
+      "url": "https://www.city.oamishirasato.lg.jp/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "chiba-sanmu",
+      "url": "https://www.city.sammu.lg.jp/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "iruma-base",
+      "url": "https://www.mod.go.jp/asdf/iruma/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "kanagawa-nightflowers",
+      "url": "https://www.city.yokohama.lg.jp/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "katsushika-noryo",
+      "url": "https://www.city.katsushika.lg.jp/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "oamishirasato",
+      "url": "https://www.city.oamishirasato.lg.jp/",
+      "status": 304,
+      "accessible": true
+    },
+    {
+      "name": "tokyo-hachioji",
+      "url": "https://www.hkc.or.jp/fireworks/",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "name": "tokyo-katsushika",
+      "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html",
+      "status": 200,
+      "accessible": true
+    }
+  ]
+}

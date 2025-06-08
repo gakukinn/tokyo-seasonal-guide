@@ -9,13 +9,13 @@
  * @description kamakura-hanabi完整详情信息，包含交通、观赏、历史等
  */
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { kamakuraHanabiData } from '@/data/level5-july-hanabi-kamakura';
+import { kamakuraData } from '@/data/level5-july-hanabi-kanagawa-kamakura';
 
 export default function KamakuraHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={kamakuraHanabiData}
-      regionKey="kanagawa"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={kamakuraData}
+ regionKey="kanagawa"
+ />
+ );
 } 

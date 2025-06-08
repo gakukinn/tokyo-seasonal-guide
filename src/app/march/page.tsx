@@ -3,5 +3,5 @@
 import MonthTemplate from '@/components/MonthTemplate';
 
 export default function MarchPage() {
-  return <MonthTemplate monthId={3} />;
+ return <MonthTemplate monthId={3} />;
 } 

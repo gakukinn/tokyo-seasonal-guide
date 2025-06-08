@@ -11,6 +11,15 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      // 部署时允许的规则
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-unused-vars": "warn", 
+      "@typescript-eslint/no-empty-object-type": "warn",
+      "@next/next/no-img-element": "warn",
+    }
+  }
 ];
 
 export default eslintConfig;

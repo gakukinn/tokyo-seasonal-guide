@@ -12,13 +12,13 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { hanabiDetailData } from '@/data/level5-august-omigawa-hanabi';
 
 export default function OmigawaHanabiPage() {
-  return <HanabiDetailTemplate data={hanabiDetailData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={hanabiDetailData} regionKey="chiba" />;
 }
 
 export async function generateMetadata() {
-  return {
-    title: `${hanabiDetailData.name} | 2025年花火大会`,
-    description: `${hanabiDetailData.name}：${hanabiDetailData.history.significance}。${hanabiDetailData.expectedVisitors}，${hanabiDetailData.fireworksCount}`,
-    keywords: ['花火大会', '千叶', '小见川', '利根川', '全国尺玉大赛', '2025年'],
-  };
+ return {
+ title: `${hanabiDetailData.name} | 2025年花火大会`,
+ description: `${hanabiDetailData.name}：${hanabiDetailData.history.significance}。${hanabiDetailData.expectedVisitors}，${hanabiDetailData.fireworksCount}`,
+ keywords: ['花火大会', '千叶', '小见川', '利根川', '全国尺玉大赛', '2025年'],
+ };
 } 

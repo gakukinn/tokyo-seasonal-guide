@@ -12,10 +12,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { edogawaHanabiData } from '@/data/level5-august-edogawa-hanabi';
 
 export default function EdogawaHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={edogawaHanabiData}
-      regionKey="tokyo"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={edogawaHanabiData}
+ regionKey="tokyo"
+ />
+ );
 } 

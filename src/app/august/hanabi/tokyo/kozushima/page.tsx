@@ -12,10 +12,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { kozushimaHanabiData } from '@/data/level5-august-kozushima-hanabi';
 
 export default function KozushimaHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={kozushimaHanabiData}
-      regionKey="tokyo"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={kozushimaHanabiData}
+ regionKey="tokyo"
+ />
+ );
 } 

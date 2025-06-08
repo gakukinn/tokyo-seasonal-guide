@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { makuhariBeachHanabiData } from '@/data/level5-august-hanabi-makuhari-beach';
 
 export default function MakuhariBeachHanabiPage() {
-  return <HanabiDetailTemplate data={makuhariBeachHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={makuhariBeachHanabiData} regionKey="chiba" />;
 } 

@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { kumagayaHanabiData } from '@/data/level5-august-kumagaya-hanabi';
 
 export default function KumagayaHanabiPage() {
-  return <HanabiDetailTemplate data={kumagayaHanabiData} regionKey="saitama" />;
+ return <HanabiDetailTemplate data={kumagayaHanabiData} regionKey="saitama" />;
 } 

@@ -10,19 +10,19 @@
  */
 import { Metadata } from 'next';
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { motherFarmHanabiData } from '@/data/level5-july-hanabi-motherfarm';
+import { motherfarmData } from '@/data/level5-july-hanabi-chiba-motherfarm';
 
 export const metadata: Metadata = {
-  title: '母亲牧场夏夜农场 | マザー牧場 サマーナイトファーム 2025 | 千叶花火',
-  description: '千叶县富津市母亲牧场举办的独特花火体验。与动物接触后在山谷间观赏近距离花火，享受ジンギスカン美食观览席。7月26日・27日开催。',
-  keywords: '母亲牧场夏夜农场,マザー牧場,サマーナイトファーム,千叶花火,动物花火,ジンギスカン,富津',
+ title: '母亲牧场夏夜农场 | 母亲牧場 夏夜农场 2025 | 千叶花火',
+ description: '千叶县富津市母亲牧场举办的独特花火体验。与动物接触后在山谷间观赏近距离花火，享受烤羊肉美食观览席。7月26日、27日开催。',
+ keywords: '母亲牧场夏夜农场,母亲牧場,夏夜农场,千叶花火,动物花火,烤羊肉,富津',
 };
 
 export default function MotherFarmHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={motherFarmHanabiData}
-      regionKey="chiba"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={motherfarmData}
+ regionKey="chiba"
+ />
+ );
 } 

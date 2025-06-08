@@ -10,16 +10,16 @@
  */
 import React from 'react';
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { kamogawaHanabiData } from '@/data/level5-july-hanabi-kamogawa';
+import { kamogawaData } from '@/data/level5-july-hanabi-chiba-kamogawa';
 
 export default function KamogawaShiminHanabiPage() {
-  return (
-    <HanabiDetailTemplate data={kamogawaHanabiData} regionKey="chiba" />
-  );
+ return (
+ <HanabiDetailTemplate data={kamogawaData} regionKey="chiba" />
+ );
 }
 
 export const metadata = {
-  title: '鸭川市民花火大会 - 7月花火大会指南',
-  description: '千叶县鸭川市前原横渚海岸举办的鸭川市民花火大会详细信息。日本渚100选海岸的绚烂花火，约1500发花火绽放夜空，海面映照的花火与海风共演。',
-  keywords: '鸭川市民花火大会,前原横渚海岸,千叶花火,日本渚100选,海岸花火,7月花火大会',
+ title: '鸭川市民花火大会 - 7月花火大会指南',
+ description: '千叶县鸭川市前原横渚海岸举办的鸭川市民花火大会详细信息。日本渚100选海岸的绚烂花火，约1500发花火绽放夜空，海面映照的花火与海风共演。',
+ keywords: '鸭川市民花火大会,前原横渚海岸,千叶花火,日本渚100选,海岸花火,7月花火大会',
 }; 

@@ -13,16 +13,16 @@ import { koshigayaHanabiData } from '@/data/level5-july-hanabi-koshigaya';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '越谷花火大会 - 埼玉花火指南',
-  description: '越谷花火大会详细信息。埼玉县最受欢迎的花火大会，约5000发花火在葛西用水中土手绽放，川面倒影更添幻想色彩。',
-  keywords: '越谷花火大会,埼玉花火,葛西用水,川面倒影,水乡花火',
+ title: '越谷花火大会 - 埼玉花火指南',
+ description: '越谷花火大会详细信息。埼玉县最受欢迎的花火大会，约5000发花火在葛西用水中土手绽放，川面倒影更添幻想色彩。',
+ keywords: '越谷花火大会,埼玉花火,葛西用水,川面倒影,水乡花火',
 };
 
 export default function KoshigayaHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={koshigayaHanabiData} 
-      regionKey="saitama"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={koshigayaHanabiData} 
+ regionKey="saitama"
+ />
+ );
 } 

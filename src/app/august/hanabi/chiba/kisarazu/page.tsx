@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { kisarazuHanabiData } from '@/data/level5-august-hanabi-kisarazu';
 
 export default function KisarazuHanabiPage() {
-  return <HanabiDetailTemplate data={kisarazuHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={kisarazuHanabiData} regionKey="chiba" />;
 } 

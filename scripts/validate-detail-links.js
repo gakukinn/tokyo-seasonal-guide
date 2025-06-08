@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
 
 /**
  * 验证第四层到第五层链接完整性
@@ -12,7 +11,15 @@ const glob = require('glob');
 console.log('🔗 开始验证第四层到第五层链接完整性...\n');
 
 // 获取所有第四层数据文件
-const level4Files = glob.sync('src/data/level4-*.ts');
+function getLevel4Files() {
+  const dataDir = path.join(process.cwd(), 'src/data');
+  const files = fs.readdirSync(dataDir);
+  return files
+    .filter(file => file.startsWith('level4-') && file.endsWith('.ts'))
+    .map(file => path.join(dataDir, file));
+}
+
+const level4Files = getLevel4Files();
 const issues = [];
 const validLinks = [];
 

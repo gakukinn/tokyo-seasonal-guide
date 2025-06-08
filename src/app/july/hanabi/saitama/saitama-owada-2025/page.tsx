@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { saitamaOwadaHanabiData } from '@/data/level5-july-hanabi-saitama-owada';
 
 export default function SaitamaOwadaHanabiPage() {
-  return <HanabiDetailTemplate data={saitamaOwadaHanabiData} regionKey="saitama" />;
+ return <HanabiDetailTemplate data={saitamaOwadaHanabiData} regionKey="saitama" />;
 }

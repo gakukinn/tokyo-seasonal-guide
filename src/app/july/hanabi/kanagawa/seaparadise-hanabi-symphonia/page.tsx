@@ -9,13 +9,13 @@
  * @description seaparadise-hanabi-symphonia完整详情信息，包含交通、观赏、历史等
  */
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { seaparadiseHanabiData } from '@/data/level5-july-hanabi-seaparadise';
+import { seaparadiseData } from '@/data/level5-july-hanabi-kanagawa-seaparadise';
 
 export default function SeaparadiseHanabiSymphoniaPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={seaparadiseHanabiData}
-      regionKey="kanagawa"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={seaparadiseData}
+ regionKey="kanagawa"
+ />
+ );
 } 

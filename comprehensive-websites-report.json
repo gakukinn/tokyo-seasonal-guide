@@ -1,0 +1,183 @@
+{
+  "timestamp": "2025-06-07T09:08:53.395Z",
+  "summary": {
+    "totalWebsites": 33,
+    "officialWebsites": 9,
+    "nonOfficialWebsites": 24,
+    "officialPercentage": "27.3%"
+  },
+  "officialWebsites": [
+    {
+      "name": "chiba-futtsu",
+      "url": "https://www.city.futtsu.lg.jp/",
+      "domain": "www.city.futtsu.lg.jp"
+    },
+    {
+      "name": "chiba-oamishirasato",
+      "url": "https://www.city.oamishirasato.lg.jp/",
+      "domain": "www.city.oamishirasato.lg.jp"
+    },
+    {
+      "name": "chiba-sanmu",
+      "url": "https://www.city.sammu.lg.jp/",
+      "domain": "www.city.sammu.lg.jp"
+    },
+    {
+      "name": "iruma-base",
+      "url": "https://www.mod.go.jp/asdf/iruma/",
+      "domain": "www.mod.go.jp"
+    },
+    {
+      "name": "kanagawa-nightflowers",
+      "url": "https://www.city.yokohama.lg.jp/",
+      "domain": "www.city.yokohama.lg.jp"
+    },
+    {
+      "name": "katsushika-noryo",
+      "url": "https://www.city.katsushika.lg.jp/",
+      "domain": "www.city.katsushika.lg.jp"
+    },
+    {
+      "name": "oamishirasato",
+      "url": "https://www.city.oamishirasato.lg.jp/",
+      "domain": "www.city.oamishirasato.lg.jp"
+    },
+    {
+      "name": "tokyo-hachioji",
+      "url": "https://www.hkc.or.jp/fireworks/",
+      "domain": "www.hkc.or.jp"
+    },
+    {
+      "name": "tokyo-katsushika",
+      "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html",
+      "domain": "www.city.katsushika.lg.jp"
+    }
+  ],
+  "nonOfficialWebsites": [
+    {
+      "name": "chiba-kamogawa",
+      "url": "https://www.kamogawa-kanko.com/",
+      "domain": "www.kamogawa-kanko.com"
+    },
+    {
+      "name": "chiba-marines",
+      "url": "https://www.marines.co.jp/",
+      "domain": "www.marines.co.jp"
+    },
+    {
+      "name": "chiba-motherfarm",
+      "url": "https://www.motherfarm.co.jp/",
+      "domain": "www.motherfarm.co.jp"
+    },
+    {
+      "name": "chiba-shirahama",
+      "url": "https://www.mboso-etoko.jp/",
+      "domain": "www.mboso-etoko.jp"
+    },
+    {
+      "name": "futtsu",
+      "url": "https://futtsu-hanabi.com/",
+      "domain": "futtsu-hanabi.com"
+    },
+    {
+      "name": "kamakura",
+      "url": "https://www.trip-kamakura.com/site/kamakura-hanabi/",
+      "domain": "www.trip-kamakura.com"
+    },
+    {
+      "name": "kamogawa",
+      "url": "https://kamotabi.jp/",
+      "domain": "kamotabi.jp"
+    },
+    {
+      "name": "kanagawa-kamakura",
+      "url": "https://www.kamakura-info.jp/",
+      "domain": "www.kamakura-info.jp"
+    },
+    {
+      "name": "kanagawa-seaparadise",
+      "url": "http://www.seaparadise.co.jp/",
+      "domain": "www.seaparadise.co.jp"
+    },
+    {
+      "name": "koshigaya",
+      "url": "https://www.koshigaya-sightseeing.jp/",
+      "domain": "www.koshigaya-sightseeing.jp"
+    },
+    {
+      "name": "marines",
+      "url": "https://www.marines.co.jp/event/fireworks/",
+      "domain": "www.marines.co.jp"
+    },
+    {
+      "name": "metsza-nordic",
+      "url": "https://metsa-hanno.com/",
+      "domain": "metsa-hanno.com"
+    },
+    {
+      "name": "mikurajima",
+      "url": "https://www.mikurasima.jp/",
+      "domain": "www.mikurasima.jp"
+    },
+    {
+      "name": "motherfarm",
+      "url": "https://www.motherfarm.co.jp/",
+      "domain": "www.motherfarm.co.jp"
+    },
+    {
+      "name": "ogawa-tanabata",
+      "url": "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html",
+      "domain": "www.town.ogawa.saitama.jp"
+    },
+    {
+      "name": "saitama-owada",
+      "url": "https://visitsaitamacity.jp/events/28",
+      "domain": "visitsaitamacity.jp"
+    },
+    {
+      "name": "seaparadise",
+      "url": "https://www.seaparadise.co.jp/",
+      "domain": "www.seaparadise.co.jp"
+    },
+    {
+      "name": "seibu-en",
+      "url": "https://www.seibu-leisure.co.jp/amusementpark/",
+      "domain": "www.seibu-leisure.co.jp"
+    },
+    {
+      "name": "shirahama-ama",
+      "url": "https://amamatsuri.com/",
+      "domain": "amamatsuri.com"
+    },
+    {
+      "name": "tachikawa-showa",
+      "url": "https://hanabi.tokyo-tachikawa.org/",
+      "domain": "hanabi.tokyo-tachikawa.org"
+    },
+    {
+      "name": "tokyo-keibajo",
+      "url": "https://hanabitokyo.com/",
+      "domain": "hanabitokyo.com"
+    },
+    {
+      "name": "tokyo-sumida",
+      "url": "https://www.sumidagawa-hanabi.com/",
+      "domain": "www.sumidagawa-hanabi.com"
+    },
+    {
+      "name": "tokyo-tachikawa",
+      "url": "https://hanabi.tokyo-tachikawa.org/",
+      "domain": "hanabi.tokyo-tachikawa.org"
+    },
+    {
+      "name": "yokohama-night",
+      "url": "https://www.yokohama-sparkling-twilight.com/",
+      "domain": "www.yokohama-sparkling-twilight.com"
+    }
+  ],
+  "recommendations": [
+    "建议优先为非官方网站寻找对应的政府官方页面",
+    "重点关注市政府(.city.jp)和政府机构(.go.jp)的活动公告",
+    "可以联系当地观光协会获取官方活动信息链接"
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "eventId": "chofu-hanabi",
+    "timestamp": "2025-06-07T22:42:40.741Z",
+    "updated": true,
+    "data": {
+      "name": "调布花火2025",
+      "date": "2025年9月20日",
+      "time": "18:15-19:15",
+      "location": "调布市多摩川周边",
+      "fireworksCount": "约10000发",
+      "expectedVisitors": "约30万人",
+      "status": "confirmed"
+    },
+    "source": "official_website"
+  },
+  {
+    "eventId": "chofu-hanabi",
+    "timestamp": "2025-06-07T22:45:50.903Z",
+    "updated": true,
+    "data": {
+      "name": "调布花火2025",
+      "date": "2025年9月20日",
+      "time": "18:15-19:15",
+      "location": "调布市多摩川周边",
+      "fireworksCount": "约10000发",
+      "expectedVisitors": "约30万人",
+      "status": "confirmed"
+    },
+    "source": "official_website"
+  }
+]

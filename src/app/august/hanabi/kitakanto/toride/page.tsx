@@ -14,10 +14,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { torideHanabiData } from '@/data/level5-august-toride-hanabi';
 
 export default function TorideHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={torideHanabiData}
-      regionKey="kitakanto"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={torideHanabiData}
+ regionKey="kitakanto"
+ />
+ );
 } 

@@ -1,36 +1,48 @@
 /**
- * 第五层数据文件 - 第20回古河花火大会详情数据
+ * 第五层数据文件 - 第20回 古河花火大会详情数据
  * @layer 五层 (Detail Data)
  * @month 8月
  * @region 北关东
  * @event 古河花火大会
  * @type 花火详情数据文件
+ * 数据来源：https://hanabi.walkerplus.com/detail/ar0308e01029/
+ * 最后更新：2024年12月
  */
-import { HanabiData } from '../types/hanabi';
+import { HanabiData } from '@/types/hanabi'
 
 export const kogaHanabiData: HanabiData = {
-  id: 'koga-august',
-  name: '第20回古河花火大会',
-  japaneseName: '第20回古河花火大会',
+  id: 'koga-august-hanabi-2025',
+  name: '第20回 古河花火大会',
+  japaneseName: '第20回 古河花火大会',
   englishName: '20th Koga Fireworks Festival',
   year: 2025,
+  month: 8,
   date: '2025年8月2日(土)',
-  time: '19:00-20:30',
-  duration: '90分钟',
+  time: '19:20～20:30',
+  duration: '70分',
   fireworksCount: '非公表',
   expectedVisitors: '约20万人',
-  weather: '小雨举行（恶劣天气取消）',
-  ticketPrice: '免费观赏',
-  status: '已确认举办',
-  themeColor: 'blue',
-  month: 8,
-
+  weather: '晴朗，适合观赏',
+  ticketPrice: '有料席1席4名最多2万2000日元等',
+  status: '开催预定',
+  themeColor: '#FF6B35',
+  
   tags: {
     timeTag: '8月',
-    regionTag: '茨城县',
+    regionTag: '北关东',
     typeTag: '花火',
-    layerTag: 'Layer 5详情页'
+    layerTag: '详细介绍'
+  
   },
+
+  media: [
+    {
+      type: 'image',
+      url: '/images/hanabi/mito-fireworks-main.svg',
+      title: '第20回古河花火大会',
+      description: '渡良瀬川夜空的绚烂花火，三尺玉与特大宽幅星雨的华丽演出'
+    }
+  ],
 
   related: {
     regionRecommendations: [
@@ -65,9 +77,10 @@ export const kogaHanabiData: HanabiData = {
 
   venues: [
     {
-      name: '主会场',
-      location: '古河高尔夫球场',
-      startTime: '19:00'
+      name: '古河高尔夫球场',
+      location: '茨城県古河市',
+      startTime: '19:20',
+      features: ['河川敷高尔夫球场', '自然環境观赏', '三尺玉2発打上']
     }
   ],
 
@@ -76,9 +89,14 @@ export const kogaHanabiData: HanabiData = {
       venue: '主会场',
       stations: [
         { 
-          name: '古河站', 
+          name: 'JR古河站', 
           lines: ['JR东北本线'], 
-          walkTime: '乘坐专用巴士' 
+          walkTime: '徒歩20分钟' 
+        },
+        { 
+          name: '东武新古河站', 
+          lines: ['东武铁道日光线'], 
+          walkTime: '徒歩5分钟' 
         }
       ]
     }
@@ -86,74 +104,76 @@ export const kogaHanabiData: HanabiData = {
 
   viewingSpots: [
     {
-      name: '专用观赏席',
+      name: '会場正面区域',
       rating: 5,
       crowdLevel: 'Very High',
-      tips: '最佳观赏位置，需要提前预约',
-      pros: ['专用观赏席', '最佳视角', '设施完备'],
-      cons: ['可能需要收费', '需要提前预约', '竞争激烈']
+      tips: '直径约650米的大轮花火观赏，特大宽幅星雨',
+      pros: ['最佳观赏位置', '直径650米大轮花火', '特大宽幅星雨'],
+      cons: ['人群较多', '需要早到占位', '有料席需要提前预约']
     },
     {
-      name: '渡良瀬川河畔',
+      name: '川土手观览席',
       rating: 4,
       crowdLevel: 'High',
-      tips: '免费观赏区域，视野开阔',
-      pros: ['免费区域', '河畔美景', '视野良好'],
-      cons: ['人流较多', '需要早到占位', '交通不便']
+      tips: '野餐垫观赏可能，自然观赏体验',
+      pros: ['可铺设野餐垫', '自然观赏体验', '绢烂豪华花火絵巻'],
+      cons: ['需要自备观赏用品', '河川敷地面不平', '风较大']
     }
   ],
 
   history: {
     established: 2006,
-    significance: '茨城县古河市的重要夏季盛典，渡良瀬川河畔的花火美景',
-    highlights: [
-      '20年传统的花火大会',
-      '渡良瀬川河畔的绝美景色',
-      '大规模花火秀表演',
-      '专用观赏席提供最佳体验'
-    ]
+    significance: '第20回古河市代表性花火大会。渡良瀬川夜空展开的绚烂豪华花火絵巻深受市民喜爱。邀请野村花火工業株式会社等，以高品质节目著称。',
+          highlights: ['三尺玉2発打上', '特大宽幅星雨', '野村花火工業演出']
   },
 
   tips: [
     {
-      category: '时间安排',
+      category: '观赏建议',
       items: [
-        '建议提前2小时到达',
-        '注意专用巴士时间表',
-        '关注官方网站确认举办状态'
+        '会場是河川敷高尔夫球场，可在川土手铺野餐垫悠闲鑑賞',
+        '直径約650米的大輪花火具有震撼规模',
+        '被称为日本第一花火师的野村花火工業特别演出'
       ]
     },
     {
-      category: '必备物品',
+      category: '注意事项',
       items: [
-        '野餐垫或便携椅子',
-        '防虫喷雾和驱蚊用品',
-        '充足的饮用水和食物',
-        '便携充电器'
+        '恶劣天气情况下中止(无延期日)',
+        '充分发挥会场特征的特大宽幅星雨是看点',
+        '2000台免费停车场完备'
+      ]
+    },
+    {
+      category: '交通安排',
+      items: [
+        'JR古河駅徒歩20分钟，东武铁道新古河駅徒歩5分钟',
+        '东北道馆林IC约20分钟(国道354号经由)',
+        '夏夜建议轻装参加'
       ]
     }
   ],
 
   contact: {
-    organizer: '古河花火大会实行委员会',
-    phone: '0280-92-3111',
-    website: 'https://hanabi.walkerplus.com/detail/ar0308e00705/',
+    organizer: '古河市観光物産課内古河花火大会実行委員会',
+    phone: '0280-22-5111',
+    website: 'https://www.city.ibaraki-koga.lg.jp/soshiki/kanko/4_1/2025hanabi.html',
     socialMedia: '官方网站查询'
   },
 
   mapInfo: {
     hasMap: true,
-    mapNote: '古河高尔夫球场',
-    parking: '专用停车场及临时停车场'
+    mapNote: '古河高尔夫球场河川敷开催。JR古河駅・东武新古河駅交通便利',
+    parking: '2000台免费停车场完备'
   },
 
   weatherInfo: {
     month: '8月',
     temperature: '最高32°C，最低24°C',
     humidity: '75%',
-    rainfall: '小雨举行（恶劣天气取消）',
-    recommendation: '夏季炎热，请注意防暑降温'
+    rainfall: '恶劣天气情况下中止(无延期日)',
+    recommendation: '夏夜建议轻装参加'
   },
 
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.1234567890123!2d139.7000000123456!3d36.1900000012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5Y+k5rKz6aeF5Zy6!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
-}; 
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.8942!2d139.6951!3d36.1892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60203e5b4c5d2b69%3A0x8c9b7c8d9e2f1a34!2z5Y2k5rKz44K044Ko44Or44OV44Oq44Oz44Kv44K5!5e0!3m2!1sja!2sjp!4v1639123456789!5m2!1sja!2sjp'
+} 

@@ -12,16 +12,16 @@ import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
 import { saitamaHanabiEvents, regionInfo, monthInfo } from '@/data/level4-august-saitama-hanabi';
 
 export const metadata: Metadata = {
-  title: '埼玉花火大会 - 8月 | 关东地区花火指南',
-  description: '关东内陆的花火传统。从荒川河畔到都市公园，体验埼玉独特的田园花火魅力。',
+ title: '埼玉花火大会 - 8月 | 关东地区花火指南',
+ description: '关东内陆的花火传统。从荒川河畔到都市公园，体验埼玉独特的田园花火魅力。',
 };
 
 export default function SaitamaAugustHanabiPage() {
-  return (
-    <RegionalHanabiTemplate 
-      events={saitamaHanabiEvents}
-      regionInfo={regionInfo}
-      monthInfo={monthInfo}
-    />
-  );
+ return (
+ <RegionalHanabiTemplate 
+ events={saitamaHanabiEvents}
+ regionInfo={regionInfo}
+ monthInfo={monthInfo}
+ />
+ );
 } 

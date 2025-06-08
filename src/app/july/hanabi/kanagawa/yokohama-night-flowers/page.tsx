@@ -9,13 +9,13 @@
  * @description yokohama-night-flowers完整详情信息，包含交通、观赏、历史等
  */
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { yokohamaNightHanabiData } from '@/data/level5-july-hanabi-yokohama-night';
+import { nightflowersData } from '@/data/level5-july-hanabi-kanagawa-nightflowers';
 
 export default function YokohamaNightFlowersPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={yokohamaNightHanabiData}
-      regionKey="kanagawa"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={nightflowersData}
+ regionKey="kanagawa"
+ />
+ );
 } 

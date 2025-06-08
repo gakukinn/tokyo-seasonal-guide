@@ -13,16 +13,16 @@ import { irumaBaseHanabiData } from '@/data/level5-july-hanabi-iruma-base';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '令和7年度入间基地纳凉祭~盆踊与花火之夜 - 埼玉花火指南',
-  description: '令和7年度入间基地纳凉祭详细信息。全日本唯一在现役军事基地举办的花火大会，约900发花火与传统盆踊的完美结合。',
-  keywords: '入间基地纳凉祭,埼玉花火,军事基地花火,盆踊,航空自卫队',
+ title: '令和7年度入间基地纳凉祭~盆踊与花火之夜 - 埼玉花火指南',
+ description: '令和7年度入间基地纳凉祭详细信息。全日本唯一在现役军事基地举办的花火大会，约900发花火与传统盆踊的完美结合。',
+ keywords: '入间基地纳凉祭,埼玉花火,军事基地花火,盆踊,航空自卫队',
 };
 
 export default function IrumaBaseHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={irumaBaseHanabiData} 
-      regionKey="saitama"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={irumaBaseHanabiData} 
+ regionKey="saitama"
+ />
+ );
 } 

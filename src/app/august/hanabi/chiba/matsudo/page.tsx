@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { matsudoHanabiData } from '@/data/level5-august-hanabi-matsudo';
 
 export default function MatsudoHanabiPage() {
-  return <HanabiDetailTemplate data={matsudoHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={matsudoHanabiData} regionKey="chiba" />;
 } 

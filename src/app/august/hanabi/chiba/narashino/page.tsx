@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { narashinoHanabiData } from '@/data/level5-august-hanabi-narashino';
 
 export default function NarashinoHanabiPage() {
-  return <HanabiDetailTemplate data={narashinoHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={narashinoHanabiData} regionKey="chiba" />;
 } 

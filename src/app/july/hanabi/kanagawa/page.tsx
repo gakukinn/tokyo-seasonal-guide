@@ -13,11 +13,11 @@ import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate';
 import { kanagawaHanabiEvents, regionInfo, monthInfo } from '@/data/level4-july-kanagawa-hanabi';
 
 export default function KanagawaHanabiPage() {
-  return (
-    <RegionalHanabiTemplate 
-      events={kanagawaHanabiEvents}
-      regionInfo={regionInfo}
-      monthInfo={monthInfo}
-    />
-  );
+ return (
+ <RegionalHanabiTemplate 
+ events={kanagawaHanabiEvents}
+ regionInfo={regionInfo}
+ monthInfo={monthInfo}
+ />
+ );
 } 

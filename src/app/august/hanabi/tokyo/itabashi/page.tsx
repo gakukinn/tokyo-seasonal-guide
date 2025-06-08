@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate
 import { itabashiHanabiData } from '../../../../../data/level5-august-itabashi-hanabi';
 
 export default function ItabashiDetailPage() {
-  return <HanabiDetailTemplate data={itabashiHanabiData} regionKey="tokyo" />;
+ return <HanabiDetailTemplate data={itabashiHanabiData} regionKey="tokyo" />;
 } 

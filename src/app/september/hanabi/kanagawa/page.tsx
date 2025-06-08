@@ -10,11 +10,11 @@ import RegionalHanabiTemplate from '@/components/RegionalHanabiTemplate'
 import { kanagawaHanabiEvents, regionInfo, monthInfo } from '@/data/level4-september-kanagawa-hanabi'
 
 export default function SeptemberKanagawaHanabiPage() {
-  return (
-    <RegionalHanabiTemplate
-      events={kanagawaHanabiEvents}
-      regionInfo={regionInfo}
-      monthInfo={monthInfo}
-    />
-  )
+ return (
+ <RegionalHanabiTemplate
+ events={kanagawaHanabiEvents}
+ regionInfo={regionInfo}
+ monthInfo={monthInfo}
+ />
+ )
 } 

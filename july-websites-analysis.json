@@ -1,0 +1,174 @@
+{
+  "total": 33,
+  "withOfficialWebsite": 9,
+  "withAnyWebsite": 33,
+  "withoutWebsite": 0,
+  "websites": [
+    {
+      "file": "chiba-futtsu",
+      "url": "https://www.city.futtsu.lg.jp/",
+      "type": "official"
+    },
+    {
+      "file": "chiba-kamogawa",
+      "url": "https://www.kamogawa-kanko.com/",
+      "type": "non-official"
+    },
+    {
+      "file": "chiba-marines",
+      "url": "https://www.marines.co.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "chiba-motherfarm",
+      "url": "https://www.motherfarm.co.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "chiba-oamishirasato",
+      "url": "https://www.city.oamishirasato.lg.jp/",
+      "type": "official"
+    },
+    {
+      "file": "chiba-sanmu",
+      "url": "https://www.city.sammu.lg.jp/",
+      "type": "official"
+    },
+    {
+      "file": "chiba-shirahama",
+      "url": "https://www.mboso-etoko.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "futtsu",
+      "url": "https://futtsu-hanabi.com/",
+      "type": "non-official"
+    },
+    {
+      "file": "iruma-base",
+      "url": "https://www.mod.go.jp/asdf/iruma/",
+      "type": "official"
+    },
+    {
+      "file": "kamakura",
+      "url": "https://www.trip-kamakura.com/site/kamakura-hanabi/",
+      "type": "non-official"
+    },
+    {
+      "file": "kamogawa",
+      "url": "https://kamotabi.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "kanagawa-kamakura",
+      "url": "https://www.kamakura-info.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "kanagawa-nightflowers",
+      "url": "https://www.city.yokohama.lg.jp/",
+      "type": "official"
+    },
+    {
+      "file": "kanagawa-seaparadise",
+      "url": "http://www.seaparadise.co.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "katsushika-noryo",
+      "url": "https://www.city.katsushika.lg.jp/",
+      "type": "official"
+    },
+    {
+      "file": "koshigaya",
+      "url": "https://www.koshigaya-sightseeing.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "marines",
+      "url": "https://www.marines.co.jp/event/fireworks/",
+      "type": "non-official"
+    },
+    {
+      "file": "metsza-nordic",
+      "url": "https://metsa-hanno.com/",
+      "type": "non-official"
+    },
+    {
+      "file": "mikurajima",
+      "url": "https://www.mikurasima.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "motherfarm",
+      "url": "https://www.motherfarm.co.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "oamishirasato",
+      "url": "https://www.city.oamishirasato.lg.jp/",
+      "type": "official"
+    },
+    {
+      "file": "ogawa-tanabata",
+      "url": "https://www.town.ogawa.saitama.jp/kanko/kanko_tokusan/ogawamachitanabatamatsuri/5267.html",
+      "type": "non-official"
+    },
+    {
+      "file": "saitama-owada",
+      "url": "https://visitsaitamacity.jp/events/28",
+      "type": "non-official"
+    },
+    {
+      "file": "seaparadise",
+      "url": "https://www.seaparadise.co.jp/",
+      "type": "non-official"
+    },
+    {
+      "file": "seibu-en",
+      "url": "https://www.seibu-leisure.co.jp/amusementpark/",
+      "type": "non-official"
+    },
+    {
+      "file": "shirahama-ama",
+      "url": "https://amamatsuri.com/",
+      "type": "non-official"
+    },
+    {
+      "file": "tachikawa-showa",
+      "url": "https://hanabi.tokyo-tachikawa.org/",
+      "type": "non-official"
+    },
+    {
+      "file": "tokyo-hachioji",
+      "url": "https://www.hkc.or.jp/fireworks/",
+      "type": "official"
+    },
+    {
+      "file": "tokyo-katsushika",
+      "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1000065/1031830.html",
+      "type": "official"
+    },
+    {
+      "file": "tokyo-keibajo",
+      "url": "https://hanabitokyo.com/",
+      "type": "non-official"
+    },
+    {
+      "file": "tokyo-sumida",
+      "url": "https://www.sumidagawa-hanabi.com/",
+      "type": "non-official"
+    },
+    {
+      "file": "tokyo-tachikawa",
+      "url": "https://hanabi.tokyo-tachikawa.org/",
+      "type": "non-official"
+    },
+    {
+      "file": "yokohama-night",
+      "url": "https://www.yokohama-sparkling-twilight.com/",
+      "type": "non-official"
+    }
+  ],
+  "missing": []
+}

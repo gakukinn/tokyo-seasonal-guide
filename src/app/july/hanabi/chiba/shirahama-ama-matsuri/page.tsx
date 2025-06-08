@@ -9,8 +9,8 @@
  * @description shirahama-ama-matsuri完整详情信息，包含交通、观赏、历史等
  */
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { shirahamaAmaHanabiData } from '@/data/level5-july-hanabi-shirahama-ama';
+import { shirahamaData } from '@/data/level5-july-hanabi-chiba-shirahama';
 
 export default function ShirahamaAmaHanabiPage() {
-  return <HanabiDetailTemplate data={shirahamaAmaHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={shirahamaData} regionKey="chiba" />;
 } 

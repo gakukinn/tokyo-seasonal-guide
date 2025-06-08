@@ -14,5 +14,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { jinguGaienHanabiData } from '@/data/level5-august-jingu-gaien-hanabi';
 
 export default function JinguGaienHanabiPage() {
-  return <HanabiDetailTemplate data={jinguGaienHanabiData} regionKey="tokyo" />;
+ return <HanabiDetailTemplate data={jinguGaienHanabiData} regionKey="tokyo" />;
 } 

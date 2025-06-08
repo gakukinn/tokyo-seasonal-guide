@@ -9,8 +9,8 @@
  * @description oamishirasato-hanabi完整详情信息，包含交通、观赏、历史等
  */
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { oamishirasatoHanabiData } from '@/data/level5-july-hanabi-oamishirasato';
+import { oamishirasatoData } from '@/data/level5-july-hanabi-chiba-oamishirasato';
 
 export default function OamishirasatoHanabiPage() {
-  return <HanabiDetailTemplate data={oamishirasatoHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={oamishirasatoData} regionKey="chiba" />;
 } 

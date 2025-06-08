@@ -10,9 +10,9 @@
  */
 'use client';
 
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { sumidaData } from '@/data/level5-july-hanabi-tokyo-sumida';
+import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
+import { sumidaData } from '../../../../../data/level5-july-hanabi-tokyo-sumida';
 
 export default function SumidaHanabiPage() {
-  return <HanabiDetailTemplate data={sumidaData} regionKey="tokyo" />;
+ return <HanabiDetailTemplate data={sumidaData} regionKey="tokyo" />;
 } 

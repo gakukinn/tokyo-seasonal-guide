@@ -12,5 +12,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { teganumaHanabiData } from '@/data/level5-august-hanabi-teganuma';
 
 export default function TeganumaHanabiPage() {
-  return <HanabiDetailTemplate data={teganumaHanabiData} regionKey="chiba" />;
+ return <HanabiDetailTemplate data={teganumaHanabiData} regionKey="chiba" />;
 } 

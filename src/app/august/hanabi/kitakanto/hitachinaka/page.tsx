@@ -14,10 +14,10 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { hitachinakaHanabiData } from '@/data/level5-august-hitachinaka-hanabi';
 
 export default function HitachinakaHanabiPage() {
-  return (
-    <HanabiDetailTemplate 
-      data={hitachinakaHanabiData}
-      regionKey="kitakanto"
-    />
-  );
+ return (
+ <HanabiDetailTemplate 
+ data={hitachinakaHanabiData}
+ regionKey="kitakanto"
+ />
+ );
 } 
