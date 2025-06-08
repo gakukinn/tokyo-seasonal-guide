@@ -8,6 +8,95 @@ interface MonthTemplateProps {
  customConfig?: Partial<MonthConfig>;
 }
 
+// 地区活动数量数据（基于实际统计）
+const getRegionActivityCounts = (monthId: number) => {
+  // 7月花火活动数量统计（基于项目实际数据）
+  if (monthId === 7) {
+    return {
+      tokyo: { count: 6, activities: ['隅田川花火大会', '东京竞马场花火', '葛饰纳凉花火大会'] },
+      saitama: { count: 7, activities: ['越谷花火大会', '西武园游乐园大火祭', '入间基地纳凉祭'] },
+      chiba: { count: 6, activities: ['千叶罗德花火', '南房总白浜海女祭', '富津市民花火大会'] },
+      kanagawa: { count: 3, activities: ['镰仓花火大会', '横滨夜间花火', '八景岛花火交响曲'] },
+      kitakanto: { count: 4, activities: ['水户花火大会', '真冈花火大会', '玉村花火大会'] },
+      koshinetsu: { count: 6, activities: ['富士河口湖花火', '祇园柏崎花火', '动漫经典花火'] }
+    };
+  }
+  
+  // 8月花火活动数量统计
+  if (monthId === 8) {
+    return {
+      tokyo: { count: 6, activities: ['板桥花火大会', '江户川花火大会', '神宫外苑花火大会'] },
+      saitama: { count: 7, activities: ['朝霞花火大会', '熊谷花火大会', '户田桥花火大会'] },
+      chiba: { count: 8, activities: ['幕张海滨花火', '松户花火大会', '市川花火大会'] },
+      kanagawa: { count: 8, activities: ['厚木鲇祭花火', '金泽祭花火', '横滨夜间花火'] },
+      kitakanto: { count: 6, activities: ['足利花火大会', '高崎花火大会', '前桥花火大会'] },
+      koshinetsu: { count: 6, activities: ['神明花火大会', '新潟祭花火', '长冈花火大会'] }
+    };
+  }
+  
+  // 9月花火活动数量统计
+  if (monthId === 9) {
+    return {
+      tokyo: { count: 1, activities: ['调布花火大会'] },
+      saitama: { count: 2, activities: ['梅兹塔花火大会', '西武花火大会'] },
+      chiba: { count: 0, activities: [] },
+      kanagawa: { count: 2, activities: ['八景岛花火', '横滨花火'] },
+      kitakanto: { count: 6, activities: ['常陆海滨花火', '小山花火', '大洗花火'] },
+      koshinetsu: { count: 2, activities: ['朝原花火', '信作花火'] }
+    };
+  }
+  
+  // 其他月份暂时返回空数据
+  return {
+    tokyo: { count: 0, activities: [] },
+    saitama: { count: 0, activities: [] },
+    chiba: { count: 0, activities: [] },
+    kanagawa: { count: 0, activities: [] },
+    kitakanto: { count: 0, activities: [] },
+    koshinetsu: { count: 0, activities: [] }
+  };
+};
+
+// 地区信息配置
+const regionConfig = {
+  tokyo: { 
+    name: '东京都', 
+    emoji: '🗼', 
+    color: 'from-red-100 to-pink-100 border-red-300/60',
+    description: '首都圈最大规模花火大会集中地'
+  },
+  saitama: { 
+    name: '埼玉县', 
+    emoji: '🌸', 
+    color: 'from-pink-100 to-purple-100 border-pink-300/60',
+    description: '传统与现代融合的花火体验'
+  },
+  chiba: { 
+    name: '千叶县', 
+    emoji: '🌊', 
+    color: 'from-blue-100 to-cyan-100 border-blue-300/60',
+    description: '海滨花火与房总半岛风情'
+  },
+  kanagawa: { 
+    name: '神奈川县', 
+    emoji: '🌺', 
+    color: 'from-purple-100 to-indigo-100 border-purple-300/60',
+    description: '横滨港湾与湘南海岸花火'
+  },
+  kitakanto: { 
+    name: '北关东', 
+    emoji: '🏔️', 
+    color: 'from-green-100 to-emerald-100 border-green-300/60',
+    description: '群马・栃木・茨城三县花火'
+  },
+  koshinetsu: { 
+    name: '甲信越', 
+    emoji: '⛰️', 
+    color: 'from-yellow-100 to-orange-100 border-yellow-300/60',
+    description: '富士山麓与信州高原花火'
+  }
+};
+
 export default function MonthTemplate({ monthId, customConfig }: MonthTemplateProps) {
  // 获取基础配置，如果有自定义配置则合并
  const baseConfig = monthsConfig[monthId];
@@ -28,6 +117,8 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }
 
  const navigation = getNavigationMonths(monthConfig.id);
+ const regionCounts = getRegionActivityCounts(monthId);
+ const hasActivities = Object.values(regionCounts).some(region => region.count > 0);
 
  return (
  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-50 to-blue-100">
@@ -67,34 +158,136 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  </div>
  </section>
 
- {/* 活动类型选择 */}
- <section className="py-16 bg-white/30 backdrop-blur-sm">
+ {/* 活动类型概览 - 新设计的顶部横向展示 */}
+ {hasActivities && (
+ <section className="py-12 bg-white/40 backdrop-blur-sm border-b border-white/50">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">{monthConfig.chinese}精彩活动分类</h2>
+ <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">{monthConfig.chinese}精彩活动概览</h2>
  
- <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+ <div className="flex flex-wrap justify-center gap-6 mb-8">
  {monthConfig.activities.slice(0, 3).map((activity) => (
- <Link
+ <div
  key={activity.id}
- href={`/${getMonthPath(monthConfig.id)}/${activity.id}`}
- className={`group relative block p-8 rounded-3xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 bg-gradient-to-br ${activity.color} cursor-pointer hover:shadow-2xl border border-white/60 shadow-xl backdrop-blur-sm hover:border-white/80`}
+ className={`flex items-center space-x-4 p-6 rounded-2xl bg-gradient-to-r ${activity.color} border border-white/60 shadow-lg backdrop-blur-sm`}
  >
- <div className="text-center">
- <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
- {activity.icon}
+ <div className="text-4xl">{activity.icon}</div>
+ <div>
+ <h3 className="text-lg font-bold text-gray-800">{activity.name}</h3>
+ <p className="text-sm text-gray-600">{activity.description}</p>
  </div>
- <h3 className="text-xl font-bold mb-4 text-gray-800 group-hover:text-gray-900 transition-colors">
- {activity.name}
- </h3>
- <p className="text-sm mb-3 text-gray-600 group-hover:text-gray-700 transition-colors leading-relaxed">
- {activity.description}
- </p>
  </div>
- </Link>
  ))}
+ </div>
+ 
+ <div className="text-center">
+ <p className="text-gray-700 text-lg font-medium">
+ 🎯 选择地区，探索{monthConfig.chinese}的精彩活动
+ </p>
  </div>
  </div>
  </section>
+ )}
+
+ {/* 地区选择 - 新设计的主体内容 */}
+ {hasActivities ? (
+ <section className="py-20 bg-white/30 backdrop-blur-sm">
+ <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h2 className="text-4xl font-bold text-gray-800 text-center mb-4">选择观赏地区</h2>
+ <p className="text-gray-700 text-center mb-16 text-lg">
+ 关东地区六大区域，每个地区都有独特的{monthConfig.activities[0]?.name || '活动'}体验
+ </p>
+ 
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+ {Object.entries(regionConfig).map(([regionKey, region]) => {
+ const regionData = regionCounts[regionKey as keyof typeof regionCounts];
+ const hasEvents = regionData.count > 0;
+ 
+ return (
+ <Link
+ key={regionKey}
+ href={hasEvents ? `/${getMonthPath(monthConfig.id)}/${monthConfig.activities[0]?.id}/${regionKey}` : '#'}
+ className={`group relative block p-8 rounded-3xl transition-all duration-500 transform ${
+ hasEvents 
+ ? `bg-gradient-to-br ${region.color} hover:shadow-2xl cursor-pointer hover:scale-105 hover:-translate-y-2 shadow-xl backdrop-blur-sm hover:border-white/80`
+ : 'bg-gray-100/80 border-gray-300/60 cursor-not-allowed backdrop-blur-sm shadow-md'
+ } border-2`}
+ onClick={(e) => {
+ if (!hasEvents) {
+ e.preventDefault();
+ }
+ }}
+ >
+ <div className="text-center">
+ {/* 地区图标和名称 */}
+ <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
+ {region.emoji}
+ </div>
+ <h3 className={`text-2xl font-bold mb-3 transition-colors ${
+ hasEvents ? 'text-gray-800 group-hover:text-gray-900' : 'text-gray-400'
+ }`}>
+ {region.name}
+ </h3>
+ 
+ {/* 活动数量显示 */}
+ <div className={`text-lg font-semibold mb-4 transition-colors ${
+ hasEvents ? 'text-blue-600 group-hover:text-blue-700' : 'text-gray-500'
+ }`}>
+ {hasEvents ? `${regionData.count}个活动` : '暂无活动'}
+ </div>
+ 
+ {/* 地区描述 */}
+ <p className={`text-sm mb-4 transition-colors ${
+ hasEvents ? 'text-gray-600 group-hover:text-gray-700' : 'text-gray-500'
+ }`}>
+ {region.description}
+ </p>
+ 
+ {/* 热门活动预览 */}
+ {hasEvents && regionData.activities.length > 0 && (
+ <div className="mt-4 pt-4 border-t border-white/50">
+ <p className="text-xs text-gray-600 mb-2">热门活动：</p>
+ <div className="space-y-1">
+ {regionData.activities.slice(0, 2).map((activity, index) => (
+ <p key={index} className="text-xs text-gray-700 truncate">
+ • {activity}
+ </p>
+ ))}
+ {regionData.activities.length > 2 && (
+ <p className="text-xs text-blue-600">
+ +{regionData.activities.length - 2}个更多活动
+ </p>
+ )}
+ </div>
+ </div>
+ )}
+ 
+ {/* 状态提示 */}
+ {!hasEvents && (
+ <div className="mt-4">
+ <div className="bg-gray-200/80 text-gray-500 text-xs px-3 py-1 rounded-full backdrop-blur-sm">
+ 即将推出
+ </div>
+ </div>
+ )}
+ </div>
+ </Link>
+ );
+ })}
+ </div>
+ </div>
+ </section>
+ ) : (
+ /* 无活动时的占位内容 */
+ <section className="py-20 bg-white/30 backdrop-blur-sm">
+ <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+ <div className="text-6xl mb-8">🚧</div>
+ <h2 className="text-3xl font-bold text-gray-800 mb-4">{monthConfig.chinese}活动内容正在准备中</h2>
+ <p className="text-gray-600 text-lg mb-8">
+ 我们正在为您精心准备{monthConfig.chinese}的精彩活动内容，敬请期待！
+ </p>
+ </div>
+ </section>
+ )}
 
  {/* 旅游实用信息 */}
  <section className="py-16 bg-gradient-to-b from-white/40 to-blue-100/60 border-t border-white/50">
