@@ -20,7 +20,7 @@ export default function RevenueTracker() {
     const sampleData: RevenueData[] = [
       { source: 'Booking.com', amount: 45.50, currency: 'USD', date: '2025-01-13', type: 'affiliate' },
       { source: 'Google AdSense', amount: 12.30, currency: 'USD', date: '2025-01-13', type: 'adsense' },
-      { source: 'Klook', amount: 28.75, currency: 'USD', date: '2025-01-12', type: 'affiliate' },
+      { source: 'Agoda', amount: 18.25, currency: 'USD', date: '2025-01-12', type: 'affiliate' },
     ];
     
     setRevenues(sampleData);

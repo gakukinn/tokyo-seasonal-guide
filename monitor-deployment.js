@@ -26,9 +26,7 @@ async function checkDeploymentStatus() {
       // 检查联盟营销链接
       const bookingLink = await page.locator('a[href*="booking.com"]').count();
       const agodaLink = await page.locator('a[href*="agoda.com"]').count();
-      const klookLink = await page.locator('a[href*="klook.com"]').count();
-      
-      console.log(`📊 联盟营销链接: Booking(${bookingLink}) Agoda(${agodaLink}) Klook(${klookLink})`);
+      console.log(`📊 联盟营销链接: Booking(${bookingLink}) Agoda(${agodaLink})`);
       
       // 快速检查其他页面
       const testPages = [

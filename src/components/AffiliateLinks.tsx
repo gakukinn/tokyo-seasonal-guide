@@ -63,33 +63,34 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
     return (
       <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border border-green-200 shadow-lg mb-6">
         <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          🚄 交通优惠券
+          🚄 交通信息
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Link 
-            href="https://www.klook.com/zh-CN/activity/126-jr-pass-japan-rail-pass/?aid=3817"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
-            onClick={() => handleLinkClick('jr-pass')}
-          >
-            <span className="mr-2">🎫</span>
-            JR Pass 全国版
-          </Link>
-          <Link 
-            href="https://www.klook.com/zh-CN/activity/3664-tokyo-metro-pass/?aid=3817"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
-            onClick={() => handleLinkClick('tokyo-metro')}
-          >
-            <span className="mr-2">🚇</span>
-            东京地铁通票
-          </Link>
+        <div className="grid grid-cols-1 gap-4">
+          <div className="bg-white p-4 rounded-lg border border-gray-200">
+            <h4 className="font-semibold text-gray-800 mb-2">🎫 JR Pass</h4>
+            <p className="text-sm text-gray-600 mb-2">适合跨城市旅行，可在JR官网或授权代理商购买</p>
+            <Link 
+              href="https://www.jrpass.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            >
+              JR Pass官方网站 →
+            </Link>
+          </div>
+          <div className="bg-white p-4 rounded-lg border border-gray-200">
+            <h4 className="font-semibold text-gray-800 mb-2">🚇 东京地铁</h4>
+            <p className="text-sm text-gray-600 mb-2">市内交通首选，可在地铁站购买一日券或多日券</p>
+            <Link 
+              href="https://www.tokyometro.jp/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+            >
+              东京地铁官网 →
+            </Link>
+          </div>
         </div>
-        <p className="text-sm text-gray-600 mt-3 text-center">
-          🎯 节省交通费用，多次往返更划算
-        </p>
       </div>
     );
   }
@@ -98,33 +99,19 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
     return (
       <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-200 shadow-lg mb-6">
         <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          🎆 花火大会体验
+          🎆 观光信息
         </h3>
-        <div className="grid grid-cols-1 gap-4">
-          <Link 
-            href="https://www.klook.com/zh-CN/activity/18602-tokyo-fireworks-festival-boat-cruise/?aid=3817"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
-            onClick={() => handleLinkClick('boat-cruise')}
-          >
-            <span className="mr-2">🚢</span>
-            隅田川花火游船观赏
-          </Link>
-          <Link 
-            href="https://www.klook.com/zh-CN/activity/1827-tokyo-bay-cruise/?aid=3817"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
-            onClick={() => handleLinkClick('bay-cruise')}
-          >
-            <span className="mr-2">📸</span>
-            东京湾观光游船
-          </Link>
+        <div className="bg-white p-4 rounded-lg border border-gray-200">
+          <h4 className="font-semibold text-gray-800 mb-2">🗼 东京观光</h4>
+          <p className="text-sm text-gray-600 mb-2">
+            推荐提前在官方网站或现场购买景点门票，避免排队等候
+          </p>
+          <ul className="text-sm text-gray-600 space-y-1">
+            <li>• 东京晴空塔：可在官网预约时间段</li>
+            <li>• 东京塔：现场购票或官网预订</li>
+            <li>• 各大博物馆：建议官网查看开放时间</li>
+          </ul>
         </div>
-        <p className="text-sm text-gray-600 mt-3 text-center">
-          ✨ 专业导游带你发现最佳观赏位置
-        </p>
       </div>
     );
   }
@@ -133,23 +120,17 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
     return (
       <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200 shadow-lg mb-6">
         <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          🛡️ 旅游保险
+          🛡️ 旅游提醒
         </h3>
-        <div className="grid grid-cols-1 gap-4">
-          <Link 
-            href="https://www.allianz-travel.com.cn/travel-insurance/single-trip?utm_source=affiliate&utm_medium=referral"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
-            onClick={() => handleLinkClick('travel-insurance')}
-          >
-            <span className="mr-2">🏥</span>
-            日本旅游保险
-          </Link>
+        <div className="bg-white p-4 rounded-lg border border-gray-200">
+          <h4 className="font-semibold text-gray-800 mb-2">💡 出行建议</h4>
+          <ul className="text-sm text-gray-600 space-y-2">
+            <li>• 建议购买旅游保险，保障人身安全和财产安全</li>
+            <li>• 随身携带护照复印件和紧急联系方式</li>
+            <li>• 了解当地紧急电话：警察110，消防119</li>
+            <li>• 保持手机电量充足，下载离线地图</li>
+          </ul>
         </div>
-        <p className="text-sm text-gray-600 mt-3 text-center">
-          💪 人身意外、医疗费用、航班延误全覆盖
-        </p>
       </div>
     );
   }
