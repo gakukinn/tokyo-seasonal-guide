@@ -41,7 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 # AI enforcement blocked files
-src/data/level5-anime-classics-anisong-hanabi.ts
 src/data/level5-august-akishima-hanabi.ts
 src/data/level5-august-asaka-hanabi.ts
 src/data/level5-august-edogawa-hanabi.ts
@@ -62,10 +61,6 @@ src/data/level5-august-saitama-omagi-hanabi.ts
 src/data/level5-august-todabashi-hanabi.ts
 src/data/level5-fuji-kawaguchi-lake-hanabi.ts
 src/data/level5-gion-kashiwazaki-hanabi.ts
-src/data/level5-mito-hanabi.ts
-src/data/level5-moka-hanabi.ts
 src/data/level5-nojiri-lake-hanabi.ts
 src/data/level5-sanjo-natsumatsuri-hanabi.ts
 src/data/level5-suzaka-minna-hanabi.ts
-src/data/level5-tamura-hanabi.ts
-src/data/level5-tatebayashi-hanabi.ts
