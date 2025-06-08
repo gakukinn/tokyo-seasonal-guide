@@ -41,21 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # AI enforcement blocked files
-src/data/level5-august-akishima-hanabi.ts
-src/data/level5-august-asaka-hanabi.ts
-src/data/level5-august-edogawa-hanabi.ts
-src/data/level5-august-hanabi-tokyo-akishima.ts
-src/data/level5-august-hanabi-tokyo-edogawa.ts
-src/data/level5-august-hanabi-tokyo-kozushima.ts
-src/data/level5-august-hanabi-tokyo-okutama.ts
-src/data/level5-august-higashimatsuyama-hanabi.ts
-src/data/level5-august-ina-hanabi.ts
-src/data/level5-august-itabashi-hanabi.ts
-src/data/level5-august-iwatsuki-hanabi.ts
-src/data/level5-august-jingu-gaien-hanabi.ts
-src/data/level5-august-kozushima-hanabi.ts
-src/data/level5-august-kumagaya-hanabi.ts
-src/data/level5-august-okutama-hanabi.ts
-src/data/level5-august-omigawa-hanabi.ts
-src/data/level5-august-saitama-omagi-hanabi.ts
-src/data/level5-august-todabashi-hanabi.ts
+# (移除了被误加的8月数据文件 - 2025年1月13日修复)
