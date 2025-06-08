@@ -8,16 +8,16 @@
  * @path /august/hanabi/saitama/ina
  * @description ina完整详情信息，包含交通、观赏、历史等
  */
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { inaHanabiData } from '@/data/level5-august-ina-hanabi';
-import { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
- title: '2025伊奈祭 | 2025年8月23日 | 关东花火攻略',
- description: '"玫瑰小镇"伊奈町的夏日风物诗，从模拟店到盆踊再到压轴花火，充满昔日夏祭风情。2025年8月23日20:10开始，约4万人参加。',
- keywords: '伊奈祭,伊奈町,花火,烟花,2025,8月,埼玉,关东,夏祭,玫瑰小镇',
-};
+import React from 'react';
 
 export default function InaHanabiPage() {
- return <HanabiDetailTemplate data={inaHanabiData} regionKey="saitama" />;
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>伊奈花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 
