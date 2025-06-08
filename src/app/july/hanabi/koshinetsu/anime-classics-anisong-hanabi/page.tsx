@@ -11,13 +11,9 @@
 'use client';
 
 import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { animeClassicsData } from '@/data/level5-anime-classics-anisong-hanabi';
 
 export default function AnimeClassicsAnisongHanabiPage() {
-  return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>动漫经典动画歌曲花火大会</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
-  );
+  return <HanabiDetailTemplate data={animeClassicsData} regionKey="koshinetsu" />;
 } 

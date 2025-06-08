@@ -11,13 +11,9 @@
 'use client';
 
 import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { suzakaMinnaNHanabiData } from '@/data/level5-suzaka-minna-hanabi';
 
-export default function SuzakaMinnaNHanabiPage() {
-  return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>須坂大家花火大会</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
-  );
+export default function SuzakaMinnaHanabiPage() {
+  return <HanabiDetailTemplate data={suzakaMinnaNHanabiData} regionKey="koshinetsu" />;
 } 
