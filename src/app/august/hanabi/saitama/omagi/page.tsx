@@ -11,13 +11,9 @@
 'use client';
 
 import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { saitamaOmagiHanabiData } from '@/data/level5-august-saitama-omagi-hanabi';
 
-export default function SaitamaOmagiHanabiPage() {
-  return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>埼玉市花火大会大間木公園會場</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
-  );
+export default function OmagiHanabiPage() {
+  return <HanabiDetailTemplate data={saitamaOmagiHanabiData} regionKey="saitama" />;
 } 

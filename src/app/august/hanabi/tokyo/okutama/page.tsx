@@ -11,15 +11,11 @@
 'use client';
 
 import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { okutamaHanabiData } from '@/data/level5-august-okutama-hanabi';
 
 export default function OkutamaHanabiPage() {
-  return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>奥多摩花火大会</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
-  );
+  return <HanabiDetailTemplate data={okutamaHanabiData} regionKey="tokyo" />;
 }
 
  

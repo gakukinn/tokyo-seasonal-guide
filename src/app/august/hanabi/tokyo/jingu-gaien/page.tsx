@@ -11,13 +11,9 @@
 'use client';
 
 import React from 'react';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { jinguGaienHanabiData } from '@/data/level5-august-jingu-gaien-hanabi';
 
 export default function JinguGaienHanabiPage() {
-  return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>神宮外苑花火大会</h1>
-      <p>页面正在维护中，请稍后访问</p>
-      <p>Page under maintenance, please visit later</p>
-    </div>
-  );
+  return <HanabiDetailTemplate data={jinguGaienHanabiData} regionKey="tokyo" />;
 } 
