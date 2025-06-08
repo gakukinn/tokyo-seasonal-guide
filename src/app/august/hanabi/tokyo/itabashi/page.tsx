@@ -9,7 +9,7 @@
  * @description itabashi完整详情信息，包含交通、观赏、历史等
  */
 import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
-import { itabashiHanabiData } from '../../../../../data/level5-august-itabashi-hanabi';
+import { itabashiHanabiData } from '@/data';
 
 export default function ItabashiDetailPage() {
  return <HanabiDetailTemplate data={itabashiHanabiData} regionKey="tokyo" />;

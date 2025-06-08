@@ -11,7 +11,7 @@
 'use client';
 
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { mitoHanabiData } from '@/data/level5-mito-hanabi';
+import { mitoHanabiData } from '@/data';
 
 export default function MitoHanabiPage() {
  return (
