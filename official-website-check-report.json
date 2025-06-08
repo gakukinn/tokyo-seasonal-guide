@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-06-08T08:33:06.772Z",
+  "timestamp": "2025-06-08T22:50:58.066Z",
   "stats": {
-    "totalLevel5Files": 86,
-    "hasOfficialWebsite": 86,
+    "totalLevel5Files": 85,
+    "hasOfficialWebsite": 85,
     "noOfficialWebsite": 0,
     "onlyWalkerPlus": 0
   },
@@ -171,7 +171,7 @@
       "hasNonWalkerPlusWebsite": true,
       "onlyWalkerPlus": false,
       "websites": [
-        "https://www.city.edogawa.tokyo.jp/hanabi/index.html"
+        "https://itabashihanabi.jp/"
       ],
       "walkerPlusLinks": []
     },
@@ -498,17 +498,6 @@
       "onlyWalkerPlus": false,
       "websites": [
         "https://www.city.oamishirasato.lg.jp/"
-      ],
-      "walkerPlusLinks": [
-        "https://hanabi.walkerplus.com/detail/ar0312e00786/"
-      ]
-    },
-    {
-      "filename": "level5-july-hanabi-chiba-sanmu.ts",
-      "hasNonWalkerPlusWebsite": true,
-      "onlyWalkerPlus": false,
-      "websites": [
-        "https://www.city.sammu.lg.jp/"
       ],
       "walkerPlusLinks": [
         "https://hanabi.walkerplus.com/detail/ar0312e00786/"

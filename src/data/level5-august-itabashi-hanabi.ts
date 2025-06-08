@@ -1,18 +1,18 @@
 import { HanabiData } from '@/types/hanabi';
 
 export const itabashiHanabiData: HanabiData = {
- id: 'edogawa-ku-hanabi-50',
- name: '第50回江戸川区花火大会',
-   englishName: '50th Edogawa Ward Fireworks Festival',
+ id: 'itabashi-hanabi-2025',
+   name: '第66回板桥花火大会',
+   englishName: '66th Itabashi Fireworks Festival',
  year: 2025,
  month: 8,
  date: '2025年8月2日',
- time: '19:15-20:20',
- duration: '65分钟',
- fireworksCount: '约1万4000发',
- expectedVisitors: '约3万人',
- weather: '悪天候时中止',
- ticketPrice: '有料席 1人2000円起',
+ time: '19:00-20:30',
+ duration: '90分钟',
+ fireworksCount: '约1万5000发',
+ expectedVisitors: '约57万人',
+ weather: '少雨决行，荒天时顺延无',
+ ticketPrice: '有料席约3万4千人分',
  status: '开催确定',
  themeColor: 'blue',
  
@@ -28,49 +28,49 @@ export const itabashiHanabiData: HanabiData = {
  media: [
  {
  type: 'image',
- url: '/images/hanabi/edogawa-fireworks.jpg',
- title: '第50回江戸川区花火大会壮观场面',
- description: '江戸川河川敷1万4000发花火，7个主题与BGM联动的音乐花火盛典'
+ url: '/images/hanabi/itabashi-fireworks.jpg',
+       title: '第66回板桥花火大会壮观场面',
+ description: '荒川河川敷1万5000发花火，与戸田桥花火大会同时举办的关东最大规模花火盛典'
  }
  ],
  
  venues: [
  {
- name: '江戸川河川敷（都立筱崎公园先）',
- location: '东京都江戸川区筱崎町',
- startTime: '19:15',
+ name: '荒川河川敷（板桥区侧）',
+ location: '东京都板桥区荒川河川敷',
+ startTime: '19:00',
  features: [
  '河川敷开阔视野',
- '多层构造花火',
- 'BGM联动演出',
- '屋台美食区域'
+ '都内最大尺五寸玉',
+ '与戸田桥花火同时举办',
+ '57万人观赏规模'
  ]
  }
  ],
 
  access: [
  {
- venue: '江戸川河川敷（都立筱崎公园先）',
+ venue: '荒川河川敷（板桥区侧）',
  stations: [
  {
- name: '筱崎站',
- lines: ['都营地下鉄新宿线'],
- walkTime: '步行15分钟'
+ name: '浮间舟渡站',
+ lines: ['JR埼京线'],
+ walkTime: '步行20分钟'
  },
  {
- name: '小岩站',
- lines: ['JR总武线'],
- walkTime: '步行25分钟'
+ name: '高岛平站',
+ lines: ['都营地下鉄三田线'],
+ walkTime: '步行20分钟'
  },
  {
- name: '京成江戸川站',
- lines: ['京成本线'],
- walkTime: '步行25分钟'
+ name: '西台站',
+ lines: ['都营地下鉄三田线'],
+ walkTime: '步行20分钟'
  },
  {
- name: '瑞江站',
- lines: ['都营地下鉄新宿线'],
- walkTime: '步行45分钟'
+ name: '莲根站',
+ lines: ['都营地下鉄三田线'],
+ walkTime: '步行20分钟'
  }
  ]
  }
@@ -78,40 +78,40 @@ export const itabashiHanabiData: HanabiData = {
 
  viewingSpots: [
  {
- name: '都立筱崎公园河川敷',
+ name: '荒川河川敷（板桥区侧）',
  rating: 5,
  crowdLevel: '高',
- tips: '正面观赏位置，可完整体验7个主题演出和BGM联动效果',
- pros: ['正面观赏', '音响效果最佳', '多层花火迫力'],
- cons: ['人群极度密集', '需要早到2-3小时占位']
+ tips: '主会场正面观赏位置，可体验都内最大尺五寸玉的震撼',
+ pros: ['正面观赏', '都内最大尺五寸玉', '57万人规模壮观'],
+ cons: ['人群极度密集', '需要早到占位']
  },
  {
- name: '江戸川对岸（千叶县市川市）',
+ name: '荒川河川敷（戸田市侧）',
  rating: 4,
  crowdLevel: '中',
- tips: '从对岸观赏，可拍摄到完整的花火与河面倒影',
- pros: ['河面反射美景', '摄影角度佳', '人群相对分散'],
- cons: ['距离较远', '音响效果减弱', '交通不便']
+ tips: '从对岸观赏，可同时观看板桥和戸田桥两个花火大会',
+ pros: ['双重花火体验', '摄影角度佳', '人群相对分散'],
+ cons: ['距离较远', '音响效果减弱']
  },
  {
- name: '筱崎站周边道路',
+ name: '浮间舟渡站周边',
  rating: 3,
  crowdLevel: '高',
  tips: '从稍远位置观赏，可避开最拥挤区域',
  pros: ['交通便利', '可选择观赏位置', '观赏后离场方便'],
- cons: ['视野受限', '无法体验完整音响', '部分花火被遮挡']
+ cons: ['视野受限', '无法体验完整震撼', '部分花火被遮挡']
  }
  ],
 
  history: {
- established: 1976,
- significance: '2025年迎来第50回纪念大会，江戸川区代表性夏季盛典',
+ established: 1959,
+ significance: '2025年迎来第66回，板桥区代表性夏季盛典，与戸田桥花火大会同时举办',
  highlights: [
- '1976年第1回开始',
- '2025年第50回纪念',
- '创业360年宗家花火「鍵屋」担当',
- '7个主题BGM联动演出特色',
- '国内最大级「富士大仕掛」'
+ '1959年第1回开始',
+ '2025年第66回',
+ '与戸田桥花火大会同时举办',
+ '关东最大规模57万人观赏',
+ '都内最大尺五寸玉震撼演出'
  ]
  },
 
@@ -119,7 +119,7 @@ export const itabashiHanabiData: HanabiData = {
  {
  category: '观赏建议',
  items: [
- '建议提前2-3小时到场占位（筱崎站混雑）',
+ '建议提前2-3小时到场占位',
  '携带折叠椅或野餐垫',
  '准备防虫喷雾（河川敷蚊虫较多）',
  '夜间气温下降，准备保暖衣物'
@@ -128,44 +128,47 @@ export const itabashiHanabiData: HanabiData = {
  {
  category: '交通提示',
  items: [
- '筱崎站往返极度混雑，建议利用其他车站',
- '当日17:00-22:00会场周边交通规制',
- '车辆、自行车入场禁止',
+ '各车站往返极度混雑，建议分散利用',
+ '当日会场周边交通规制实施',
+ '车辆入场禁止',
  '建议提前2小时到达，结束后等待分散'
  ]
  },
  {
- category: '音乐花火特色',
+ category: '花火特色',
  items: [
- '开场5秒1000发迫力开幕',
- '7个不同主题BGM联动演出',
- '国内最大级「富士大仕掛」',
- '压轴「怒涛金金毛」壮观'
+ '都内最大尺五寸玉目前开放',
+ '日本全国花火竞技会优秀花火师「芸术玉」',
+         '5个场所同时打上宽幅星雷',
+        '终章「天空的尼亚加拉」壮观'
  ]
  },
  {
- category: '50周年特色',
+ category: '2025年特色',
  items: [
- '「富士大仕掛」挑战吉尼斯世界记录',
- '花火设计公开征集採用',
- '宗家花火鍵屋特别审查',
- '自由独创花火打上'
+         '博洛尼亚市友好都市交流20周年纪念花火',
+        '质量并重的宽幅星雷升级',
+        '开场・终章迫力演出',
+ '与戸田桥花火的双重震撼体验'
  ]
  }
  ],
 
  contact: {
- organizer: '江戸川区花火大会实行委员会事务局（産业経済課内）',
- phone: '03-5662-0523',
- website: 'https://www.city.edogawa.tokyo.jp/hanabi/index.html',
- socialMedia: '@edogawa_hanabi'
+ organizer: '板桥区观光协会',
+ phone: '03-3579-2255',
+ website: 'https://itabashihanabi.jp/',
+ socialMedia: '@itabashihanabi'
  },
 
- mapInfo: {
- hasMap: true,
- mapNote: '江戸川河川敷（都立筱崎公园先），当日17:00-22:00会场周边交通规制实施。车辆、自行车入场禁止',
- parking: '无停车场（车辆入场禁止）'
- },
+   mapInfo: {
+    hasMap: true,
+    mapNote: '荒川河川敷（板桥区侧），当日会场周边交通规制实施。车辆入场禁止',
+    parking: '无停车场（车辆入场禁止）'
+  },
+
+  // 地图嵌入URL
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.1!2d139.6!3d35.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5b8c5c5c5c%3A0x7e4c5e5b8a2c8c8c!2z6I2J5bed5Yy66I2J5bed!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
 
  weatherInfo: {
  month: '8月',
@@ -173,61 +176,69 @@ export const itabashiHanabiData: HanabiData = {
  humidity: '75-85%',
  rainfall: '夏季雷雨可能',
  recommendation: '河川敷夜间相对凉爽，但仍需注意中暑对策',
- rainPolicy: '悪天候时中止',
- note: '江戸川河川敷，夜间河风凉爽'
+ rainPolicy: '少雨决行，荒天时顺延无',
+ note: '荒川河川敷，夜间河风凉爽'
  },
 
  specialFeatures: {
- scale: '1万4000发花火，65分钟连续演出',
- location: '江戸川河川敷开阔视野，多层构造花火',
- tradition: '创业360年宗家花火「鍵屋」担当制作',
- atmosphere: '7个主题BGM联动，音乐与花火完美融合',
- collaboration: '厚实多层构造花火与音响效果联动'
+ scale: '1万5000发花火，90分钟连续演出',
+ location: '荒川河川敷开阔视野，57万人观赏规模',
+ tradition: '第66回传统花火大会，与戸田桥花火同时举办',
+ atmosphere: '关东最大规模双花火盛典',
+ collaboration: '板桥区与戸田市跨界合作花火演出'
  },
 
  special2025: {
- theme: '第50回纪念大会',
- concept: '江戸川夜空7主题演出',
- memorial: '1976年第1回开始的50年里程碑',
+     theme: '第66回板桥花火大会',
+ concept: '荒川夜空双花火盛典',
+ memorial: '1959年第1回开始的66年传统',
  features: [
- '开场5秒1000发震撼开幕',
- '国内最大级「富士大仕掛」吉尼斯挑战',
- '压轴「怒涛金金毛」壮观演出',
- '花火设计公开征集採用',
- '异色7主题BGM联动演出'
+ '都内最大尺五寸玉目前开放震撼',
+ '日本全国花火竞技会优秀花火师「芸术玉」',
+         '终章「天空的尼亚加拉」壮观演出',
+        '博洛尼亚市友好都市交流20周年纪念花火',
+        '5个场所同时打上宽幅星雷升级'
  ]
  },
 
- mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.1!2d139.9!3d35.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188559c5b8c5c5%3A0x7e4c5e5b8a2c8c8c!2z6YO96ZGf5bed5Yy65r2t5bSO6aeF!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp',
-
+   // 关联推荐
   related: {
-   regionRecommendations: [
-     {
-       id: 'itabashi-hanabi',
-       name: '第66回板桥花火大会',
-       date: '2025年8月9日',
-       location: '荒川河川敷',
-       visitors: '52万人',
-       link: '/august/hanabi/tokyo/itabashi-hanabi'
-     },
-     {
-       id: 'sumida-hanabi',
-       name: '第48回隅田川花火大会',
-       date: '7月最后土曜日',
-       location: '隅田川沿岸',
-       visitors: '95万人',
-       link: '/july/hanabi/tokyo/sumida-hanabi'
-     }
-   ],
-   timeRecommendations: [
-     {
-       id: 'katsushika-hanabi',
-       name: '第59回葛饰纳凉花火大会',
-       date: '2025年8月22日',
-       location: '江戸川河川敷',
-       visitors: '77万人',
-       link: '/july/hanabi/tokyo/katsushika-hanabi'
-     }
-   ]
- }
+    regionRecommendations: [
+      {
+        id: 'edogawa-hanabi-2025',
+        name: '第50回江户川区花火大会',
+        date: '2025年8月2日',
+        location: '江户川河川敷',
+        visitors: '3万人',
+        link: '/august/hanabi/tokyo/edogawa'
+      },
+      {
+        id: 'jingu-gaien-hanabi-2025',
+        name: '2025 神宫外苑花火大会',
+        date: '2025年8月16日',
+        location: '明治神宮外苑',
+        visitors: '100万人',
+        link: '/august/hanabi/tokyo/jingu-gaien'
+      }
+    ],
+    timeRecommendations: [
+      {
+        id: 'kozushima-hanabi-2025',
+        name: '第32回神津島渚花火大会',
+        date: '2025年8月4日',
+        location: '神津島港桟橋',
+        visitors: '1000人',
+        link: '/august/hanabi/tokyo/kozushima'
+      },
+      {
+        id: 'okutama-hanabi-2025',
+        name: '町制施行70周年纪念 奥多摩纳凉花火大会',
+        date: '2025年8月9日',
+        location: '愛宕山広場',
+        visitors: '1万人',
+        link: '/august/hanabi/tokyo/okutama'
+      }
+    ],
+    sameMonth: ["江户川花火大会", "神津岛渚花火大会", "奥多摩纳凉花火大会"]
+  }
 };

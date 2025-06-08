@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方案A - 卡片内嵌展开</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        /* X轴月份滚动 */
+        .month-scroll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .scroll-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .month-display {
+            margin: 0 30px;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        /* Y轴活动滚动 */
+        .activity-scroll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .activity-display {
+            margin: 0 30px;
+            color: white;
+            font-size: 1.5rem;
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        /* 主要活动卡片 */
+        .activity-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .card-subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        /* 地区选择展开区域 */
+        .region-selector {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+        }
+        
+        .region-selector.expanded {
+            max-height: 300px;
+            padding-top: 20px;
+        }
+        
+        .region-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .region-btn {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .region-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+        
+        .region-btn::after {
+            content: attr(data-count);
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+        }
+        
+        .expand-hint {
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        
+        .expanded .expand-hint {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎌 东京旅游指南</h1>
+        
+        <!-- X轴：月份选择 -->
+        <div class="month-scroll">
+            <button class="scroll-btn" onclick="changeMonth(-1)">‹</button>
+            <div class="month-display" id="monthDisplay">7月</div>
+            <button class="scroll-btn" onclick="changeMonth(1)">›</button>
+        </div>
+        
+        <!-- Y轴：活动类型选择 -->
+        <div class="activity-scroll">
+            <button class="scroll-btn" onclick="changeActivity(-1)">‹</button>
+            <div class="activity-display" id="activityDisplay">🎆 花火大会</div>
+            <button class="scroll-btn" onclick="changeActivity(1)">›</button>
+        </div>
+        
+        <!-- 主活动卡片 -->
+        <div class="activity-card" id="activityCard" onclick="toggleRegions()">
+            <div class="card-header">
+                <h2 class="card-title" id="cardTitle">7月花火大会</h2>
+                <p class="card-subtitle">点击选择观赏地区，探索精彩花火体验</p>
+            </div>
+            
+            <!-- 地区选择区域 -->
+            <div class="region-selector" id="regionSelector">
+                <h3 style="text-align: center; color: #333; margin-bottom: 15px;">选择观赏地区</h3>
+                <div class="region-grid">
+                    <button class="region-btn" data-count="12个" onclick="selectRegion('tokyo')">
+                        🗼 东京
+                    </button>
+                    <button class="region-btn" data-count="8个" onclick="selectRegion('saitama')">
+                        🌸 埼玉
+                    </button>
+                    <button class="region-btn" data-count="6个" onclick="selectRegion('chiba')">
+                        🌊 千叶
+                    </button>
+                    <button class="region-btn" data-count="9个" onclick="selectRegion('kanagawa')">
+                        🗻 神奈川
+                    </button>
+                    <button class="region-btn" data-count="5个" onclick="selectRegion('kitakanto')">
+                        🏔️ 北关东
+                    </button>
+                    <button class="region-btn" data-count="7个" onclick="selectRegion('koshinetsu')">
+                        ⛰️ 甲信越
+                    </button>
+                </div>
+            </div>
+            
+            <div class="expand-hint">👆 点击展开地区选择</div>
+        </div>
+    </div>
+
+    <script>
+        const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+        const activities = ['🎆 花火大会', '🌸 樱花观赏', '🍁 红叶狩猎'];
+        
+        let currentMonth = 6; // 7月 (索引6)
+        let currentActivity = 0; // 花火大会
+        let regionsExpanded = false;
+        
+        function changeMonth(direction) {
+            currentMonth = (currentMonth + direction + months.length) % months.length;
+            document.getElementById('monthDisplay').textContent = months[currentMonth];
+            updateCard();
+        }
+        
+        function changeActivity(direction) {
+            currentActivity = (currentActivity + direction + activities.length) % activities.length;
+            document.getElementById('activityDisplay').textContent = activities[currentActivity];
+            updateCard();
+        }
+        
+        function updateCard() {
+            const month = months[currentMonth];
+            const activity = activities[currentActivity].replace(/🎆|🌸|🍁/g, '').trim();
+            document.getElementById('cardTitle').textContent = `${month}${activity}`;
+            
+            // 收起地区选择
+            if (regionsExpanded) {
+                toggleRegions();
+            }
+        }
+        
+        function toggleRegions() {
+            const selector = document.getElementById('regionSelector');
+            const card = document.getElementById('activityCard');
+            
+            regionsExpanded = !regionsExpanded;
+            
+            if (regionsExpanded) {
+                selector.classList.add('expanded');
+                card.style.cursor = 'default';
+            } else {
+                selector.classList.remove('expanded');
+                card.style.cursor = 'pointer';
+            }
+        }
+        
+        function selectRegion(region) {
+            const month = months[currentMonth];
+            const activity = activities[currentActivity].includes('花火') ? 'hanabi' : 
+                           activities[currentActivity].includes('樱花') ? 'sakura' : 'koyo';
+            
+            // 模拟跳转到地区页面
+            alert(`跳转到: /${month.replace('月', '')}-${region}-${activity}/`);
+        }
+    </script>
+</body>
+</html> 

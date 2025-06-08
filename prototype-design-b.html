@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方案B - 右侧滑出面板</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        /* X轴月份滚动 */
+        .month-scroll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .scroll-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .month-display {
+            margin: 0 30px;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        /* Y轴活动滚动 */
+        .activity-scroll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .activity-display {
+            margin: 0 30px;
+            color: white;
+            font-size: 1.5rem;
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        /* 主要活动卡片 */
+        .activity-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .card-subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        .card-action {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .select-region-btn {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .select-region-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,107,107,0.4);
+        }
+        
+        .select-region-btn::after {
+            content: '→';
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .select-region-btn:hover::after {
+            transform: translateX(5px);
+        }
+        
+        /* 右侧滑出面板 */
+        .side-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+            transition: right 0.4s ease;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .side-panel.open {
+            right: 0;
+        }
+        
+        .panel-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px 20px;
+            position: relative;
+        }
+        
+        .panel-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .panel-subtitle {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .close-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: rotate(90deg);
+        }
+        
+        .panel-content {
+            padding: 30px 20px;
+        }
+        
+        .region-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .region-item {
+            background: #f8f9fa;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .region-item:hover {
+            border-color: #ff6b6b;
+            background: #fff5f5;
+            transform: translateX(5px);
+        }
+        
+        .region-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .region-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .region-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+        }
+        
+        /* 遮罩层 */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .side-panel {
+                width: 100vw;
+                right: -100vw;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎌 东京旅游指南</h1>
+        
+        <!-- X轴：月份选择 -->
+        <div class="month-scroll">
+            <button class="scroll-btn" onclick="changeMonth(-1)">‹</button>
+            <div class="month-display" id="monthDisplay">7月</div>
+            <button class="scroll-btn" onclick="changeMonth(1)">›</button>
+        </div>
+        
+        <!-- Y轴：活动类型选择 -->
+        <div class="activity-scroll">
+            <button class="scroll-btn" onclick="changeActivity(-1)">‹</button>
+            <div class="activity-display" id="activityDisplay">🎆 花火大会</div>
+            <button class="scroll-btn" onclick="changeActivity(1)">›</button>
+        </div>
+        
+        <!-- 主活动卡片 -->
+        <div class="activity-card">
+            <div class="card-header">
+                <h2 class="card-title" id="cardTitle">7月花火大会</h2>
+                <p class="card-subtitle">选择观赏地区，探索精彩花火体验</p>
+            </div>
+            
+            <div class="card-action">
+                <button class="select-region-btn" onclick="openPanel()">
+                    选择地区
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 遮罩层 -->
+    <div class="overlay" id="overlay" onclick="closePanel()"></div>
+    
+    <!-- 右侧滑出面板 -->
+    <div class="side-panel" id="sidePanel">
+        <div class="panel-header">
+            <h3 class="panel-title" id="panelTitle">7月花火大会</h3>
+            <p class="panel-subtitle">选择您想要探索的地区</p>
+            <button class="close-btn" onclick="closePanel()">×</button>
+        </div>
+        
+        <div class="panel-content">
+            <div class="region-list">
+                <div class="region-item" onclick="selectRegion('tokyo')">
+                    <div class="region-icon">🗼</div>
+                    <div class="region-name">东京</div>
+                    <div class="region-count">12个精彩活动</div>
+                </div>
+                
+                <div class="region-item" onclick="selectRegion('saitama')">
+                    <div class="region-icon">🌸</div>
+                    <div class="region-name">埼玉</div>
+                    <div class="region-count">8个精彩活动</div>
+                </div>
+                
+                <div class="region-item" onclick="selectRegion('chiba')">
+                    <div class="region-icon">🌊</div>
+                    <div class="region-name">千叶</div>
+                    <div class="region-count">6个精彩活动</div>
+                </div>
+                
+                <div class="region-item" onclick="selectRegion('kanagawa')">
+                    <div class="region-icon">🗻</div>
+                    <div class="region-name">神奈川</div>
+                    <div class="region-count">9个精彩活动</div>
+                </div>
+                
+                <div class="region-item" onclick="selectRegion('kitakanto')">
+                    <div class="region-icon">🏔️</div>
+                    <div class="region-name">北关东</div>
+                    <div class="region-count">5个精彩活动</div>
+                </div>
+                
+                <div class="region-item" onclick="selectRegion('koshinetsu')">
+                    <div class="region-icon">⛰️</div>
+                    <div class="region-name">甲信越</div>
+                    <div class="region-count">7个精彩活动</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+        const activities = ['🎆 花火大会', '🌸 樱花观赏', '🍁 红叶狩猎'];
+        
+        let currentMonth = 6; // 7月 (索引6)
+        let currentActivity = 0; // 花火大会
+        
+        function changeMonth(direction) {
+            currentMonth = (currentMonth + direction + months.length) % months.length;
+            document.getElementById('monthDisplay').textContent = months[currentMonth];
+            updateCard();
+        }
+        
+        function changeActivity(direction) {
+            currentActivity = (currentActivity + direction + activities.length) % activities.length;
+            document.getElementById('activityDisplay').textContent = activities[currentActivity];
+            updateCard();
+        }
+        
+        function updateCard() {
+            const month = months[currentMonth];
+            const activity = activities[currentActivity].replace(/🎆|🌸|🍁/g, '').trim();
+            document.getElementById('cardTitle').textContent = `${month}${activity}`;
+            document.getElementById('panelTitle').textContent = `${month}${activity}`;
+        }
+        
+        function openPanel() {
+            document.getElementById('sidePanel').classList.add('open');
+            document.getElementById('overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePanel() {
+            document.getElementById('sidePanel').classList.remove('open');
+            document.getElementById('overlay').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        function selectRegion(region) {
+            const month = months[currentMonth];
+            const activity = activities[currentActivity].includes('花火') ? 'hanabi' : 
+                           activities[currentActivity].includes('樱花') ? 'sakura' : 'koyo';
+            
+            // 模拟跳转到地区页面
+            alert(`跳转到: /${month.replace('月', '')}-${region}-${activity}/`);
+            closePanel();
+        }
+        
+        // ESC键关闭面板
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePanel();
+            }
+        });
+    </script>
+</body>
+</html> 
