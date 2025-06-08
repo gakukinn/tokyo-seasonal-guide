@@ -32,7 +32,7 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link 
-            href="https://www.booking.com/searchresults.zh-cn.html?ss=东京&checkin=2025-07-25&checkout=2025-07-27"
+            href="https://www.booking.com/searchresults.zh-cn.html?ss=东京&checkin=2025-07-25&checkout=2025-07-27&aid=304142"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
@@ -42,7 +42,7 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
             Booking.com 查看酒店
           </Link>
           <Link 
-            href="https://www.agoda.com/zh-cn/city/tokyo-jp.html?checkin=2025-07-25&checkout=2025-07-27"
+            href="https://www.agoda.com/zh-cn/city/tokyo-jp.html?checkin=2025-07-25&checkout=2025-07-27&cid=1844104"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
@@ -67,7 +67,7 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link 
-            href="https://www.klook.com/zh-CN/activity/126-jr-pass-japan-rail-pass/"
+            href="https://www.klook.com/zh-CN/activity/126-jr-pass-japan-rail-pass/?aid=3817"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
@@ -77,7 +77,7 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
             JR Pass 全国版
           </Link>
           <Link 
-            href="https://www.klook.com/zh-CN/activity/3664-tokyo-metro-pass/"
+            href="https://www.klook.com/zh-CN/activity/3664-tokyo-metro-pass/?aid=3817"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
@@ -102,7 +102,7 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
         </h3>
         <div className="grid grid-cols-1 gap-4">
           <Link 
-            href="https://www.klook.com/zh-CN/activity/18602-tokyo-fireworks-festival-boat-cruise/"
+            href="https://www.klook.com/zh-CN/activity/18602-tokyo-fireworks-festival-boat-cruise/?aid=3817"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
@@ -112,14 +112,14 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
             隅田川花火游船观赏
           </Link>
           <Link 
-            href="https://www.klook.com/zh-CN/activity/tokyo-hanabi-photography-tour/"
+            href="https://www.klook.com/zh-CN/activity/1827-tokyo-bay-cruise/?aid=3817"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
-            onClick={() => handleLinkClick('photo-tour')}
+            onClick={() => handleLinkClick('bay-cruise')}
           >
             <span className="mr-2">📸</span>
-            专业摄影指导
+            东京湾观光游船
           </Link>
         </div>
         <p className="text-sm text-gray-600 mt-3 text-center">
@@ -137,7 +137,7 @@ export default function AffiliateLinks({ type, eventName, location }: AffiliateL
         </h3>
         <div className="grid grid-cols-1 gap-4">
           <Link 
-            href="https://www.allianz-travel.com.cn/"
+            href="https://www.allianz-travel.com.cn/travel-insurance/single-trip?utm_source=affiliate&utm_medium=referral"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center shadow-md hover:shadow-lg"
