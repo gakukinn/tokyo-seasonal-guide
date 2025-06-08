@@ -11,8 +11,8 @@
 'use client';
 
 import React from 'react';
-import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
-import { tatebayashiHanabiData } from '../../../../../data/level5-tatebayashi-hanabi';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { tatebayashiHanabiData } from '@/data/level5-tatebayashi-hanabi';
 
 export default function TatebayashiHanabiPage() {
   return <HanabiDetailTemplate data={tatebayashiHanabiData} regionKey="kitakanto" />;

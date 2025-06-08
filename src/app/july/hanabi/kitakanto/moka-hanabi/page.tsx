@@ -11,8 +11,8 @@
 'use client';
 
 import React from 'react';
-import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
-import { mokaHanabiData } from '../../../../../data/level5-moka-hanabi';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { mokaHanabiData } from '@/data/level5-moka-hanabi';
 
 export default function MokaHanabiPage() {
   return <HanabiDetailTemplate data={mokaHanabiData} regionKey="kitakanto" />;

@@ -11,8 +11,8 @@
 'use client';
 
 import React from 'react';
-import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
-import { tamuraHanabiData } from '../../../../../data/level5-tamura-hanabi';
+import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
+import { tamuraHanabiData } from '@/data/level5-tamura-hanabi';
 
 export default function TamuraHanabiPage() {
   return <HanabiDetailTemplate data={tamuraHanabiData} regionKey="kitakanto" />;
