@@ -34,5 +34,21 @@ export { kanazawaMatsurihanabiData } from './level5-august-kanazawa-matsuri-hana
 // 7月份数据  
 export { mitoHanabiData } from './level5-mito-hanabi';
 export { mokaHanabiData } from './level5-moka-hanabi';
+export { tamuraHanabiData } from './level5-tamura-hanabi';
+export { tatebayashiHanabiData } from './level5-tatebayashi-hanabi';
+// 暂时注释掉有问题的导出，只保留确认可用的
+// export { suzakaMinnaNHanabiData } from './level5-suzaka-minna-hanabi';
+// export { nojiriLakeHanabiData } from './level5-nojiri-lake-hanabi';
+// export { sanjoNatsumatsurihanabiData } from './level5-sanjo-natsumatsuri-hanabi';
+
+// // 9月份数据  
+// export { chofuHanabiData } from './level5-september-tokyo-chofu-hanabi';
+// export { koshinetsuAsaharaHanabiData } from './level5-september-koshinetsu-asahara-hanabi';
+// export { koshinetsuShinsokuHanabiData } from './level5-september-koshinetsu-shinsaku-hanabi';
+
+// // 其他特殊数据
+// export { gionKashiwazakiHanabiData } from './level5-gion-kashiwazaki-hanabi';
+// export { fujiKawaguchiLakeHanabiData } from './level5-fuji-kawaguchi-lake-hanabi';
+// export { animeClassicsAnisongHanabiData } from './level5-anime-classics-anisong-hanabi';
 
 // 其他月份数据根据需要添加 
