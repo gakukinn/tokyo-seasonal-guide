@@ -8,14 +8,16 @@
  * @path /august/hanabi/tokyo/kozushima
  * @description kozushima完整详情信息，包含交通、观赏、历史等
  */
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { kozushimaHanabiData } from '@/data/level5-august-kozushima-hanabi';
+'use client';
+
+import React from 'react';
 
 export default function KozushimaHanabiPage() {
- return (
- <HanabiDetailTemplate 
- data={kozushimaHanabiData}
- regionKey="tokyo"
- />
- );
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>神津島花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 
