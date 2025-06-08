@@ -11,8 +11,8 @@
 'use client';
 
 import React from 'react';
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { animeClassicsData } from '@/data/level5-anime-classics-anisong-hanabi';
+import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
+import { animeClassicsData } from '../../../../../data/level5-anime-classics-anisong-hanabi';
 
 export default function AnimeClassicsAnisongHanabiPage() {
   return <HanabiDetailTemplate data={animeClassicsData} regionKey="koshinetsu" />;
