@@ -4,10 +4,6 @@ Allow: /
 # 禁止爬取开发文件
 Disallow: /_next/
 Disallow: /api/
-Disallow: /.well-known/
-
-# Sitemap位置
-Sitemap: https://your-domain.com/sitemap.xml
 
 # 特殊爬虫规则
 User-agent: GoogleBot
