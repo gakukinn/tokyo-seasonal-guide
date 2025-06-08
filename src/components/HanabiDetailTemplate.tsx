@@ -7,6 +7,7 @@ import MediaDisplay from './MediaDisplay';
 // import HanabiHeader from './shared/HanabiHeader';
 import HanabiBreadcrumb from './shared/HanabiBreadcrumb';
 import { getThemeColors, getRegionConfig, validateHanabiData } from '../config/hanabi-detail-template';
+import AffiliateLinks from './AffiliateLinks';
 
 interface HanabiDetailTemplateProps {
  data: HanabiData;
@@ -441,6 +442,29 @@ export default function HanabiDetailTemplate({ data, regionKey }: HanabiDetailTe
          </div>
          </div>
          </section>
+
+ {/* 旅游服务推荐 - 变现区域 */}
+ <section className="py-12 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border-t border-white/50">
+ <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div className="text-center mb-8">
+ <h2 className="text-3xl font-bold text-gray-900 mb-4">🎯 完美观赏攻略</h2>
+ <p className="text-gray-700 max-w-2xl mx-auto">
+ 为您推荐最佳住宿、交通和体验服务，让花火之旅更加完美！
+ </p>
+ </div>
+
+ <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+ <div>
+ <AffiliateLinks type="hotel" location={regionConfig.name} />
+ <AffiliateLinks type="transport" />
+ </div>
+ <div>
+ <AffiliateLinks type="tickets" eventName={data.name} />
+ <AffiliateLinks type="insurance" />
+ </div>
+ </div>
+ </div>
+ </section>
 
  {/* 关联推荐 - 轮回设计 */}
  <section className="py-12 bg-white/50 backdrop-blur-sm border-t border-white/50">

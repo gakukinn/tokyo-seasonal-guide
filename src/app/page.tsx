@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { HeaderAd, ContentAd, FooterAd } from '../components/AdSenseAd';
 
 // 月份数据 - 日本传统月名设计
 const months = [
@@ -83,6 +84,11 @@ export default function Home() {
 
  {/* 主要内容 */}
  <main className="relative z-10">
+ {/* 顶部广告位 */}
+ <div className="max-w-4xl mx-auto px-4 pt-8">
+ <HeaderAd />
+ </div>
+
  {/* 英雄区域 */}
  <section className="pt-24 pb-20 text-center bg-gradient-to-b from-rose-100/60 to-white/50 backdrop-blur-sm">
  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,9 +105,14 @@ export default function Home() {
  <section className="py-20 bg-white/30 backdrop-blur-sm border-t border-white/50">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">选择旅行月份</h2>
- <p className="text-gray-700 text-center mb-16 text-lg">
+ <p className="text-gray-700 text-center mb-8 text-lg">
  点击月份了解该月的活动、节庆和旅游亮点
  </p>
+ 
+ {/* 内容区广告 */}
+ <div className="max-w-2xl mx-auto mb-16">
+ <ContentAd />
+ </div>
  
  {/* 月份网格 */}
  <div className="grid grid-cols-3 gap-8">
@@ -232,6 +243,11 @@ export default function Home() {
  </div>
  </section>
  </main>
+
+ {/* 底部广告位 */}
+ <div className="max-w-4xl mx-auto px-4 py-8">
+ <FooterAd />
+ </div>
 
  {/* 页脚 */}
  <footer className="relative z-10 bg-gray-800 border-t border-gray-700 mt-20">
