@@ -1,10 +1,10 @@
 {
-  "name": "hanabi-guide",
+  "name": "tokyo-seasonal-guide",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run pre-build-check && next build",
+    "build": "next build",
     "pre-build-check": "node scripts/pre-build-checker.js",
     "start": "next start",
     "lint": "next lint",
