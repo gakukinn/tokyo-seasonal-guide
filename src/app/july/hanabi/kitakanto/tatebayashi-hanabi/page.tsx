@@ -11,7 +11,7 @@
 'use client';
 
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { tatebayashiHanabiData } from '@/data/level5-tatebayashi-hanabi';
+import { tatebayashiHanabiData } from '@/data';
 
 export default function TatebayashiHanabiPage() {
  return (

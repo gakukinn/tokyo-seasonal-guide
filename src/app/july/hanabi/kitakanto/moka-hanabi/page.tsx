@@ -11,7 +11,7 @@
 'use client';
 
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { mokaHanabiData } from '@/data/level5-moka-hanabi';
+import { mokaHanabiData } from '@/data';
 
 export default function MokaHanabiPage() {
  return (

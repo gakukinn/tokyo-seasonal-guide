@@ -11,7 +11,7 @@
 'use client';
 
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { okutamaHanabiData } from '@/data/level5-august-okutama-hanabi';
+import { okutamaHanabiData } from '@/data';
 
 export default function OkutamaHanabiPage() {
  return <HanabiDetailTemplate data={okutamaHanabiData} regionKey="tokyo" />;

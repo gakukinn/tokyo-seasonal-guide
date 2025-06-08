@@ -11,7 +11,7 @@
 'use client';
 
 import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { tamuraHanabiData } from '@/data/level5-tamura-hanabi';
+import { tamuraHanabiData } from '@/data';
 
 export default function TamuraHanabiPage() {
  return (
