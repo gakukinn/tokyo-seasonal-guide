@@ -10,14 +10,14 @@
  */
 'use client';
 
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { mitoHanabiData } from '@/data';
+import React from 'react';
 
 export default function MitoHanabiPage() {
- return (
- <HanabiDetailTemplate 
- data={mitoHanabiData}
- regionKey="kitakanto"
- />
- );
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>水戸花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 

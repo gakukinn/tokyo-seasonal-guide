@@ -1,5 +1,5 @@
 /**
- * 第五层页面 - tatebayashi-hanabi详情
+ * 第五层页面 - tatebayashi-hanabi完整详情信息，包含交通、观赏、历史等
  * @layer 五层 (Detail Layer)
  * @month 7月
  * @region 北关东
@@ -10,14 +10,14 @@
  */
 'use client';
 
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { tatebayashiHanabiData } from '@/data';
+import React from 'react';
 
 export default function TatebayashiHanabiPage() {
- return (
- <HanabiDetailTemplate 
- data={tatebayashiHanabiData}
- regionKey="kitakanto"
- />
- );
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>館林花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 
