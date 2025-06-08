@@ -10,9 +10,15 @@
  */
 'use client';
 
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { akishimaHanabiData } from '@/data';
+import React from 'react';
 
+// 临时占位符页面
 export default function AkishimaHanabiPage() {
- return <HanabiDetailTemplate data={akishimaHanabiData} regionKey="tokyo" />;
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>昭島市夏祭り花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 

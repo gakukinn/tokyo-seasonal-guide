@@ -8,9 +8,16 @@
  * @path /august/hanabi/tokyo/itabashi
  * @description itabashi完整详情信息，包含交通、观赏、历史等
  */
-import HanabiDetailTemplate from '../../../../../components/HanabiDetailTemplate';
-import { itabashiHanabiData } from '@/data';
+'use client';
+
+import React from 'react';
 
 export default function ItabashiDetailPage() {
- return <HanabiDetailTemplate data={itabashiHanabiData} regionKey="tokyo" />;
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>板橋区花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 
