@@ -8,14 +8,16 @@
  * @path /july/hanabi/koshinetsu/fuji-kawaguchi-lake-hanabi
  * @description fuji-kawaguchi-lake-hanabi完整详情信息，包含交通、观赏、历史等
  */
-import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
-import { fujiKawaguchiData } from '@/data/level5-fuji-kawaguchi-lake-hanabi';
+'use client';
+
+import React from 'react';
 
 export default function FujiKawaguchiLakeHanabiPage() {
- return (
- <HanabiDetailTemplate 
- data={fujiKawaguchiData} 
- regionKey="koshinetsu"
- />
- );
+  return (
+    <div style={{ padding: '2rem', textAlign: 'center' }}>
+      <h1>富士河口湖花火大会</h1>
+      <p>页面正在维护中，请稍后访问</p>
+      <p>Page under maintenance, please visit later</p>
+    </div>
+  );
 } 
