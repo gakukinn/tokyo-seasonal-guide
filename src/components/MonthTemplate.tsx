@@ -273,31 +273,6 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  </div>
  </section>
 
- {/* 活动类型概览 - 新设计的顶部横向展示 */}
- {hasActivities && (
- <section className="py-12 bg-white/40 backdrop-blur-sm border-b border-white/50">
- <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">{monthConfig.chinese}精彩活动概览</h2>
- 
- <div className="flex flex-wrap justify-center gap-6 mb-8">
- {monthConfig.activities.slice(0, 3).map((activity) => (
- <div
- key={activity.id}
- className={`flex items-center space-x-4 p-6 rounded-2xl bg-gradient-to-r ${activity.color} border border-white/60 shadow-lg backdrop-blur-sm`}
- >
- <div className="text-4xl">{activity.icon}</div>
- <div>
- <h3 className="text-lg font-bold text-gray-800">{activity.name}</h3>
- <p className="text-sm text-gray-600">{activity.description}</p>
- </div>
- </div>
- ))}
- </div>
- 
- </div>
- </section>
- )}
-
  {/* 地区选择 - 新设计的主体内容 */}
  {hasActivities ? (
  <section className="py-20 bg-white/30 backdrop-blur-sm">
@@ -419,6 +394,31 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  <p className="text-gray-600 text-lg mb-8">
  我们正在为您精心准备{monthConfig.chinese}的精彩活动内容，敬请期待！
  </p>
+ </div>
+ </section>
+ )}
+
+ {/* 活动类型概览 - 移至地区卡片下方 */}
+ {hasActivities && (
+ <section className="py-12 bg-white/40 backdrop-blur-sm border-t border-white/50">
+ <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">{monthConfig.chinese}精彩活动概览</h2>
+ 
+ <div className="flex flex-wrap justify-center gap-6 mb-8">
+ {monthConfig.activities.slice(0, 3).map((activity) => (
+ <div
+ key={activity.id}
+ className={`flex items-center space-x-4 p-6 rounded-2xl bg-gradient-to-r ${activity.color} border border-white/60 shadow-lg backdrop-blur-sm`}
+ >
+ <div className="text-4xl">{activity.icon}</div>
+ <div>
+ <h3 className="text-lg font-bold text-gray-800">{activity.name}</h3>
+ <p className="text-sm text-gray-600">{activity.description}</p>
+ </div>
+ </div>
+ ))}
+ </div>
+ 
  </div>
  </section>
  )}
