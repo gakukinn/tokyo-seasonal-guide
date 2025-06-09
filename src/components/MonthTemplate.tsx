@@ -358,8 +358,8 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  href={hasEvents ? `/${getMonthPath(monthConfig.id)}/${monthConfig.activities[0]?.id}/${regionKey}` : '#'}
  className={`group relative block p-6 rounded-2xl transition-all duration-500 transform ${
  hasEvents 
- ? `bg-gradient-to-br ${region.color} hover:shadow-2xl cursor-pointer hover:scale-105 hover:-translate-y-2 shadow-xl backdrop-blur-sm hover:border-white/80 border-2 hover:shadow-blue-200/50`
- : 'bg-gradient-to-br from-gray-100/90 to-gray-200/80 border-gray-300/60 cursor-not-allowed backdrop-blur-sm shadow-lg border-2'
+ ? `bg-gradient-to-br ${region.color} hover:shadow-2xl cursor-pointer hover:scale-110 hover:-translate-y-3 shadow-2xl backdrop-blur-sm border-2 border-white/60 hover:border-white/90 hover:shadow-blue-300/60`
+ : 'bg-gradient-to-br from-gray-50/70 to-gray-100/50 border-gray-200/40 cursor-not-allowed backdrop-blur-sm shadow-sm border-2 opacity-60 grayscale hover:grayscale-0 hover:opacity-70'
  }`}
  style={{ gridArea: region.gridArea }}
  onClick={(e) => {
@@ -374,7 +374,7 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  {region.emoji}
  </div>
  <h3 className={`text-2xl font-bold transition-colors ${
- hasEvents ? 'text-gray-800 group-hover:text-gray-900' : 'text-gray-400'
+ hasEvents ? 'text-gray-800 group-hover:text-gray-900 drop-shadow-sm' : 'text-gray-400'
  }`}>
  {region.name}
  </h3>
