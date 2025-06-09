@@ -283,9 +283,9 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  .region-grid {
  display: grid;
  grid-template-columns: repeat(4, 1fr);
- grid-template-rows: repeat(6, 120px);
- gap: 1.2rem;
- max-width: 700px;
+ grid-template-rows: repeat(6, 140px);
+ gap: 1rem;
+ max-width: 800px;
  margin: 0 auto;
  grid-template-areas:
  "niigata niigata fukushima fukushima"
@@ -297,8 +297,8 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }
  
  .region-grid > * {
- min-height: 120px;
- padding: 1rem !important;
+ min-height: 140px;
+ padding: 1.2rem !important;
  }
  
  .region-grid h3 {
@@ -324,9 +324,9 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  @media (max-width: 768px) {
  .region-grid {
  grid-template-columns: repeat(2, 1fr);
- grid-template-rows: repeat(8, 100px);
- gap: 0.8rem;
- max-width: 450px;
+ grid-template-rows: repeat(8, 120px);
+ gap: 0.7rem;
+ max-width: 500px;
  grid-template-areas:
  "niigata fukushima"
  "nagano gunma"
@@ -339,8 +339,8 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }
  
  .region-grid > * {
- min-height: 100px;
- padding: 0.8rem !important;
+ min-height: 120px;
+ padding: 1rem !important;
  }
  }
  `}</style>
@@ -369,13 +369,6 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }}
  >
  <div className="text-center">
- {/* 活动数量徽章 */}
- {hasEvents && (
- <div className="absolute top-3 right-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
- {regionData.count}个活动
- </div>
- )}
- 
  {/* 地区图标和名称 */}
  <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
  {region.emoji}
@@ -385,19 +378,6 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }`}>
  {region.name}
  </h3>
- 
- {/* 状态指示器 */}
- {hasEvents ? (
- <div className="mt-2 flex items-center justify-center space-x-1">
- <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
- <span className="text-xs text-gray-600 font-medium">有活动</span>
- </div>
- ) : (
- <div className="mt-2 flex items-center justify-center space-x-1">
- <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
- <span className="text-xs text-gray-500">暂无活动</span>
- </div>
- )}
  </div>
  </Link>
  );
