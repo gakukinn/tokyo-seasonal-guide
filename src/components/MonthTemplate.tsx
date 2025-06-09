@@ -179,11 +179,6 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  ))}
  </div>
  
- <div className="text-center">
- <p className="text-gray-700 text-lg font-medium">
- 🎯 选择地区，探索{monthConfig.chinese}的精彩活动
- </p>
- </div>
  </div>
  </section>
  )}
@@ -192,10 +187,6 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  {hasActivities ? (
  <section className="py-20 bg-white/30 backdrop-blur-sm">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- <h2 className="text-4xl font-bold text-gray-800 text-center mb-4">选择观赏地区</h2>
- <p className="text-gray-700 text-center mb-16 text-lg">
- 关东地区六大区域，每个地区都有独特的{monthConfig.activities[0]?.name || '活动'}体验
- </p>
  
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
  {Object.entries(regionConfig).map(([regionKey, region]) => {
