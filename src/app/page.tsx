@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { HeaderAd, ContentAd, FooterAd } from '../components/AdSenseAd';
+import { monthsConfig } from '../config/monthsConfig';
 
 // 月份数据 - 日本传统月名设计
 const months = [
@@ -203,6 +204,39 @@ export default function Home() {
  <span className="text-lg">❄️</span>
  </div>
  <span className="text-gray-800 font-medium">冬季</span>
+ </div>
+ </div>
+ </div>
+
+ {/* 特色活动展示 */}
+ <div className="mt-20 text-center">
+ <h3 className="text-2xl font-bold text-gray-800 mb-8">关东地区特色体验</h3>
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+ {/* 花火大会 */}
+ <div className="group bg-gradient-to-br from-rose-100 to-white border-2 border-rose-300/60 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+ <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-rose-100 to-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+ <span className="text-2xl">🎆</span>
+ </div>
+ <h4 className="text-xl font-bold text-gray-800 mb-2">花火大会</h4>
+ <p className="text-gray-600 text-sm">夏夜最美的烟花盛典</p>
+ </div>
+
+ {/* 传统祭祀 */}
+ <div className="group bg-gradient-to-br from-white to-blue-100 border-2 border-blue-300/60 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+ <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-white to-blue-100 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+ <span className="text-2xl">🏮</span>
+ </div>
+ <h4 className="text-xl font-bold text-gray-800 mb-2">传统祭祀</h4>
+ <p className="text-gray-600 text-sm">七夕节、酸浆花市、阿波舞</p>
+ </div>
+
+ {/* 特色活动 */}
+ <div className="group bg-gradient-to-br from-blue-100 to-blue-200 border-2 border-blue-300/60 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+ <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+ <span className="text-2xl">🎪</span>
+ </div>
+ <h4 className="text-xl font-bold text-gray-800 mb-2">特色活动</h4>
+ <p className="text-gray-600 text-sm">牵牛花节、金鱼祭、风铃</p>
  </div>
  </div>
  </div>
