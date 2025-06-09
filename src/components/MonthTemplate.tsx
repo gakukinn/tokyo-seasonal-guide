@@ -284,8 +284,8 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: repeat(6, 120px);
- gap: 0.8rem;
- max-width: 600px;
+ gap: 1.2rem;
+ max-width: 700px;
  margin: 0 auto;
  grid-template-areas:
  "niigata niigata fukushima fukushima"
@@ -325,8 +325,8 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  .region-grid {
  grid-template-columns: repeat(2, 1fr);
  grid-template-rows: repeat(8, 100px);
- gap: 0.6rem;
- max-width: 400px;
+ gap: 0.8rem;
+ max-width: 450px;
  grid-template-areas:
  "niigata fukushima"
  "nagano gunma"
