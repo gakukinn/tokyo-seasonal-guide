@@ -358,9 +358,9 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  href={hasEvents ? `/${getMonthPath(monthConfig.id)}/${monthConfig.activities[0]?.id}/${regionKey}` : '#'}
  className={`group relative block p-6 rounded-2xl transition-all duration-500 transform ${
  hasEvents 
- ? `bg-gradient-to-br ${region.color} hover:shadow-2xl cursor-pointer hover:scale-105 hover:-translate-y-2 shadow-xl backdrop-blur-sm hover:border-white/80`
- : 'bg-gray-100/80 border-gray-300/60 cursor-not-allowed backdrop-blur-sm shadow-md'
- } border-2`}
+ ? `bg-gradient-to-br ${region.color} hover:shadow-2xl cursor-pointer hover:scale-105 hover:-translate-y-2 shadow-xl backdrop-blur-sm hover:border-white/80 border-2 hover:shadow-blue-200/50`
+ : 'bg-gradient-to-br from-gray-100/90 to-gray-200/80 border-gray-300/60 cursor-not-allowed backdrop-blur-sm shadow-lg border-2'
+ }`}
  style={{ gridArea: region.gridArea }}
  onClick={(e) => {
  if (!hasEvents) {
@@ -369,8 +369,15 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }}
  >
  <div className="text-center">
+ {/* 活动数量徽章 */}
+ {hasEvents && (
+ <div className="absolute top-3 right-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
+ {regionData.count}个活动
+ </div>
+ )}
+ 
  {/* 地区图标和名称 */}
- <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
+ <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
  {region.emoji}
  </div>
  <h3 className={`text-2xl font-bold transition-colors ${
@@ -378,6 +385,19 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  }`}>
  {region.name}
  </h3>
+ 
+ {/* 状态指示器 */}
+ {hasEvents ? (
+ <div className="mt-2 flex items-center justify-center space-x-1">
+ <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+ <span className="text-xs text-gray-600 font-medium">有活动</span>
+ </div>
+ ) : (
+ <div className="mt-2 flex items-center justify-center space-x-1">
+ <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+ <span className="text-xs text-gray-500">暂无活动</span>
+ </div>
+ )}
  </div>
  </Link>
  );
