@@ -18,7 +18,16 @@ const getRegionActivityCounts = (monthId: number) => {
       chiba: { count: 6, activities: ['千叶罗德花火', '南房总白浜海女祭', '富津市民花火大会'] },
       kanagawa: { count: 3, activities: ['镰仓花火大会', '横滨夜间花火', '八景岛花火交响曲'] },
       kitakanto: { count: 4, activities: ['水户花火大会', '真冈花火大会', '玉村花火大会'] },
-      koshinetsu: { count: 6, activities: ['富士河口湖花火', '祇园柏崎花火', '动漫经典花火'] }
+      koshinetsu: { count: 6, activities: ['富士河口湖花火', '祇园柏崎花火', '动漫经典花火'] },
+      // 新增地区（暂时没有活动数据）
+      niigata: { count: 0, activities: [] },
+      fukushima: { count: 0, activities: [] },
+      nagano: { count: 0, activities: [] },
+      gunma: { count: 0, activities: [] },
+      tochigi: { count: 0, activities: [] },
+      ibaraki: { count: 0, activities: [] },
+      yamanashi: { count: 0, activities: [] },
+      shizuoka: { count: 0, activities: [] }
     };
   }
   
@@ -30,7 +39,16 @@ const getRegionActivityCounts = (monthId: number) => {
       chiba: { count: 8, activities: ['幕张海滨花火', '松户花火大会', '市川花火大会'] },
       kanagawa: { count: 8, activities: ['厚木鲇祭花火', '金泽祭花火', '横滨夜间花火'] },
       kitakanto: { count: 6, activities: ['足利花火大会', '高崎花火大会', '前桥花火大会'] },
-      koshinetsu: { count: 6, activities: ['神明花火大会', '新潟祭花火', '长冈花火大会'] }
+      koshinetsu: { count: 6, activities: ['神明花火大会', '新潟祭花火', '长冈花火大会'] },
+      // 新增地区（暂时没有活动数据）
+      niigata: { count: 0, activities: [] },
+      fukushima: { count: 0, activities: [] },
+      nagano: { count: 0, activities: [] },
+      gunma: { count: 0, activities: [] },
+      tochigi: { count: 0, activities: [] },
+      ibaraki: { count: 0, activities: [] },
+      yamanashi: { count: 0, activities: [] },
+      shizuoka: { count: 0, activities: [] }
     };
   }
   
@@ -42,7 +60,16 @@ const getRegionActivityCounts = (monthId: number) => {
       chiba: { count: 0, activities: [] },
       kanagawa: { count: 2, activities: ['八景岛花火', '横滨花火'] },
       kitakanto: { count: 6, activities: ['常陆海滨花火', '小山花火', '大洗花火'] },
-      koshinetsu: { count: 2, activities: ['朝原花火', '信作花火'] }
+      koshinetsu: { count: 2, activities: ['朝原花火', '信作花火'] },
+      // 新增地区（暂时没有活动数据）
+      niigata: { count: 0, activities: [] },
+      fukushima: { count: 0, activities: [] },
+      nagano: { count: 0, activities: [] },
+      gunma: { count: 0, activities: [] },
+      tochigi: { count: 0, activities: [] },
+      ibaraki: { count: 0, activities: [] },
+      yamanashi: { count: 0, activities: [] },
+      shizuoka: { count: 0, activities: [] }
     };
   }
   
@@ -53,47 +80,135 @@ const getRegionActivityCounts = (monthId: number) => {
     chiba: { count: 0, activities: [] },
     kanagawa: { count: 0, activities: [] },
     kitakanto: { count: 0, activities: [] },
-    koshinetsu: { count: 0, activities: [] }
+    koshinetsu: { count: 0, activities: [] },
+    niigata: { count: 0, activities: [] },
+    fukushima: { count: 0, activities: [] },
+    nagano: { count: 0, activities: [] },
+    gunma: { count: 0, activities: [] },
+    tochigi: { count: 0, activities: [] },
+    ibaraki: { count: 0, activities: [] },
+    yamanashi: { count: 0, activities: [] },
+    shizuoka: { count: 0, activities: [] }
   };
 };
 
-// 地区信息配置
-const regionConfig = {
-  tokyo: { 
-    name: '东京都', 
-    emoji: '🗼', 
-    color: 'from-red-100 to-pink-100 border-red-300/60',
-    description: '首都圈最大规模花火大会集中地'
+// 地区信息配置 - 扩展为12个地区
+const regionConfig: Record<string, {
+  name: string;
+  emoji: string;
+  color: string;
+  description: string;
+  gridArea: string;
+  hidden?: boolean;
+}> = {
+  // 第一行：北部地区
+  niigata: { 
+    name: '新潟县', 
+    emoji: '🌾', 
+    color: 'from-green-100 to-emerald-100 border-green-300/60',
+    description: '日本海沿岸的花火与雪国文化',
+    gridArea: 'niigata'
+  },
+  fukushima: { 
+    name: '福岛县', 
+    emoji: '🌸', 
+    color: 'from-blue-100 to-cyan-100 border-blue-300/60',
+    description: '东北南部的传统花火祭典',
+    gridArea: 'fukushima'
+  },
+  
+  // 第二行：中部地区
+  nagano: { 
+    name: '长野县', 
+    emoji: '🏔️', 
+    color: 'from-green-100 to-emerald-100 border-green-300/60',
+    description: '信州高原的山间花火体验',
+    gridArea: 'nagano'
+  },
+  gunma: { 
+    name: '群马县', 
+    emoji: '♨️', 
+    color: 'from-yellow-100 to-orange-100 border-yellow-300/60',
+    description: '温泉之乡的花火与自然',
+    gridArea: 'gunma'
+  },
+  tochigi: { 
+    name: '栃木县', 
+    emoji: '🦌', 
+    color: 'from-purple-100 to-indigo-100 border-purple-300/60',
+    description: '日光与那须的花火名胜',
+    gridArea: 'tochigi'
+  },
+  ibaraki: { 
+    name: '茨城县', 
+    emoji: '🌊', 
+    color: 'from-blue-100 to-cyan-100 border-blue-300/60',
+    description: '太平洋沿岸的海滨花火',
+    gridArea: 'ibaraki'
+  },
+  
+  // 第三行：中南部地区
+  yamanashi: { 
+    name: '山梨县', 
+    emoji: '🗻', 
+    color: 'from-purple-100 to-pink-100 border-purple-300/60',
+    description: '富士山麓的绝景花火',
+    gridArea: 'yamanashi'
   },
   saitama: { 
     name: '埼玉县', 
     emoji: '🌸', 
     color: 'from-pink-100 to-purple-100 border-pink-300/60',
-    description: '传统与现代融合的花火体验'
+    description: '传统与现代融合的花火体验',
+    gridArea: 'saitama'
   },
   chiba: { 
     name: '千叶县', 
     emoji: '🌊', 
     color: 'from-blue-100 to-cyan-100 border-blue-300/60',
-    description: '海滨花火与房总半岛风情'
+    description: '海滨花火与房总半岛风情',
+    gridArea: 'chiba'
+  },
+  
+  // 第四行：南部地区
+  shizuoka: { 
+    name: '静冈县', 
+    emoji: '🍃', 
+    color: 'from-green-100 to-emerald-100 border-green-300/60',
+    description: '富士山南麓的茶乡花火',
+    gridArea: 'shizuoka'
+  },
+  tokyo: { 
+    name: '东京都', 
+    emoji: '🗼', 
+    color: 'from-red-100 to-pink-100 border-red-300/60',
+    description: '首都圈最大规模花火大会集中地',
+    gridArea: 'tokyo'
   },
   kanagawa: { 
     name: '神奈川县', 
     emoji: '🌺', 
     color: 'from-purple-100 to-indigo-100 border-purple-300/60',
-    description: '横滨港湾与湘南海岸花火'
+    description: '横滨港湾与湘南海岸花火',
+    gridArea: 'kanagawa'
   },
+  
+  // 保留原有的合并地区作为备用
   kitakanto: { 
     name: '北关东', 
     emoji: '🏔️', 
     color: 'from-green-100 to-emerald-100 border-green-300/60',
-    description: '群马・栃木・茨城三县花火'
+    description: '群马・栃木・茨城三县花火',
+    gridArea: 'kitakanto',
+    hidden: true // 隐藏，不在新布局中显示
   },
   koshinetsu: { 
     name: '甲信越', 
     emoji: '⛰️', 
     color: 'from-yellow-100 to-orange-100 border-yellow-300/60',
-    description: '富士山麓与信州高原花火'
+    description: '富士山麓与信州高原花火',
+    gridArea: 'koshinetsu',
+    hidden: true // 隐藏，不在新布局中显示
   }
 };
 
@@ -188,8 +303,40 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  <section className="py-20 bg-white/30 backdrop-blur-sm">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  
- <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
- {Object.entries(regionConfig).map(([regionKey, region]) => {
+ {/* 地理位置布局的CSS Grid */}
+ <style jsx>{`
+ .region-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: auto auto auto auto;
+ gap: 1rem;
+ max-width: 800px;
+ margin: 0 auto;
+ grid-template-areas:
+ "niigata fukushima fukushima ."
+ "nagano gunma tochigi ibaraki"
+ "yamanashi saitama saitama chiba"
+ "shizuoka tokyo kanagawa chiba";
+ }
+ 
+ @media (max-width: 768px) {
+ .region-grid {
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas:
+ "niigata fukushima"
+ "nagano gunma"
+ "tochigi ibaraki"
+ "yamanashi saitama"
+ "shizuoka tokyo"
+ "kanagawa chiba";
+ }
+ }
+ `}</style>
+ 
+ <div className="region-grid">
+ {Object.entries(regionConfig)
+ .filter(([_, region]) => !region.hidden) // 过滤掉隐藏的地区
+ .map(([regionKey, region]) => {
  const regionData = regionCounts[regionKey as keyof typeof regionCounts];
  const hasEvents = regionData.count > 0;
  
@@ -197,11 +344,12 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  <Link
  key={regionKey}
  href={hasEvents ? `/${getMonthPath(monthConfig.id)}/${monthConfig.activities[0]?.id}/${regionKey}` : '#'}
- className={`group relative block p-8 rounded-3xl transition-all duration-500 transform ${
+ className={`group relative block p-6 rounded-2xl transition-all duration-500 transform ${
  hasEvents 
  ? `bg-gradient-to-br ${region.color} hover:shadow-2xl cursor-pointer hover:scale-105 hover:-translate-y-2 shadow-xl backdrop-blur-sm hover:border-white/80`
  : 'bg-gray-100/80 border-gray-300/60 cursor-not-allowed backdrop-blur-sm shadow-md'
  } border-2`}
+ style={{ gridArea: region.gridArea }}
  onClick={(e) => {
  if (!hasEvents) {
  e.preventDefault();
