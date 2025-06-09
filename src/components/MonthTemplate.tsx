@@ -111,9 +111,9 @@ const regionConfig: Record<string, {
   },
   fukushima: { 
     name: '福岛县', 
-    emoji: '🌸', 
-    color: 'from-blue-100 to-cyan-100 border-blue-300/60',
-    description: '东北南部的传统花火祭典',
+    emoji: '🍑', 
+    color: 'from-pink-100 to-red-100 border-pink-300/60',
+    description: '水果王国的田园花火祭典',
     gridArea: 'fukushima'
   },
   
@@ -141,9 +141,9 @@ const regionConfig: Record<string, {
   },
   ibaraki: { 
     name: '茨城县', 
-    emoji: '🌊', 
-    color: 'from-blue-100 to-cyan-100 border-blue-300/60',
-    description: '太平洋沿岸的海滨花火',
+    emoji: '🌻', 
+    color: 'from-yellow-100 to-orange-100 border-yellow-300/60',
+    description: '农业大县的田园花火',
     gridArea: 'ibaraki'
   },
   
@@ -157,9 +157,9 @@ const regionConfig: Record<string, {
   },
   saitama: { 
     name: '埼玉县', 
-    emoji: '🌸', 
-    color: 'from-pink-100 to-purple-100 border-pink-300/60',
-    description: '传统与现代融合的花火体验',
+    emoji: '🏘️', 
+    color: 'from-blue-100 to-green-100 border-blue-300/60',
+    description: '现代住宅区的都市花火',
     gridArea: 'saitama'
   },
   chiba: { 
@@ -173,7 +173,7 @@ const regionConfig: Record<string, {
   // 第四行：南部地区
   shizuoka: { 
     name: '静冈县', 
-    emoji: '🍃', 
+    emoji: '🍵', 
     color: 'from-green-100 to-emerald-100 border-green-300/60',
     description: '富士山南麓的茶乡花火',
     gridArea: 'shizuoka'
@@ -187,8 +187,8 @@ const regionConfig: Record<string, {
   },
   kanagawa: { 
     name: '神奈川县', 
-    emoji: '🌺', 
-    color: 'from-purple-100 to-indigo-100 border-purple-300/60',
+    emoji: '⚓', 
+    color: 'from-blue-100 to-indigo-100 border-blue-300/60',
     description: '横滨港湾与湘南海岸花火',
     gridArea: 'kanagawa'
   },
@@ -303,32 +303,69 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  <section className="py-20 bg-white/30 backdrop-blur-sm">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  
- {/* 地理位置布局的CSS Grid */}
+ {/* 地理位置布局的CSS Grid - 精确按照地理位置排列 */}
  <style jsx>{`
  .region-grid {
  display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr;
- grid-template-rows: auto auto auto auto;
- gap: 1rem;
- max-width: 800px;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(6, 120px);
+ gap: 0.8rem;
+ max-width: 600px;
  margin: 0 auto;
  grid-template-areas:
- "niigata fukushima fukushima ."
+ "niigata niigata fukushima fukushima"
+ "nagano gunma tochigi ibaraki"
  "nagano gunma tochigi ibaraki"
  "yamanashi saitama saitama chiba"
- "shizuoka tokyo kanagawa chiba";
+ "yamanashi tokyo tokyo chiba"
+ "shizuoka kanagawa kanagawa .";
+ }
+ 
+ .region-grid > * {
+ min-height: 120px;
+ padding: 1rem !important;
+ }
+ 
+ .region-grid h3 {
+ font-size: 1.2rem !important;
+ margin-bottom: 0.5rem !important;
+ }
+ 
+ .region-grid .text-6xl {
+ font-size: 2.5rem !important;
+ margin-bottom: 0.5rem !important;
+ }
+ 
+ .region-grid .text-lg {
+ font-size: 0.9rem !important;
+ margin-bottom: 0.5rem !important;
+ }
+ 
+ .region-grid .text-sm {
+ font-size: 0.75rem !important;
+ margin-bottom: 0.3rem !important;
  }
  
  @media (max-width: 768px) {
  .region-grid {
- grid-template-columns: 1fr 1fr;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(8, 100px);
+ gap: 0.6rem;
+ max-width: 400px;
  grid-template-areas:
  "niigata fukushima"
  "nagano gunma"
  "tochigi ibaraki"
- "yamanashi saitama"
- "shizuoka tokyo"
- "kanagawa chiba";
+ "saitama chiba"
+ "yamanashi chiba"
+ "tokyo chiba"
+ "shizuoka kanagawa"
+ ". .";
+ }
+ 
+ .region-grid > * {
+ min-height: 100px;
+ padding: 0.8rem !important;
  }
  }
  `}</style>
@@ -361,53 +398,11 @@ export default function MonthTemplate({ monthId, customConfig }: MonthTemplatePr
  <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
  {region.emoji}
  </div>
- <h3 className={`text-2xl font-bold mb-3 transition-colors ${
+ <h3 className={`text-2xl font-bold transition-colors ${
  hasEvents ? 'text-gray-800 group-hover:text-gray-900' : 'text-gray-400'
  }`}>
  {region.name}
  </h3>
- 
- {/* 活动数量显示 */}
- <div className={`text-lg font-semibold mb-4 transition-colors ${
- hasEvents ? 'text-blue-600 group-hover:text-blue-700' : 'text-gray-500'
- }`}>
- {hasEvents ? `${regionData.count}个活动` : '暂无活动'}
- </div>
- 
- {/* 地区描述 */}
- <p className={`text-sm mb-4 transition-colors ${
- hasEvents ? 'text-gray-600 group-hover:text-gray-700' : 'text-gray-500'
- }`}>
- {region.description}
- </p>
- 
- {/* 热门活动预览 */}
- {hasEvents && regionData.activities.length > 0 && (
- <div className="mt-4 pt-4 border-t border-white/50">
- <p className="text-xs text-gray-600 mb-2">热门活动：</p>
- <div className="space-y-1">
- {regionData.activities.slice(0, 2).map((activity, index) => (
- <p key={index} className="text-xs text-gray-700 truncate">
- • {activity}
- </p>
- ))}
- {regionData.activities.length > 2 && (
- <p className="text-xs text-blue-600">
- +{regionData.activities.length - 2}个更多活动
- </p>
- )}
- </div>
- </div>
- )}
- 
- {/* 状态提示 */}
- {!hasEvents && (
- <div className="mt-4">
- <div className="bg-gray-200/80 text-gray-500 text-xs px-3 py-1 rounded-full backdrop-blur-sm">
- 即将推出
- </div>
- </div>
- )}
  </div>
  </Link>
  );

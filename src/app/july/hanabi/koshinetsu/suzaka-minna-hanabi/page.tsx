@@ -15,5 +15,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { suzakaMinnaNHanabiData } from '@/data/level5-suzaka-minna-hanabi';
 
 export default function SuzakaMinnaHanabiPage() {
-  return <HanabiDetailTemplate data={suzakaMinnaNHanabiData} regionKey="koshinetsu" />;
+ return <HanabiDetailTemplate data={suzakaMinnaNHanabiData} regionKey="koshinetsu" />;
 } 

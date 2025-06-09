@@ -13,5 +13,5 @@ import HanabiDetailTemplate from '@/components/HanabiDetailTemplate';
 import { akishimaHanabiData } from '@/data/level5-august-akishima-hanabi';
 
 export default function AkishimaHanabiPage() {
-  return <HanabiDetailTemplate data={akishimaHanabiData} regionKey="tokyo" />;
+ return <HanabiDetailTemplate data={akishimaHanabiData} regionKey="tokyo" />;
 } 
